@@ -1,4 +1,10 @@
-
+:root{
+    --verde: rgb(55, 90, 68);
+    --verdeClaro: rgb(171, 219, 188);
+    --verdeSpan: rgb(193, 204, 192);
+    --verdeSpanFonte: rgb(103, 119, 102);
+    --cinza: rgb(235, 235, 235);
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,24 +17,53 @@ a{
 }
 a:hover{
     transition: 0.3s;
-    color: #abdbbc;
+    text-decoration:underline;
+    color :var(--verdeClaro);
 }
 
-.banner{
+.bannerIndex{
     width: 100%;
-    height: 600px;
-    background-image: url('banner2.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    height: 15rem;
+    overflow: hidden;
+}
 
+.bannerIndex img{
+    width: 100%;
+    height: calc(100svh - 4rem);
+    object-fit: cover;
+}
 
+span{
+    display: flex;
+    align-items: center;
+    background-color: var(--verdeSpan);
+    padding: 5px;
+    color:var(--verdeSpanFonte);
+    border: 2px solid var(--verdeSpanFonte);
+    border-radius: 50px;
+    height: 5rem;
+    width: 20rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    
+}
+span img{
+    height:4rem ;
 }
 h1{
-    font-size: 2rem;
-    text-align: center;
-    color:white ;
+    font-size: 5rem;
+    text-align:left;
+    color:rgb(0, 0, 0) ;
     padding-top: 20px;
+    margin-left: 2rem;
+    
+}
+p{
+    font-size: 1.5rem;
+    text-align: left;
+    color: black;
+    padding-top: 20px;
+    margin-left: 2rem;
 }
 nav{
     display: flex;
@@ -37,11 +72,23 @@ nav{
     gap: 0.5rem;
     height: 4rem;
     width: 100%;
-    background-color:#375a44;
+    background-color:var(--verde);
+}
+
+.botaoS{
+    background-color: var(--verde);
+    height: 3.5rem;
+    width: 10rem;
+    color: white;
+    border-radius: 50px;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    
 }
 .logo{
     display: flex;
-    background-color: #ebebeb;
+    background-color: var(--cinza);
     height: 7rem;
     justify-content: center;
 }
