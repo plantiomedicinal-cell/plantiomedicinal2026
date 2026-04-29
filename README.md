@@ -1,5 +1,3 @@
-# @plantiomedicinal
-
 <h1 align="center">🌱 Raízes do Bem</h1>
 <p align="center">
   <b>Plantio Medicinal • Conhecimentos Naturais</b>
@@ -33,5 +31,5 @@ Este projeto está sendo desenvolvido por:
 ✔ Preservar saberes tradicionais 🌿  
 ✔ Compartilhar conhecimento acessível  
 
-# alteração feita pelo Projeto Plantio Medicinal.
+### alteração feita pelo Projeto Plantio Medicinal.
 
