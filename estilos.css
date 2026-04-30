@@ -11,11 +11,11 @@
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
 }
-a{
+header nav a{
     text-decoration: none;
     color: white;
 }
-a:hover{
+header nav a:hover{
     transition: 0.3s;
     text-decoration:underline;
     color :var(--verdeClaro);
@@ -50,21 +50,36 @@ span{
 span img{
     height:4rem ;
 }
-h1{
-    font-size: 5rem;
+.jardimM{
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
     text-align:left;
     color:rgb(0, 0, 0) ;
-    padding-top: 20px;
+    justify-content: space-between;
     margin-left: 2rem;
     
 }
-p{
-    font-size: 1.5rem;
-    text-align: left;
+.textoM{
+    font-size: 2rem;
+    margin-top: 2rem;
+    max-width: 50%;
     color: black;
-    padding-top: 20px;
-    margin-left: 2rem;
 }
+.textoM p{
+    font-size: 1.5rem;
+}
+
+.imagemM{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+.imagemM img{
+    width: 50%;
+    height: auto;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -75,15 +90,29 @@ nav{
     background-color:var(--verde);
 }
 
+.divisao1{
+    background-color: var(--cinza);
+    height: 4rem;
+    width: 100%;
+    border: none;
+}
+.divisao2{
+    background-color: var(--verde);
+    height: 1rem;
+    width: 100%;
+    border: none;
+}
+
 .botaoS{
     background-color: var(--verde);
     height: 3.5rem;
     width: 10rem;
     color: white;
     border-radius: 50px;
-    margin-left: 2rem;
+    border: none;
     font-size: 1.3rem;
-    margin-top: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     
 }
 .logo{
@@ -91,4 +120,39 @@ nav{
     background-color: var(--cinza);
     height: 7rem;
     justify-content: center;
+}
+
+.card{
+    background-color: var(--verdeSpan);
+    border: 2px solid var(--verdeSpanFonte);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    width: 20rem;
+    height: 25rem;
+    margin-left: 2rem;
+    padding: 2rem 2rem;
+}
+.card img{
+    height: 18rem;
+    width: 16rem;
+    border: 2px solid var(--verde);
+}
+
+.catalogo{
+    text-align: center;
+    font-size:3rem ;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.orapronobis{
+    text-align: left;
+    color: white;
+    font-size: 1.5rem;
+    width: 16rem;
+}
+
+#opnC{
+    color: white;
+    
 }
