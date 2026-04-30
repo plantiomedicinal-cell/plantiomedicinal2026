@@ -15,7 +15,6 @@
 p{
     font-size: 16px;
     text-align: center;
-    margin: 2rem;
 }
 
 header nav a{
@@ -75,6 +74,7 @@ span img{
 }
 .textoM p{
     font-size: 1.5rem;
+    text-align: left;
 }
 
 .imagemM{
@@ -161,6 +161,7 @@ nav{
 
 #opnC{
     color: white;
+    text-align: left;
     
 }
 
