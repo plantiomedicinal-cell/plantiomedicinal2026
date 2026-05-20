@@ -1,31 +1,99 @@
+/* =========================
+   ROOT / CORES
+========================= */
+
 :root{
-    --verde: rgb(55, 90, 68);
-    --verdeClaro: rgb(171, 219, 188);
-    --verdeSpan: rgb(193, 204, 192);
-    --verdeSpanFonte: rgb(103, 119, 102);
-    --cinza: rgb(235, 235, 235);
+    --verdeMusgo: rgb(55, 90, 68); 
+    --verdeMenta: rgb(171, 219, 188); 
+    --verdeAcinzentado: rgb(193, 204, 192); 
+    --verdeOliva: rgb(103, 119, 102);
+    --verdeOlivaAcinzentado: rgb(103, 119, 102);
+    --verdeNevoa: rgb(226, 238, 229);
+    --cinzaGelo: rgb(235, 235, 235);
+    --begeAreia: rgb(214, 196, 168);
+    --terracota: rgb(181, 117, 87);
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* =========================
+   TAGS GERAIS
+========================= */
 
 p{
     font-size: 16px;
     text-align: center;
 }
 
+span{
+    display: flex;
+    align-items: center;
+    background-color: var(--verdeAcinzentado);
+    padding: 5px;
+    color: var(--verdeOliva);
+    border: 2px solid var(--verdeOliva);
+    border-radius: 50px;
+    height: 5rem;
+    width: 20rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+
+span img{
+    height: 4rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 4rem;
+    width: 100%;
+    background-color: var(--verdeMusgo);
+}
+
+h2{
+    margin: 4rem 2rem 1rem 4rem;
+}
+
+ul li{
+    margin: 1rem 5rem;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    transform: scale(1.05);
+    text-shadow: 0 0 1px black;
+}
+
+/* =========================
+   HEADER
+========================= */
+
 header nav a{
     text-decoration: none;
     color: white;
 }
+
 header nav a:hover{
     transition: 0.3s;
-    text-decoration:underline;
-    color :var(--verdeClaro);
+    text-decoration: underline;
+    color: var(--verdeMenta);
 }
+
+/* =========================
+   BANNERS
+========================= */
 
 .bannerIndex{
     width: 100%;
@@ -39,39 +107,27 @@ header nav a:hover{
     object-fit: cover;
 }
 
-span{
-    display: flex;
-    align-items: center;
-    background-color: var(--verdeSpan);
-    padding: 5px;
-    color:var(--verdeSpanFonte);
-    border: 2px solid var(--verdeSpanFonte);
-    border-radius: 50px;
-    height: 5rem;
-    width: 20rem;
-    margin-top: 5rem;
-    margin-left: 2rem;
-    
-}
-span img{
-    height:4rem ;
-}
+/* =========================
+   SEÇÃO PRINCIPAL
+========================= */
+
 .jardimM{
     display: flex;
     font-size: 2rem;
     align-items: center;
-    text-align:left;
-    color:rgb(0, 0, 0) ;
+    text-align: left;
+    color: black;
     justify-content: space-between;
     margin-left: 2rem;
-    
 }
+
 .textoM{
     font-size: 2rem;
     margin-top: 2rem;
     max-width: 50%;
     color: black;
 }
+
 .textoM p{
     font-size: 1.5rem;
     text-align: left;
@@ -82,36 +138,42 @@ span img{
     flex: 1;
     justify-content: flex-end;
 }
+
 .imagemM img{
     width: 50%;
     height: auto;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    height: 4rem;
-    width: 100%;
-    background-color:var(--verde);
-}
+/* =========================
+   DIVISÕES
+========================= */
 
 .divisao1{
-    background-color: var(--cinza);
+    background-color: var(--cinzaGelo);
     height: 4rem;
     width: 100%;
     border: none;
 }
+
 .divisao2{
-    background-color: var(--verde);
+    background-color: var(--verdeMusgo);
     height: 1rem;
     width: 100%;
     border: none;
 }
 
+.traço{
+    background-color: var(--verdeMusgo);
+    color: var(--verdeMusgo);
+    margin: 4rem 0;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
 .botaoS{
-    background-color: var(--verde);
+    background-color: var(--verdeMusgo);
     height: 3.5rem;
     width: 10rem;
     color: white;
@@ -120,38 +182,72 @@ nav{
     font-size: 1.3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    
 }
+
+.botaoFiltros{
+    width: 16rem;
+    color: var(--verdeMusgo);
+}
+
+.barraPesquisa button{
+    border-radius: 50px;
+    background-color: transparent;
+    border: 3px solid var(--verdeMusgo);
+    font-size: 1.3rem;
+    padding: 8px;
+    color: var(--verdeMusgo);
+    cursor: pointer;
+}
+
+.barraPesquisa button:hover{
+    transition: 0.6s;
+    background-color: var(--verdeMenta);
+}
+
+/* =========================
+   LOGO
+========================= */
+
 .logo{
     display: flex;
-    background-color: var(--cinza);
+    background-color: var(--cinzaGelo);
     height: 7rem;
     justify-content: center;
 }
 
+/* =========================
+   CARDS
+========================= */
+
 .card{
-    background-color: var(--verdeSpan);
-    border: 2px solid var(--verdeSpanFonte);
+    background-color: var(--verdeAcinzentado);
+    border: 2px solid var(--verdeOliva);
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
     width: 20rem;
     height: 25rem;
     margin-left: 2rem;
-    padding: 2rem 2rem;
+    padding: 2rem;
 }
+
 .card img{
     height: 18rem;
     width: 16rem;
-    border: 2px solid var(--verde);
+    border: 2px solid var(--verdeMusgo);
 }
+
+/* =========================
+   CATÁLOGO
+========================= */
 
 .catalogo{
     text-align: center;
-    font-size:3rem ;
+    font-size: 3rem;
     text-decoration: none;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
 .orapronobis{
     text-align: left;
     color: white;
@@ -162,8 +258,11 @@ nav{
 #opnC{
     color: white;
     text-align: left;
-    
 }
+
+/* =========================
+   RECEITAS
+========================= */
 
 .inicioReceita{
     display: flex;
@@ -177,82 +276,36 @@ nav{
     display: flex;
     justify-content: center;
     gap: 1rem;
-   color: rgb(55, 90, 68);
-   margin: 2rem;
+    color: var(--verdeMusgo);
+    margin: 2rem;
 }
 
 .barraPesquisa input{
     border-radius: 50px;
-    font-size: 1.8rem;
-    border: 3px solid rgb(55, 90, 68);
+    border: 3px solid var(--verdeMusgo);
     width: 30rem;
     font-size: 16px;
     padding: 10px;
     cursor: pointer;
 }
 
-.barraPesquisa button{  /*Botões ao lado da barra de pesquisa*/
-    border-radius: 50px;
-    background-color: transparent;
-    font-size: 1.8rem;
-    border-color: rgb(55, 90, 68);
-    border: 3px solid rgb(55, 90, 68);
-    font-size: 1.3rem;
-    padding: 8px;
-    color: rgb(55, 90, 68);
-    cursor: pointer;
-}
-
-.botaoFiltros{
-    width: 16rem ;
-    color: rgb(55, 90, 68);
-}
-
-.barraPesquisa button:hover{
-    transition: 0.6s;
-    background-color: var(--verdeClaro);
-}
-
-.traço{
-    background-color:rgb(55, 90, 68) ;
-    color: rgb(55, 90, 68);
-    margin:4rem 0;
-}
-
-h2{
-    margin: 4rem 2rem 1rem 4rem;
-}
-
-ul li{
-margin: 1rem 5rem;
-}
-
-ul li a{
-    color: black;
-    text-decoration:none;
-}
-
-ul li a:hover{
-   transform: scale(1.05);
-   text-shadow: 0 0 1px black;
-}
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-    background-color: rgb(55, 90, 68);
-    margin: 8rem 0 0 0;
+    background-color: var(--verdeMusgo);
+    margin-top: 8rem;
     height: 15rem;
     display: flex;
     gap: 10rem;
     padding: 2rem 5rem;
-    display: flex;
     width: 100%;
-
 }
 
 footer h4{
-    color: white ;
+    color: white;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
-
