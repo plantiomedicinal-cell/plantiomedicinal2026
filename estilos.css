@@ -305,6 +305,56 @@ header nav a:hover{
 }
 
 /* =========================
+   SOBRE NÓS
+========================= */
+
+.inicioSobreNos{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 3rem;
+    font-size: 58px;
+} 
+
+b{
+    font-weight: bold; 
+} 
+
+.perguntas{ 
+    padding: 2rem 0 1rem 4rem; 
+} 
+
+.resposta{ 
+    padding: 0 4rem 0 3rem; 
+    text-align: left; 
+    line-height: 2rem; 
+} 
+
+.profissional{ 
+    border: 4px solid var(--cinzaGelo); 
+    border-radius: 50rem; 
+    margin: 6rem; 
+    display: flex; 
+    width: 12rem; 
+} 
+
+.contato{ 
+    margin: 2rem 0; 
+    display: flex; 
+    align-items: center; 
+    background-color: var(--cinzaGelo); 
+} 
+
+.conteudo{ 
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.8rem; 
+
+} 
+
+/* =========================
    FOOTER
 ========================= */
 
