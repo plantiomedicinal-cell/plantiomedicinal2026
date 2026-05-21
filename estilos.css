@@ -162,10 +162,13 @@ header nav a:hover{
     border: none;
 }
 
-.traço{
-    background-color: var(--verdeMusgo);
-    color: var(--verdeMusgo);
-    margin: 4rem 0;
+.divisao3{
+    background-color: var(--cinzaGelo);
+    width: 100%; 
+    padding: 0.1rem 2rem;       
+    box-sizing: border-box;    
+    border: none;
+    height: auto;
 }
 
 /* =========================
@@ -287,6 +290,18 @@ header nav a:hover{
     font-size: 16px;
     padding: 10px;
     cursor: pointer;
+}
+
+/* =========================
+   POSTAGENS
+========================= */
+
+.inicioPostagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    font-size: 58px;
 }
 
 /* =========================
