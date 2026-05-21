@@ -58,10 +58,6 @@ nav{
     background-color: var(--verdeMusgo);
 }
 
-h2{
-    margin: 4rem 2rem 1rem 4rem;
-}
-
 ul li{
     margin: 1rem 5rem;
 }
@@ -175,6 +171,10 @@ header nav a:hover{
     height: auto;
 }
 
+.divisao4{
+    border: none;
+}
+
 /* =========================
    BOTÕES
 ========================= */
@@ -183,17 +183,46 @@ header nav a:hover{
     background-color: var(--verdeMusgo);
     height: 3.5rem;
     width: 10rem;
-    color: white;
+    color: var(--cinzaGelo);
     border-radius: 50px;
     border: none;
     font-size: 1.3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.botaoS:hover{
+    transform: scale(1.05);
+    box-shadow:0 10px 10px rgba(0,0,0, 0.3) ;
 }
 
 .botaoFiltros{
     width: 16rem;
     color: var(--verdeMusgo);
+}
+
+.botaoC{
+    background-color: var(--verdeMusgo);
+    height: 3.5rem;
+    width: 23rem;
+    color: var(--cinzaGelo);
+    border-radius: 50px;
+    border: none;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.botaoC:hover{
+    transform: scale(1.05);
+    box-shadow:0 10px 10px rgba(0,0,0, 0.3) ;
+}
+.verCatalogo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .barraPesquisa button{
@@ -220,6 +249,25 @@ header nav a:hover{
     background-color: var(--cinzaGelo);
     height: 7rem;
     justify-content: center;
+}
+
+/*============================
+       TÍTULOS 
+====================*/
+
+.DescubraR{
+    width: 100%;
+    border: 1px solid red;
+}
+.receitas{
+    text-align:start;
+    font-size: 4rem;
+    font-weight: 100;
+}
+.receita{
+    text-align: start;
+    font-size: 4rem;
+    
 }
 
 /* =========================
@@ -424,4 +472,83 @@ footer img{
     transform: translateX(-50%); 
     height: 10rem;
     width: auto;
+}
+
+/* =========================
+   CARDS
+========================= */
+.catalogo .descricao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 3rem;
+    font-size: 40px;
+}
+.containerCards{
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+}
+.containerCards .textos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.containerCards .plantas .nomeP{
+    color: var(--verdeMusgo);
+}
+.containerCards .plantas .nomeC{
+    color: var(--verdeOliva);
+}
+.containerCards .AreaPlantas{
+    width: 80%;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+.cards, .cards1{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+.containerCards .plantas{
+    border-radius: 1rem 1rem;
+    background-color:var(--verdeAcinzentado) ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 30%;
+    overflow: hidden;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+.containerCards .plantas:hover{
+    box-shadow: 0 25px 25px rgba(0,0,0, 0.3);
+    transform: scale(105%);
+}
+.containerCards .quadroImg{
+    width: 100%;
+    aspect-ratio: 1/0.7;
+    display: block;
+    overflow: hidden;
+}
+.containerCards .quadroImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.containerCards .catalogo{
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+    .containerCards{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .containerCards .AreaPlantas{
+        width: 100%;
+    }
 }
