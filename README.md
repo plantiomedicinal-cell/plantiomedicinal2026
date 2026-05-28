@@ -31,15 +31,4 @@ Este projeto está sendo desenvolvido por:
 ✔ Preservar saberes tradicionais 🌿  
 ✔ Compartilhar conhecimento acessível
 
----
-
-## Tecnologias
-HTML CSS JavaScript
-
----
-
-## 📄 Licença
-Este projeto está sob licença MIT.
-
 ### alteração feita pelo Projeto Plantio Medicinal.
-
