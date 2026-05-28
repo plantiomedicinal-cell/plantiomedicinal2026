@@ -29,10 +29,8 @@
 
     <p>Principais receitas medicinais reunindo preparos naturais como chás, xaropes e infusões, com orientações simples para uso no dia a dia. Uma forma prática de aproveitar os benefícios das plantas para o bem-estar.</p>
 
-
     <div class="barraPesquisa">
-        <input type="text" placeholder="🔍">
-        <button>Buscar</button>
+        <input type="text" id="pesquisaPlanta" placeholder="🔍 Pesquisar planta">
     </div>
 
 
@@ -42,15 +40,15 @@
                 <h2>Filtros:</h2>
 
                 <ul class="listaFiltros">
-                    <li><button>Digestivas</button></li>
-                    <li><button>Calmantes</button></li>
-                    <li><button>Imunológicos</button></li>
-                    <li><button>Cuidados da Pele</button></li>
-                    <li><button>Cicratizantes</button></li> 
-                    <li><button>Anti-Infamátorios</button></li>
-                    <li><button>Medicinais Brasileiras</button></li>  
-                    <li><button>Chás Tradicionais</button></li>  
-                    <li><button>Antioxidantes</button></li>                       
+                    <li><button class="filtroBtn" data-filter="Digestivos">Digestivas</button></li>
+                    <li><button class="filtroBtn" data-filter="Calmantes">Calmantes</button></li>
+                    <li><button class="filtroBtn" data-filter="Imunológicos">Imunológicos</button></li>
+                    <li><button class="filtroBtn" data-filter="Cuidados da Pele">Cuidados da Pele</button></li>
+                    <li><button class="filtroBtn" data-filter="Cicratizantes">Cicratizantes</button></li> 
+                    <li><button class="filtroBtn" data-filter="Anti-Inflamátorios">Anti-Infamátorios</button></li>
+                    <li><button class="filtroBtn" data-filter="Medicinais">Medicinais Brasileiras</button></li>  
+                    <li><button class="filtroBtn" data-filter="Chás Tradicionais">Chás Tradicionais</button></li>  
+                    <li><button class="filtroBtn" data-filter="Antioxidantes">Antioxidantes</button></li>                       
                 </ul>
 
     </section>
@@ -63,7 +61,7 @@
     <div class="cardsCatalogo">
 
     <!-- CARD 1 -->
-       <div class="catalogoPlantas">
+       <div class="catalogoPlantas" data-category="Medicinais">
         <a href="" class="quadroImgCatalogo">
           <img src="img/Plantas Medicinais/ORA PRO NOBIS.jpg" alt=" Ora Pro Nobis">
         </a>
@@ -77,24 +75,24 @@
 
     <!-- CARD 2 -->
         
-       <div class="catalogoPlantas">
+       <div class="catalogoPlantas" data-category="Calmantes">
         <a href="research/alecrim.html" class="quadroImgCatalogo">
           <img src="img/Plantas Medicinais/ALECRIM.jpg" alt=" Alecrim">
         </a>
 
-        <div class="textosCatalogo"">
+        <div class="textosCatalogo">
           <h2 class="nomePlanta">Alecrim</h2>
           <h3 class="nomeCientifico">Salvia rosmarinus</h3>
         </div>
         </div>
 
     <!-- CARD 3 -->
-        <div class="catalogoPlantas">
+        <div class="catalogoPlantas" data-category="Anti-Inflamátorios">
         <a href="" class="quadroImgCatalogo">
           <img src="img/Plantas Medicinais/PIMENTA MACACO.jpg" alt=" Pimenta Macaco">
         </a>
 
-        <div class="textosCatalogo"">
+        <div class="textosCatalogo">
           <h2 class="nomePlanta">Pimenta Macaco</h2>
           <h3 class="nomeCientifico">Xylopia aromatica</h3>
         </div>
@@ -107,36 +105,36 @@
        <div class="cardsCatalogo1">
 
     <!-- CARD 4 -->
-       <div class="catalogoPlantas">
+       <div class="catalogoPlantas" data-category="Imunológicos">
         <a href="" class="quadroImgCatalogo">
           <img src="img/Plantas Medicinais/MORINGA.jpg" alt=" Moringa">
         </a>
 
-        <div class="textosCatalogo"">
+        <div class="textosCatalogo">
           <h2 class="nomePlanta">Moringa</h2>
           <h3 class="nomeCientifico">Moringa oleifera</h3>
         </div>
         </div>
 
     <!-- CARD 5 -->
-        <div class="catalogoPlantas">
+        <div class="catalogoPlantas" data-category="Digestivos">
         <a href="" class="quadroImgCatalogo">
           <img src="img/Plantas Medicinais/LOURO.jpg" alt=" Louro">
         </a>
 
-        <div class="textosCatalogo"">
+        <div class="textosCatalogo">
           <h2 class="nomePlanta">Louro</h2>
           <h3 class="nomeCientifico">Laurus nobilis L.</h3>
         </div>
        </div>
 
     <!-- CARD 6 -->
-        <div class="catalogoPlantas">
+        <div class="catalogoPlantas" data-category="Calmantes">
         <a href="" class="quadroImgCatalogo">
           <img src="img/Plantas Medicinais/GUACO.jpg" alt=" Guaco">
         </a>
 
-        <div class="textosCatalogo"">
+        <div class="textosCatalogo">
           <h2 class="nomePlanta">Guaco</h2>
           <h3 class="nomeCientifico">Mikania glomerata</h3>
         </div>
@@ -182,5 +180,6 @@
         </div>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

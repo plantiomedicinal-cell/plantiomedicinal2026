@@ -30,7 +30,7 @@ p{
     text-align: center;
 }
 
-span{
+.span{
     display: flex;
     align-items: center;
     background-color: var(--verdeAcinzentado);
@@ -553,6 +553,11 @@ footer img{
     justify-content: center;
 }
 
+.menuCatalogo {
+    display: flex;
+    flex-direction: row;
+}
+
 .containerCatalogo .textosCatalogo{
     display: flex;
     flex-direction: column;
@@ -577,8 +582,9 @@ footer img{
 .cardsCatalogo, .cardsCatalogo1{
     display: flex;
     gap: 1.5rem;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
+
 .containerCatalogo .catalogoPlantas{
     border-radius: 1rem 1rem;
     background-color:var(--verdeAcinzentado) ;
@@ -610,15 +616,15 @@ footer img{
 .menuCategorias{
     border: 1px solid var(--verdeMusgo);
     padding: 2rem;
-    width: 18%;
+    width: 15%;
 }
 
 .listaFiltros{
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin-top: 1rem;
+    align-items: flex-start;
+    margin-top: 0.1rem;
 }
 
 .menuCategorias .listaFiltros button{
@@ -719,6 +725,9 @@ footer img{
     align-items: center;
     width: 100%;
     cursor: default;
+    border: 0.2rem solid var(--verdeMusgo);
+    background-color: var(--verdeNevoa);
+    border-radius: 20px;
 }
 
 .imagemCientifica .voltar button{
@@ -740,15 +749,196 @@ footer img{
     box-shadow:0 10px 10px rgba(0,0,0, 0.3) ;
 }
 
+/* =========================
+   INSTAGRAM
+========================= */
 
+.container-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 40px auto;
+    padding: 1rem 20px;
+    box-sizing: border-box;
+    background-color: var(--cinzaGelo);
+}
 
-@media screen and (max-width: 1200px){
-    .containerCards{
+/* ========================= 
+   TUTORIAL 
+========================= */ 
+
+.inicioTutorial{  
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin: 3rem; 
+    font-size: 58px; 
+} 
+
+/* ========================= 
+   GRÁFICO 
+========================= */ 
+ 
+.grafico{ 
+    margin: 5rem 20rem 5rem 20rem ; 
+    width: 80rem; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+
+.imgGrafico{ 
+    width: 80rem; 
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+} 
+
+/* ========================= 
+    EXPLICAÇÃO GRÁFICO 
+========================= */ 
+
+.H1{ 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 0.5rem; 
+    align-items: center; 
+    margin: 3rem; 
+    font-size: 58px; 
+} 
+
+.textoExplicacao{ 
+    padding: 0 4rem 0 3rem;  
+    text-align: left;  
+    line-height: 2rem;  
+    align-items: flex-start; 
+} 
+
+.finalTutorial{ 
+    display: flex; 
+    justify-content:space-between ; 
+    align-items: center; 
+    font-size: 1.5rem; 
+    text-align: left; 
+    padding: 2rem; 
+} 
+
+.imagemFinal{ 
+    margin: 0; 
+    width: 30rem; 
+    height: 35rem; 
+    overflow: hidden; 
+} 
+
+.imagemFinal img{ 
+    width: 30rem; 
+    height: rem; 
+}
+
+/* =========================
+   MIDIA (RESPONSIVIDADE)
+========================= */
+
+/* 1. Telas Grandes/Médias (Notebooks e Monitores menores que 1500px) */
+@media screen and (max-width: 1500px) {
+    footer .direitosReservados {
+        /* Arrumar */
+        left: 65%;
+        position: static;
+    }
+}
+
+/* Tablets e Telas Médias (Até 980px) */
+@media screen and (max-width: 980px) {
+    .containerCards {
         flex-direction: column;
-        gap: 1rem;
+        align-items: center;
+        gap: 2rem;
     }
 
-    .containerCards .AreaPlantas{
+    .containerCards .AreaPlantas,
+    .menuCatalogo .containerCatalogo .areaPlantas {
         width: 100%;
+    }
+
+    .cards, .cards1, .cardsCatalogo, .cardsCatalogo1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .containerCards .plantas, 
+    .containerCatalogo .catalogoPlantas {
+        width: 80%;
+    }
+
+    .cientifico {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cientifico .textoCientifico {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+
+    .menuCategorias {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .inicioReceita, .inicioPostagens, .inicioSobreNos {
+        font-size: 38px;
+        margin: 2rem 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .direitosReservados {
+        position: static;
+        transform: none;
+        margin-top: 2rem;
+    }
+
+    footer img {
+        position: static;
+        transform: none;
+        margin: 1rem auto;
+    }
+
+    .imagemM {
+        display: none;
+    }
+}
+
+/* Celulares (Até 550px) */
+@media screen and (max-width: 550px) {
+    .barraPesquisa input {
+        width: 90%;
+    }
+
+    .containerCards .plantas, 
+    .containerCatalogo .catalogoPlantas {
+        width: 100%;
+    }
+
+    .inicioReceita, .inicioPostagens, .inicioSobreNos {
+        font-size: 28px;
+    }
+
+    nav {
+        font-size: 14px;
+        gap: 0.3rem;
     }
 }
