@@ -310,6 +310,7 @@ header nav a:hover{
     justify-content: space-between;
     align-items: flex-start;
     padding: 4rem;
+    gap: 3rem;
 }
 .receitas{
     text-align:start;
