@@ -1,27 +1,36 @@
-.App {
-  text-align: center;
+/* =========================
+   ROOT / CORES
+========================= */
+
+:root{
+    --verdeMusgo: rgb(55, 90, 68); 
+    --verdeMenta: rgb(171, 219, 188); 
+    --verdeAcinzentado: rgb(193, 204, 192); 
+    --verdeOliva: rgb(103, 119, 102);
+    --verdeOlivaAcinzentado: rgb(103, 119, 102);
+    --verdeNevoa: rgb(226, 238, 229);
+    --cinzaGelo: rgb(235, 235, 235);
+    --cinza-neutro: rgb(195, 195, 195);
+    --begeAreia: rgb(214, 196, 168);
+    --terracota: rgb(181, 117, 87);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.App {
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -36,3 +45,166 @@
     transform: rotate(360deg);
   }
 }
+
+/* =========================
+   SPAN
+========================= */
+
+.spanInicio{
+    display: flex;
+    align-items: center;
+    background-color: var(--verdeAcinzentado);
+    padding: 5px;
+    color: var(--verdeOliva);
+    border: 2px solid var(--verdeOliva);
+    border-radius: 50px;
+    height: 3rem;
+    width: 20rem;
+    margin-top: 5rem;
+    margin-left: 28rem;
+}
+
+.spanInicio img{
+    height: 4rem;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+    display: flex;
+    background-color: var(--cinzaGelo);
+    height: 7rem;
+    justify-content: center;
+}
+
+/* =========================
+   TAGS GERAIS
+========================= */
+
+p{
+    font-size: 16px;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 4rem;
+    width: 100%;
+    background-color: var(--verdeMusgo);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.header nav a:hover{
+    transition: 0.3s;
+    text-decoration: underline;
+    color: var(--verdeMenta);
+}
+
+/* =========================
+   SEÇÃO PRINCIPAL
+========================= */
+
+.info{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    align-items: center;
+    text-align: left;
+    color: black;
+    justify-content: space-between;
+    margin-left: 2rem;
+    padding: 2rem 25rem 0 25rem;
+}
+
+.infoTexto{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    max-width: 50%;
+    color: black;
+}
+
+.infoTexto p{
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.infoImagem{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.infoImagem img{
+    width: 90%;
+    height: auto;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.infoBotao{
+    width: 10rem;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    border: solid 1px var(--cinza-neutro);
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.infoBotao:hover{
+    transform: scale(1.05);
+    box-shadow:0 10px 10px rgba(0,0,0, 0.3) ;
+}
+
+
+/* =========================
+   DIVISÕES
+========================= */
+
+.divisao1{
+    background-color: var(--cinzaGelo);
+    height: 4rem;
+    width: 100%;
+    border: none;
+}
+
+.divisao2{
+    background-color: var(--verdeMusgo);
+    height: 0.4rem;
+    width: 100%;
+    border: none;
+}
+
+.divisao3{
+    background-color: var(--cinzaGelo);
+    width: 100%; 
+    padding: 0.1rem 2rem;       
+    box-sizing: border-box;    
+    border: none;
+    height: auto;
+}
+
+.divisao4{
+    border: none;
+}
+
