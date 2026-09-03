@@ -301,6 +301,65 @@ nav a:hover{
     font-size: 40px;
 }
 
+/* =========================
+   RECEITAS - INDEX
+========================= */
+
+.descubraTitulo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+.receitasPrevia {
+    text-align: start;
+    font-size: 3rem;
+    max-width: 30%;
+    margin-right: 0;
+}
+
+.textoReceita {
+    text-align: end;
+    max-width: 30%;
+    margin-right: 0;
+
+}
+
+.textoReceita p {
+    text-align: center;
+}
+
+.trioImagem{
+    display: flex;
+    margin-top: 2rem;
+    padding: 0 2rem 2rem 2rem;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img1 img,
+.img2 img,
+.img3 img{
+    width: 70%;
+    max-width: 250px;
+    width: 20rem;
+    height: 20rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textoTrio1, .textoTrio2, .textoTrio3{
+    color: var(--verdeMusgo);
+    text-align: center;
+    font-size: 2rem;
+}
 
 /* =========================
    GRID DOS CARDS

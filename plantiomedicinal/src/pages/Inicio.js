@@ -34,7 +34,7 @@ function Inicio() {
         </div>
 
         <div className="infoImagem">
-          <img src="/img/4.png" alt="Logo" />
+          <img src="/img/personagem1.png" alt="Logo" />
         </div>
       </div>
 
@@ -51,7 +51,7 @@ function Inicio() {
             {/* CARD 1 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/ORA PRO NOBIS.jpg" alt="Ora Pro Nobis" />
+                <img src="/img/orapronobis.jpg" alt="Ora Pro Nobis" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Ora Pro Nobis</h2>
@@ -62,55 +62,55 @@ function Inicio() {
             {/* CARD 2 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/ORA PRO NOBIS.jpg" alt="Ora Pro Nobis" />
+                <img src="/img/alecrim.jpg" alt="Alecrim" />
               </Link>
               <div className="textosPrevia">
-                <h2 className="nomeP">Ora Pro Nobis</h2>
-                <h3 className="nomeC">Pereskia aculeata</h3>
+                <h2 className="nomeP">Alecrim</h2>
+                <h3 className="nomeC">Salvia rosmarinus</h3>
               </div>
             </div>
 
             {/* CARD 3 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/ORA PRO NOBIS.jpg" alt="Ora Pro Nobis" />
+                <img src="/img/pimentamacaco.jpg" alt="Pimenta Macaco" />
               </Link>
               <div className="textosPrevia">
-                <h2 className="nomeP">Ora Pro Nobis</h2>
-                <h3 className="nomeC">Pereskia aculeata</h3>
+                <h2 className="nomeP">Pimenta Macaco</h2>
+                <h3 className="nomeC">Xylopia aromatica</h3>
               </div>
             </div>
 
             {/* CARD 4 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/ORA PRO NOBIS.jpg" alt="Ora Pro Nobis" />
+                <img src="/img/moringa.jpg" alt="Moringa" />
               </Link>
               <div className="textosPrevia">
-                <h2 className="nomeP">Ora Pro Nobis</h2>
-                <h3 className="nomeC">Pereskia aculeata</h3>
+                <h2 className="nomeP">Moringa</h2>
+                <h3 className="nomeC">Moringa oleifera</h3>
               </div>
             </div>
 
             {/* CARD 5 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/ORA PRO NOBIS.jpg" alt="Ora Pro Nobis" />
+                <img src="/img/louro.jpg" alt="Louro" />
               </Link>
               <div className="textosPrevia">
-                <h2 className="nomeP">Ora Pro Nobis</h2>
-                <h3 className="nomeC">Pereskia aculeata</h3>
+                <h2 className="nomeP">Louro</h2>
+                <h3 className="nomeC">Laurus nobilis L.</h3>
               </div>
             </div>
 
             {/* CARD 6 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/ORA PRO NOBIS.jpg" alt="Ora Pro Nobis" />
+                <img src="/img/guaco.jpg" alt="Guaco" />
               </Link>
               <div className="textosPrevia">
-                <h2 className="nomeP">Ora Pro Nobis</h2>
-                <h3 className="nomeC">Pereskia aculeata</h3>
+                <h2 className="nomeP">Guaco</h2>
+                <h3 className="nomeC">Mikania glomerata</h3>
               </div>
             </div>
           </div>
@@ -127,9 +127,33 @@ function Inicio() {
 
       <hr className="divisao4" />
 
-      <h2 className="receitas">
-        Descubra novas<br /> <b>receitas.</b>
-      </h2>
+      <div className="descubraTitulo">
+        <h2 className="receitasPrevia">Descubra novas<br/> <strong>receitas.</strong></h2>
+      
+
+        <div class="textoReceita">
+        <p>Plantas Medicinais podem ser ultilizadas de diversas formas para promover saúde e bem-estar, sendo uma prática tradicional que atravessa gerações. Com elas, é possível preparar receitas naturais como chás, infusões, xaropes, pomadas, e até banhos terapêuticos, cada um com finalidades específicas</p>
+        </div>
+        </div>
+
+        <div class="trioImagem">
+
+            <div class="img1">
+                <img src="./img/planta.png" alt="Imagem Planta"/> 
+                <h2 class="textoTrio1">Plante e Colha</h2>
+            </div>
+
+            <div class="img2">
+                <img src="./img/personagem2.png" alt="Imagem Profissional"/>
+                <h2 class="textoTrio2">Faça e Cozinhe</h2>
+            </div>
+
+            <div class="img3">
+                <img src="./img/livro.png" alt="Imagem Livro"/>
+                <h2 class="textoTrio3">Mostre seu Resultado</h2>
+            </div>
+
+        </div>
     </main>
   );
 }
