@@ -1,16 +1,33 @@
+import { Link } from 'react-router-dom';
+
 function Header() {
   return (
-    <header className="header">
+    <header className="App-header">
 
       <nav>
-        <a href="">Sobre Nós</a>
-        <a href="">Receitas</a>
-        <a href="">Catálogo</a>
-        <a href="">Postagens</a>
+
+        <Link to="/sobre">
+          Sobre Nós
+        </Link>
+
+        <Link to="/receitas">
+          Receitas
+        </Link>
+
+        <Link to="/catalogo">
+          Catálogo
+        </Link>
+
+        <Link to="/postagens">
+          Postagens
+        </Link>
+
       </nav>
 
       <div className="logo">
-        <img src="./img/logo1.png" alt="Logo" />
+        <Link to="/">
+          <img src="./img/logo1.png" alt="Logo" />
+        </Link>
       </div>
 
     </header>

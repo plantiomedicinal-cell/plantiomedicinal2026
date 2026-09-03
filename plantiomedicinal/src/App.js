@@ -1,59 +1,32 @@
+// src/App.jsx
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Header from './components/Header';
+
+import Inicio from './pages/Inicio';
+import Sobre from './pages/Sobre';
+import Receitas from './pages/Receitas';
+import Catalogo from './pages/Catalogo';
+import Postagens from './pages/Postagens';
 
 import './App.css';
-import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
+        <Header />
 
-      <Header />
-
-      <main>
-
-      <span className="spanInicio">
-      <img src="./img/logo1.png" />
-      <b>+ de 20 espécies diferentes</b>
-      </span>
-
-      <div className="info">
-
-        <div className="infoTexto">
-
-          <h1>
-            Faça seu jardim <br />
-            <strong>MEDICINAL</strong> <br />
-            agora, na sua casa!
-          </h1>
-
-          <p>
-            Veja as plantas medicinais com segurança. Consulte fichas
-            técnicas detalhadas de espécies vegetais, filtre por
-            características e encontre a planta ideal para cada projeto
-            de plantio.
-          </p>
-
-          <a href="">
-            <button className="infoBotao">
-              <b>SAIBA MAIS!</b>
-            </button>
-          </a>
-
-          </div>
-
-          <div className="infoImagem">
-            <img src="./img/4.png" alt="Logo" />
-          </div>
-
-        </div>
-
-        <hr className="divisao1" />
-        <hr className="divisao2" />
-
-      </main>
-
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/receitas" element={<Receitas />} />
+          <Route path="/catalogo" element={<Catalogo />} />
+          <Route path="/postagens" element={<Postagens />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
-
