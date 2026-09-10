@@ -1,0 +1,94 @@
+a{
+    text-decoration: none;
+}
+.inicioReceita{
+    display: flex;
+    border: 1px solid blue;
+    flex-direction: column;
+}
+
+
+.tituloReceita{
+    font-size: 3rem;
+}
+
+ .receita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+}
+
+
+.fraseReceita{
+    display: flex;
+    align-items:center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    
+} 
+
+.fraseReceita p{
+    font-size: 1.5rem;
+    text-align:justify
+}
+
+.barraPesquisa{
+    display:flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.barraPesquisa input{
+    border-radius: 10px;
+    border: solid 2px var(--verdeMusgo);
+    background-color:var(--verdeAcinzentado);
+    padding-left: 0.5rem;
+
+    width: 45%;
+    height: 2.5rem;
+}
+hr{
+    border: none;
+}
+.receitas{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+
+
+}
+.titulo{
+    text-align: center;
+    border: 1px solid pink;
+    padding-bottom: 1rem;
+
+}
+.titulo h3{
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+.titulo ul{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    gap:7px;
+    text-align: justify;
+    border: 1px solid purple;
+}
+.titulo li{
+   list-style-type: none; 
+}
+.titulo li a{
+    color: black;
+    transition: color 0.3s;
+}
+.titulo li a:hover{
+    color: var(--verdeOlivaPadrao);
+}
+
+
