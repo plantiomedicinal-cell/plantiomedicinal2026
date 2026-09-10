@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 
+
 import Inicio from './pages/Inicio';
 import Sobre from './pages/Sobre';
 import Receitas from './pages/Receitas';
@@ -25,6 +26,7 @@ function App() {
           <Route path="/postagens" element={<Postagens />} />
         </Routes>
       </BrowserRouter>
+
     </div>
   );
 }

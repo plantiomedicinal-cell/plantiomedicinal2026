@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Galeria from '../components/Galeria';
+import Footer from '../components/Footer';
+
 function Inicio() {
   return (
     <main>
@@ -154,7 +157,32 @@ function Inicio() {
             </div>
 
         </div>
+
+        <hr className="divisao1" />
+        <hr className="divisao2" />
+
+        <div className="containerPostagens">
+        <div className="postagensTexto">
+          <h1>
+            Compartilhe o seu <strong>PLANTIO MEDICINAL</strong> conosco, na comunidade!
+          </h1>
+
+          <p>
+            Mostre o crescimento das plantas, os
+            cuidados no dia a dia e a beleza de
+            cultivar a natureza. Um espaço para
+            trocar experiências, ideias e
+            inspirações sobre jardinagem de
+            forma simples e natural.
+          </p>
+
+          <Galeria />
+
+          </div>
+        </div>
+        <Footer />
     </main>
+
   );
 }
 
