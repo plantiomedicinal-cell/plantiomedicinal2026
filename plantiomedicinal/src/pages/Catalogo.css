@@ -1,0 +1,213 @@
+/* =========================
+   INICIO PAGINA CATALOGO
+========================= 
+
+.inicioCatalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    font-size: 58px;
+}
+
+.barraPesquisa{ 
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--verdeMusgo);
+    margin: 2rem;
+}
+
+.barraPesquisa input{
+    border-radius: 50px;
+    border: 3px solid var(--verdeMusgo);
+    width: 30rem;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menuCatalogo .containerCatalogo{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.menuCatalogo {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuCategorias{
+    border: 1px solid var(--verdeMusgo);
+    width: 250px;
+    min-width: 250px;
+    margin: 2rem 15rem 0 15rem;
+}
+
+.menuCategorias h2{
+    padding: 2rem;
+}
+
+
+
+/* =========================
+  LISTA FILTROS
+========================= 
+
+.listaFiltros{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.1rem;
+}
+
+.menuCategorias .listaFiltros button{
+    border: none;
+    width: 5.5rem;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    text-align: left;
+    display: flex;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: background-color 0.5s, border-bottom 0.5s;
+}
+
+.listaFiltros button:hover{
+    background-color: var(--verdeAcinzentado);
+    border-bottom: 1px solid var(--cinzaGelo);
+}
+
+/* =========================
+   CARDS (CATALOGO.HTML)
+========================= 
+
+.areaContainer{
+    display: flex;
+    justify-content:center; 
+}
+
+.containerCatalogo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid red;
+    margin: 2rem 15rem 0 15rem;
+}
+
+.catalogoPlantas{
+    border: 1px solid green;
+    width: 100%;
+
+}
+
+
+.containerCatalogo .textosCatalogo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.containerCatalogo .catalogoPlantas .nomePlanta{
+    color: var(--verdeMusgo);
+}
+
+.containerCatalogo .catalogoPlantas .nomeCientifico{
+    color: var(--verdeOliva);
+}
+
+.menuCatalogo .containerCatalogo .areaPlantas{
+    width: 80%;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+
+.containerCatalogo .catalogoPlantas{
+    border-radius: 1rem 1rem;
+    background-color:var(--verdeAcinzentado) ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 30%;
+    overflow: hidden;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+.containerCatalogo .catalogoPlantas:hover{
+    box-shadow: 0 25px 25px rgba(0,0,0, 0.3);
+    transform: scale(105%);
+}
+.containerCatalogo .quadroImgCatalogo{
+    width: 100%;
+    aspect-ratio: 1/0.7;
+    display: block;
+    overflow: hidden;
+}
+.containerCatalogo .quadroImgCatalogo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+*/
+
+/* Inicio */
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    font-size: 58px;
+}
+
+.barraPesquisa{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--verdeMusgo);
+    margin: 2rem;
+}
+
+.barraPesquisa input{
+    border:solid 2px var(--verdeMusgo);
+    border-radius: 3rem;
+    width: 40%;
+    height: 3rem;
+    padding-left: 2rem;
+}
+
+/* Container de menus */
+
+.menuCatalogo{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+
+}
+
+
+/* Filtros */
+
+.filtros{
+    border: 1px solid red;
+    background-color: var(--cinzaGelo);
+}
+
+.listaFiltro{
+
+    
+}
+
+/* Cards*/
+
+.areaContainer{
+    border: 1px solid purple;
+}
+
+.containerCatalogo{
+    border: 1px solid orangered;
+}
+
+

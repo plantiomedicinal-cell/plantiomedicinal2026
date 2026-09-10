@@ -54,7 +54,7 @@ function Inicio() {
             {/* CARD 1 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/orapronobis.jpg" alt="Ora Pro Nobis" />
+                <img src="/img/orapronobis.webp" alt="Ora Pro Nobis" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Ora Pro Nobis</h2>
@@ -65,7 +65,7 @@ function Inicio() {
             {/* CARD 2 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/alecrim.jpg" alt="Alecrim" />
+                <img src="/img/alecrim.webp" alt="Alecrim" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Alecrim</h2>
@@ -76,7 +76,7 @@ function Inicio() {
             {/* CARD 3 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/pimentamacaco.jpg" alt="Pimenta Macaco" />
+                <img src="/img/pimentamacaco.webp" alt="Pimenta Macaco" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Pimenta Macaco</h2>
@@ -87,7 +87,7 @@ function Inicio() {
             {/* CARD 4 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/moringa.jpg" alt="Moringa" />
+                <img src="/img/moringa.webp" alt="Moringa" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Moringa</h2>
@@ -98,7 +98,7 @@ function Inicio() {
             {/* CARD 5 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/louro.jpg" alt="Louro" />
+                <img src="/img/louro.webp" alt="Louro" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Louro</h2>
@@ -109,7 +109,7 @@ function Inicio() {
             {/* CARD 6 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/guaco.jpg" alt="Guaco" />
+                <img src="/img/guaco.webp" alt="Guaco" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Guaco</h2>
