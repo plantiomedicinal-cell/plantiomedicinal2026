@@ -16,14 +16,15 @@ function Receitas() {
     </div>
 
     <div className="barraPesquisa">
-        <i class='bi bi-search'></i>
-        <input type="text" id="pesquisaReceitas" placeholder=" Pesquisar por receitas disponiveis"/>
+        <input type="text" id="pesquisaReceitas" placeholder=" Pesquisar receitas"/>
     </div>
 
     <hr></hr>
 
+    <section className="grupoCards">
+      
     <div className="receitas">
-    <div className="titulo">
+    <div className="card">
       <h3>Chás</h3>
       <ul>
         <li><a href="recChá1.js">Chá de Hortelã</a></li>
@@ -31,8 +32,10 @@ function Receitas() {
         <li><a href="recChá3.js">Chá de Gengibre</a></li> 
       </ul>
     </div>
+    </div>
 
-     <div className="titulo">
+    <div className="receitas">
+     <div className="card">
       <h3>Sucos</h3>
       <ul>
         <li><a href="recSuco1.js">Suco de Detox Verde</a></li>
@@ -40,8 +43,10 @@ function Receitas() {
         <li><a href="recSuco3.js">Suco de Abacaxi com Hortelã</a></li> 
       </ul>
     </div>
+    </div>
 
-    <div className="titulo">
+    <div className="receitas">
+    <div className="card">
       <h3>Xaropes</h3>
       <ul>
         <li><a href="recXar1.js">Xarope de Mel com Limão</a></li>
@@ -49,8 +54,11 @@ function Receitas() {
         <li><a href="recXar3.js">Xarope de Alho</a></li> 
       </ul>
     </div>
+    </div>
+    
 
-    <div className="titulo">
+    <div className="receitas">
+    <div className="card">
       <h3>Pomadas</h3>
       <ul>
         <li><a href="recPom1.js">Pomada de Babosa</a></li>
@@ -58,8 +66,11 @@ function Receitas() {
         <li><a href="recPom3.js">Pomada de Ervas</a></li> 
       </ul>
     </div>
+    </div>
 
-    <div className="titulo">
+
+    <div className="receitas">
+    <div className="card">
       <h3>Banhos Medicinais</h3>
       <ul>
         <li><a href="recBanho1.js">Banho de Camomila</a></li>
@@ -67,22 +78,32 @@ function Receitas() {
         <li><a href="recBanho3.js">Banho de Erva Cidreira</a></li> 
       </ul>
     </div>
+    </div>
 
-    <div className="titulo">
+
+    <div className="receitas">
+    <div className="card">
       <h3>Óleos Medicinais</h3>
       <ul>
         <li><a href="recOleo1.js">Óleo de Hortelã</a></li>
         <li><a href="recOleo2.js">Óleo de Alecrim</a></li> 
-        <li><a href="recOleo3.js">Óleo de Lavanda</a></li> 
+        <li><a href="recOleo3.js">Óleo de Lavanda</a></li>
       </ul>
     </div>
-
-
-
-
-
     </div>
 
+    </section>
+
+    <section className="curiosidade">
+      <h1>Você Sabia?</h1>
+
+      <div className="Tcuriosidade">
+        <p >Na área de "Postagens" você pode publicar uma receita feita a partir de Plantas Mediciniais e ver receitas de outras pessoas. Compartilhe seus conhecimentos!</p>
+      </div>
+      
+    </section>
+
+   
     </main>
 
 

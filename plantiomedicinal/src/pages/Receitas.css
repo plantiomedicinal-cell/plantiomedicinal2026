@@ -35,72 +35,89 @@ a{
 }
 
 .barraPesquisa{
-    position: relative;
-    width: 70%;
-    max-width: 700px;
-    margin: 2rem auto;
+    display:flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
-
 .barraPesquisa input{
     border-radius: 10px;
-    width: 100%;
+    border: solid 2px var(--verdeMusgo);
+    background-color:var(--verdeAcinzentado);
+    padding-left: 0.5rem;
+    width: 45%;
     height: 2.5rem;
-    box-sizing: border-box;
-    padding: 10px 12px 10px 40px;
-    border: 1px solid var(--cinza-neutro);
-    border-radius: 8px;
-    outline: none;
 }
-
-.barraPesquisa i {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--verdeMusgo);
-}
-
-.barraPesquisa input:focus {
-    border-color: var(--verdeMusgo);
-}
-
 hr{
     border: none;
 }
-
-.receitas{
+.grupoCards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
     margin: 0 auto;
-    border: 1px solid var(--cinzaGelo);
-    box-shadow: 20px 20px 40px rgba(0,0,0,0.2);
-
+    margin-top:2rem;
+    margin-bottom: 3rem;
 }
-.titulo{
+
+.receitas{
+    margin:1rem;
+}
+.card{
     text-align: center;
     padding: 2rem 0 2rem 0;
     border: 1px solid rgba(195, 195, 195, 0.3);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    transition:transform 0.3s;
 }
-.titulo h3{
+.card:hover{
+    transform: scale(1.1);
+}
+.card h3{
     font-size: 2rem;
     padding-bottom: 0.5rem;
 }
-.titulo ul{
+.card ul{
     display: flex;
     flex-direction: column;
-   
     gap:7px;
 }
-.titulo li{
+.card li{
    list-style-type: none; 
+   
 }
-.titulo li a{
+.card li a{
     color: black;
     transition: color 0.2s;
 }
-.titulo li a:hover{
+.card li a:hover{
     color: var(--verdeOlivaPadrao);
 }
 
+.curiosidade{
+    background-color: var(--verdeAcinzentado);
+    height: 12rem;
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+    
+}
+.curiosidade h1{
+    color: var(--verdeMusgo);
+    padding-top: 1.3rem;
+    padding-left: 1.3rem;
+    align-self: start;
+}
 
+.Tcuriosidade{
+    display: flex;
+    align-self: start;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.Tcuriosidade p{
+    font-size: 20px;
+    text-align: justify;
+}
