@@ -41,6 +41,10 @@
   }
 }
 
+/* =========================
+   SPANS
+========================= */
+
 .infoSpans{
     display: flex;
     align-items: center;
@@ -128,9 +132,9 @@ p{
 nav{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    height: 4rem;
+    justify-content: space-between;
+    padding: 0 5rem;
+    height: 5rem;
     width: 100%;
     background-color: var(--verdeMusgo);
 }
@@ -148,6 +152,49 @@ nav a:hover{
     transition: 0.3s;
     text-decoration: underline;
     color: var(--verdeMenta);
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.botaoMenu {
+    border: none;
+    background-color: transparent;
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.botaoMenu div {
+    width: 1.8rem;
+    height: 2px;
+    background-color: white;
+    transition: background 0.5s;
+}
+
+.botaoMenu:hover div {
+    background-color: yellow;
+}
+
+.perfilMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: var(--verdeMusgo);
+}
+
+.perfilMenu i {
+    font-size: 2rem;
+}
+
+.perfilMenu:hover {
+    color: var(--verdeOliva);
 }
 
 /* =========================
@@ -203,6 +250,12 @@ footer .infoDivisao{
 .separacao img{
     width: 10%;
     height: 5rem;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
 }
 
 .direitosreservados{
@@ -622,6 +675,14 @@ footer .infoDivisao{
 ========================= */
 
 @media (max-width: 1000px){
+
+nav a {
+    display: none;
+}
+
+.botaoMenu {
+    display: flex;
+}
 
 .logo{
     height: 6rem;

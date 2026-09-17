@@ -16,7 +16,8 @@ function Receitas() {
     </div>
 
     <div className="barraPesquisa">
-        <input type="text" id="pesquisaReceitas" placeholder=" Pesquisar receitas"/>
+        <i class='bi bi-search'></i>
+        <input type="text" id="pesquisaReceitas" placeholder=" Pesquisar por receitas disponiveis"/>
     </div>
 
     <hr></hr>

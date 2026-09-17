@@ -35,22 +35,39 @@ a{
 }
 
 .barraPesquisa{
-    display:flex;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    position: relative;
+    width: 70%;
+    max-width: 700px;
+    margin: 2rem auto;
 }
+
 .barraPesquisa input{
     border-radius: 10px;
-    border: solid 2px var(--verdeMusgo);
-    background-color:var(--verdeAcinzentado);
-    padding-left: 0.5rem;
-    width: 45%;
+    width: 100%;
     height: 2.5rem;
+    box-sizing: border-box;
+    padding: 10px 12px 10px 40px;
+    border: 1px solid var(--cinza-neutro);
+    border-radius: 8px;
+    outline: none;
 }
+
+.barraPesquisa i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--verdeMusgo);
+}
+
+.barraPesquisa input:focus {
+    border-color: var(--verdeMusgo);
+}
+
 hr{
     border: none;
 }
+
 .receitas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

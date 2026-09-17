@@ -6,9 +6,17 @@ function Header() {
     <header className="App-header">
 
       <nav>
+
+        <div className='perfilMenu'>
+        <Link to="/conta" className="perfilNav">
+          <i class="bi bi-person-circle"></i>
+        </Link>
+        </div>
+
+        <div className='menu'>
         <Link to="/">
           <i class="bi bi-houses-fill"></i>
-          Ínicio
+          Início
         </Link>
 
         <Link to="/sobre">
@@ -30,6 +38,13 @@ function Header() {
           <i class="bi bi-image-fill"></i>
           Postagens
         </Link>
+        </div>
+
+        <button class="botaoMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
 
       </nav>
 

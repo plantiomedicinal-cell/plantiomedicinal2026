@@ -42,6 +42,19 @@ function Footer() {
             <Link to="/contato">
             Contato
             </Link>
+            <div className='contatos'>
+                <Link to="/">
+                  <i class="bi bi-whatsapp"></i>
+                </Link>
+
+                <Link to="/">
+                  <i class="bi bi-facebook"></i>
+                </Link>
+
+                <Link to="/">
+                  <i class="bi bi-instagram"></i>
+                </Link>               
+            </div>
         </div>
     </div>
     </footer>

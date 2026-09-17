@@ -30,7 +30,7 @@ function Inicio() {
         </div>
 
         <div className="textoSpan">
-            <b>9</b>
+            <b>+6</b>
             <span>espécies</span>
         </div>
     </div>
@@ -41,7 +41,7 @@ function Inicio() {
         </div>
 
         <div className="textoSpan">
-            <b>9</b>
+            <b>+4</b>
             <span>filtros</span>
         </div>
     </div>
