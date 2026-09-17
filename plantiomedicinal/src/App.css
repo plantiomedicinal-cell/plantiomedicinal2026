@@ -41,58 +41,58 @@
   }
 }
 
-/* =========================
-   SPAN
-========================= */
-
-/* 
-
-.spanInicio{
+.infoSpans{
     display: flex;
     align-items: center;
-    background-color: var(--verdeAcinzentado);
-    padding: 5px;
-    color: var(--verdeOliva);
-    border: 2px solid var(--verdeOliva);
-    border-radius: 50px;
-    height: 3rem;
-    width: 20rem;
-    margin-top: 5rem;
-    margin-left: 28rem;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 }
-
-.spanInicio img{
-    height: 4rem;
-} 
-
-*/
 
 .infoSpan{
     display: flex;
     align-items: center;
-    background-color: var(--verdeAcinzentado);
-    color: var(--verdeOliva);
-    border: 2px solid var(--verdeOliva);
-    height: 3.2rem;
-    width: 60%;
-    border-radius: 10px;
-    font-size: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    transition: transform 0.3s, box-shadow 0.3s;
+    gap: 0.8rem;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    transition: transform 0.3s;
 }
 
 .infoSpan:hover{
-    transform: scale(1.05);
-    box-shadow:0 10px 10px rgba(0,0,0, 0.3) ;
+    transform: translateY(-3px);
+    box-shadow: none;
 }
 
-.infoSpan b{
-    cursor: default;
+.iconeSpan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--verdeNevoa);
+    color: var(--verdeMusgo);
+    font-size: 1.2rem;
 }
 
-.infoSpan img{
-    height: 4rem;
+.textoSpan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textoSpan b{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.textoSpan span{
+    font-size: 0.85rem;
+    color: black;
 }
 
 /* =========================
@@ -129,7 +129,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
     height: 4rem;
     width: 100%;
     background-color: var(--verdeMusgo);
@@ -138,6 +138,10 @@ nav{
 nav a{
     text-decoration: none;
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 17px;
 }
 
 nav a:hover{
@@ -147,7 +151,7 @@ nav a:hover{
 }
 
 /* =========================
-   FOOTER
+   RODAPÉ
 ========================= */
 
 footer{
@@ -221,6 +225,13 @@ footer .infoDivisao{
     justify-content: space-between;
     margin-left: 2rem;
     padding: 2rem 25rem 0 25rem;
+
+        background-color: white;
+    background-image: radial-gradient(
+        rgba(55, 90, 68, 0.12) 1px,
+        transparent 1px
+    );
+    background-size: 22px 22px;
 }
 
 .infoTexto{
@@ -422,10 +433,6 @@ footer .infoDivisao{
     color: var(--verdeOliva);
 }
 
-/* =========================
-   HOVER
-========================= */
-
 .containerCards .plantasPrevia:hover {
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
@@ -518,4 +525,468 @@ footer .infoDivisao{
 .postagensTexto p{
     font-size: 16px;
     margin-top: 1rem;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+
+/* =========================
+   TELAS ATÉ 1550px
+========================= */
+
+@media (max-width: 1550px){
+
+.info{
+    padding: 2rem 12rem 0 12rem;
+}
+
+.infoTexto{
+    max-width: 50%;
+    font-size: 1.7rem;
+}
+
+.infoImagem img{
+   width: 90%;
+}
+
+.containerCards .catalogoPrevia{
+    width: 85%;
+}
+
+.descubraTitulo{
+        padding: 4rem 8rem;
+    }
+}
+
+/* =========================
+   TELAS ATÉ 1200px
+========================= */
+
+@media (max-width: 1200px){
+
+.info{
+    padding: 2rem 6rem 0 6rem;
+    gap: 2rem;
+}
+
+.infoTexto{
+    max-width: 50%;
+    font-size: 1.5rem;
+}
+
+.infoImagem img{
+    width: 100%;
+}
+
+.cards{
+    gap: 1.5rem;
+}
+
+.containerCards .catalogoPrevia{
+    width: 90%;
+}
+
+.descubraTitulo{
+    padding: 4rem 5rem;
+    gap: 2rem;
+}
+
+.receitasPrevia{
+    max-width: 35%;
+    font-size: 2.5rem;
+}
+
+.textoReceita{
+    max-width: 50%;
+}
+
+.trioImagem{
+    gap: 1rem;
+}
+
+.img1 img,
+.img2 img,
+.img3 img{
+    max-width: 220px;
+}
+
+footer .infoDivisao{
+    grid-template-columns: 0.8fr 0.5fr 0.5fr;
+}
+}
+
+/* =========================
+   TELAS ATÉ 1000px
+========================= */
+
+@media (max-width: 1000px){
+
+.logo{
+    height: 6rem;
+}
+
+.logo img{
+    height: 8rem;
+}
+
+nav{
+    gap: 1rem;
+}
+
+.info{
+    padding: 2rem 3rem 0 3rem;
+}
+
+.infoTexto{
+    font-size: 1.4rem;
+}
+
+.infoTexto p{
+    font-size: 0.95rem;
+}
+
+.infoSpan{
+    width: 70%;
+}
+
+.cards{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.descubraTitulo{
+    padding: 3rem;
+}
+
+.receitasPrevia{
+    font-size: 2.2rem;
+}
+
+.textoReceita p{
+    font-size: 16px;
+}
+
+.img1 img,
+.img2 img,
+.img3 img{
+    max-width: 190px;
+}
+
+footer .infoDivisao{
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+/* =========================
+   TELAS ATÉ 760px
+========================= */
+
+@media (max-width: 760px){
+
+/* LOGO */
+.logo{
+    height: 5.5rem;
+}
+
+.logo img{
+    height: 7rem;
+    max-width: 90%;
+    object-fit: contain;
+}
+
+/* MENU */
+nav{
+    height: auto;
+    min-height: 4rem;
+    padding: 1rem;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+nav a{
+    font-size: 0.95rem;
+}
+
+/* INFORMAÇÕES */
+.info{
+    flex-direction: column;
+    padding: 2rem 2rem;
+    margin-left: 0;
+    gap: 2rem;
+    text-align: center;
+}
+
+.infoTexto{
+    max-width: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.infoTexto p{
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.infoImagem{
+    width: 100%;
+    justify-content: center;
+}
+
+.infoImagem img{
+    width: 90%;
+    max-width: 500px;
+}
+
+/* INFO SPAN */
+
+.infoSpan{
+    width: 90%;
+    height: auto;
+    min-height: 3.2rem;
+    padding: 0.5rem;
+}
+
+.infoSpan img{
+    height: 3.5rem;
+}
+
+/* CONJUNTO */
+.infoConjunto{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARDS */
+.containerCards{
+    padding: 1rem 0;
+}
+
+.containerCards .catalogoPrevia{
+    width: 90%;
+}
+
+.cards{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.containerCards .plantasPrevia:hover{
+    transform: scale(1.02);
+}
+
+/* TÍTULO CATÁLOGO */
+.catalogo .descricao{
+    margin: 2rem 1rem;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+/* RECEITAS */
+
+.descubraTitulo{
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+
+.receitasPrevia{
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.textoReceita{
+    max-width: 100%;
+    width: 100%;
+}
+
+.textoReceita p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* TRIO DE IMAGENS */
+.trioImagem{
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.img1 img,
+.img2 img,
+.img3 img{
+    max-width: 220px;
+}
+
+/* POSTAGENS */
+.containerPostagens{
+    padding: 3rem 2rem;
+}
+
+.postagensTexto{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.postagensTexto p{
+    text-align: justify;
+}
+
+/* FOOTER */
+footer .infoDivisao{
+    grid-template-columns: 1fr;
+    margin: 1.5rem;
+}
+
+.separacao{
+    align-items: center;
+    text-align: center;
+}
+
+.separacao h3,
+.separacao h2{
+    text-align: center;
+}
+
+.separacao p{
+    text-align: center;
+}
+
+.separacao img{
+    width: 20%;
+    height: auto;
+}
+
+.direitosreservados{
+text-align: center;
+}
+}
+
+/* =========================
+   TELAS ATÉ 480px
+========================= */
+
+@media (max-width: 480px){
+
+/* LOGO */
+.logo{
+    height: 5rem;
+}
+
+.logo img{
+    height: 6.5rem;
+}
+
+/* MENU */
+nav{
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.7rem;
+}
+
+nav a{
+    font-size: 0.9rem;
+}
+
+/* INFORMAÇÕES */
+.info{
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+}
+
+.infoTexto{
+    font-size: 1.3rem;
+}
+
+.infoTexto p{
+    font-size: 15px;
+}
+
+/* SPAN */
+.infoSpan{
+    width: 95%;
+    font-size: 0.9rem;
+}
+
+.infoSpan img{
+    height: 3rem;
+}
+
+/* BOTÕES */
+.infoBotao,
+.receitasBotao{
+    width: 8.5rem;
+    padding: 0.8rem;
+}
+
+.botaoCatalogo{
+    width: 90%;
+    font-size: 1rem;
+}
+
+/* CARDS */
+.containerCards .catalogoPrevia{
+    width: 94%;
+}
+
+.containerCards .plantasPrevia:hover{
+    transform: none;
+}
+
+.catalogo .descricao{
+    font-size: 1.8rem;
+}
+
+/* RECEITAS */
+.descubraTitulo{
+    padding: 2.5rem 1rem;
+}
+
+.receitasPrevia{
+    font-size: 1.8rem;
+}
+
+.textoReceita p{
+    font-size: 15px;
+}
+
+/* IMAGENS */
+.img1 img,
+.img2 img,
+.img3 img{
+    max-width: 180px;
+}
+
+.textoTrio1,
+.textoTrio2,
+.textoTrio3{
+    font-size: 1.3rem;
+}
+
+/* POSTAGENS */
+.containerPostagens{
+    padding: 2rem 1rem;
+}
+
+.postagensTexto{
+    font-size: 1.2rem;
+}
+
+
+/* FOOTER */
+footer .infoDivisao{
+    margin: 1rem;
+}
+
+.separacao{
+    margin: 0.8rem;
+}
+
+.separacao img{
+    width: 30%;
+}
 }

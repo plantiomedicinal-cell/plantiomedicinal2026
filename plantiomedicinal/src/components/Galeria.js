@@ -82,7 +82,6 @@ function Galeria() {
     function finalizarArraste(e) {
 
         if (inicioX.current === null) return;
-
         const distancia = e.clientX - inicioX.current;
 
         if (distancia > 50) {
@@ -92,7 +91,7 @@ function Galeria() {
         if (distancia < -50) {
             proxima();
         }
-
+        
         inicioX.current = null;
     }
 

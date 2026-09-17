@@ -22,21 +22,33 @@ function Inicio() {
             de plantio.
           </p>
 
-          <div className="infoConjunto">
-            <span className="infoSpan">
-              <img src="/img/logo1.png" alt="Logo" />
-              <b>+ de 20 espécies diferentes</b>
-            </span>
+<div className="infoSpans">
 
-            <Link to="/sobre">
-              <button className="infoBotao">
-                <b>SAIBA MAIS!</b>
-              </button>
-            </Link>
-          </div>
+    <div className="infoSpan">
+        <div className="iconeSpan">
+            <i className="bi bi-leaf"></i>
         </div>
 
-        <div className="infoImagem">
+        <div className="textoSpan">
+            <b>9</b>
+            <span>espécies</span>
+        </div>
+    </div>
+
+    <div className="infoSpan">
+        <div className="iconeSpan">
+            <i className="bi bi-droplet"></i>
+        </div>
+
+        <div className="textoSpan">
+            <b>9</b>
+            <span>filtros</span>
+        </div>
+    </div>
+</div>
+</div>
+
+      <div className="infoImagem">
           <img src="/img/personagem1.png" alt="Logo" />
         </div>
       </div>
@@ -47,7 +59,7 @@ function Inicio() {
       <article className="containerCards">
         <section className="catalogoPrevia">
           <div className="catalogo">
-            <h1 className="descricao">Conheça algumas espécies do catálogo</h1>
+            <h1 className="descricao">Conheça algumas espécies do nosso catálogo</h1>
           </div>
 
           <div className="cards">
