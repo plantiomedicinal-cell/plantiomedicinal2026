@@ -1,14 +1,19 @@
 a{
     text-decoration: none;
 }
+
 .inicioReceita{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    align-items: center;
+    margin: 3rem;
+    font-size: 22px;
 }
 
-
-.tituloReceita{
-    font-size: 3rem;
+.inicioReceita p{
+    font-size: 16px;
+    padding-top: 0.5rem;
+    text-align: center;
 }
 
  .receita{
@@ -19,38 +24,43 @@ a{
     width: 100%;
 }
 
-
-.fraseReceita{
-    display: flex;
-    align-items:center;
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 2rem;
-    
-} 
-
-.fraseReceita p{
-    font-size: 1.5rem;
-    text-align:justify
+.campoPesquisa {
+    position: relative;
+    width: 70%;
+    max-width: 700px;
+    margin: 2rem auto;
 }
 
-.barraPesquisa{
-    display:flex;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.campoPesquisa input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0 15px 0 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
 }
-.barraPesquisa input{
-    border-radius: 10px;
-    border: solid 2px var(--verdeMusgo);
-    background-color:var(--verdeAcinzentado);
-    padding-left: 0.5rem;
-    width: 45%;
-    height: 2.5rem;
+
+.campoPesquisa i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--verdeMusgo);
+    z-index: 1;
 }
+
+.campoPesquisa input:focus {
+    border-color: var(--verdeMusgo);
+    box-shadow: 0 0 0 3px rgba(55, 90, 68, 0.12);
+}
+
 hr{
     border: none;
 }
+
 .grupoCards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -63,6 +73,7 @@ hr{
 .receitas{
     margin:1rem;
 }
+
 .card{
     text-align: center;
     padding: 2rem 0 2rem 0;
@@ -70,54 +81,76 @@ hr{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
     transition:transform 0.3s;
 }
+
 .card:hover{
     transform: scale(1.1);
 }
+
 .card h3{
     font-size: 2rem;
     padding-bottom: 0.5rem;
 }
+
 .card ul{
     display: flex;
     flex-direction: column;
     gap:7px;
 }
+
 .card li{
    list-style-type: none; 
    
 }
+
 .card li a{
     color: black;
     transition: color 0.2s;
 }
+
 .card li a:hover{
     color: var(--verdeOlivaPadrao);
 }
 
-.curiosidade{
-    background-color: var(--verdeAcinzentado);
-    height: 12rem;
-    width: 50%;
+.card-voce-sabia {
     display: flex;
-    margin: 0 auto;
-    border-radius: 20px;
-    
-}
-.curiosidade h1{
-    color: var(--verdeMusgo);
-    padding-top: 1.3rem;
-    padding-left: 1.3rem;
-    align-self: start;
+    align-items: center;
+    gap: 18px;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 22px 26px;
+    background: rgb(226, 238, 229);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.Tcuriosidade{
+.icone-sabia {
+    min-width: 48px;
+    height: 48px;
     display: flex;
-    align-self: start;
-    width: 50%;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background: rgb(55, 90, 68);
+    color: white;
+    border-radius: 50%;
+    font-size: 22px;
 }
 
-.Tcuriosidade p{
+.conteudo-sabia {
+    flex: 1;
+}
+
+.titulo-sabia {
+    display: block;
+    margin-bottom: 6px;
+    color: rgb(55, 90, 68);
     font-size: 20px;
-    text-align: justify;
+    font-weight: 700;
+}
+
+.conteudo-sabia p {
+    margin: 0;
+    color: rgb(70, 80, 72);
+    font-size: 15px;
+    line-height: 1.6;
+    font-style: italic;
 }

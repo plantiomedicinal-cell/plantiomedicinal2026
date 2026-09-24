@@ -9,6 +9,7 @@ import Sobre from './pages/Sobre';
 import Receitas from './pages/Receitas';
 import Catalogo from './pages/Catalogo';
 import Postagens from './pages/Postagens';
+import Conta from './pages/Conta';
 
 import './App.css';
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/receitas" element={<Receitas />} />
           <Route path="/catalogo" element={<Catalogo />} />
           <Route path="/postagens" element={<Postagens />} />
+          <Route path="/conta" element={<Conta />} />
         </Routes>
       </BrowserRouter>
 

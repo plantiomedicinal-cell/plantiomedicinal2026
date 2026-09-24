@@ -1,92 +1,228 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Postagens.css';
+import Footer from '../components/Footer';
 
-// 1. COMPONENTE DE LOGIN 
-function Login({ onLogin }) {
-  const [usuario, setUsuario] = useState("");
-  const [senha, setSenha] = useState("");
-
-  function entrar(e) {
-    e.preventDefault();
-    if (usuario && senha) {
-      onLogin();
-    } else {
-      alert("Preencha todos os campos!");
+const postagens = [
+    {
+        id: 1,
+        usuario: "Ana Souza",
+        username: "@anasouza",
+        perfil: "/img/logo1.png",
+        imagem: "/img/boldo.webp",
+        titulo: "Minha pequena horta 🌱",
+        descricao: "Depois de algumas semanas, finalmente minhas plantinhas começaram a crescer!",
+        likes: 0,
+        comentarios: 0
+    },
+    {
+        id: 2,
+        usuario: "Carlos Lima",
+        username: "@carloslima",
+        perfil: "/img/logo1.png",
+        imagem: "/img/hortela.webp",
+        titulo: "Meu jardim floresceu!",
+        descricao: "Muito feliz com o resultado depois de cuidar dele todos os dias.",
+        likes: 0,
+        comentarios: 0
+    },
+    {
+        id: 0,
+        usuario: "Maria Oliveira",
+        username: "@mariaoliveira",
+        perfil: "/img/logo1.png",
+        imagem: "/img/alecrim.webp",
+        titulo: "Alecrim crescendo 🌿",
+        descricao: "Plantei há alguns meses e agora já posso aproveitar bastante.",
+        likes: 0,
+        comentarios: 0
+    },
+    {
+        id: 4,
+        usuario: "Pedro Santos",
+        username: "@pedrosantos",
+        perfil: "/img/logo1.png",
+        imagem: "/img/pimentamacaco.webp",
+        titulo: "Começando minha horta",
+        descricao: "Estou começando agora e essas são minhas primeiras plantas.",
+        likes: 0,
+        comentarios: 0
+    },
+    {
+        id: 5,
+        usuario: "Julia Costa",
+        username: "@juliacosta",
+        perfil: "/img/logo1.png",
+        imagem: "/img/louro.webp",
+        titulo: "Cuidados com minhas plantas",
+        descricao: "Algumas dicas que aprendi cuidando das minhas plantas.",
+        likes: 0,
+        comentarios: 0
+    },
+    {
+        id: 6,
+        usuario: "Lucas Alves",
+        username: "@lucasalves",
+        perfil: "/img/logo1.png",
+        imagem: "/img/guaco.webp",
+        titulo: "Minha plantação 🌿",
+        descricao: "Mais uma atualização do meu cultivo.",
+        likes: 0,
+        comentarios: 0
     }
-  }
+];
 
-  return (
-    <div className="login">
-      <p className='FraseMenuLogin'>Entre para postar:</p>
-      <form className='formulario' onSubmit={entrar}>
-        <input
-        className='input'
-          type="text"
-          placeholder="Usuário ou e-mail"
-          value={usuario}
-          onChange={(e) => setUsuario(e.target.value)}
-        />
-        <input
-        className='input'
-          type="password"
-          placeholder="Senha"
-          value={senha}
-          onChange={(e) => setSenha(e.target.value)}
-        />
-        <button type='submit' className='EsqueceuSenha'>Esqueceu sua senha?</button>
-        <button type="submit" className="BotaoEntrar">Entrar</button>
+function Login({ onLogin }) {
+    const [usuario, setUsuario] = useState("");
+    const [senha, setSenha] = useState("");
 
-         <p className='FraseMenuLogin'>ou</p>
+    function entrar(e) {
+        e.preventDefault();
 
-         <button type='submit' className='cadastrar'>Cadastre-se</button>
+        if (usuario && senha) {
+            onLogin();
+        } else {
+            alert("Preencha todos os campos!");
+        }
+    }
 
-      </form>
-    </div>
-  );
+    return (
+        <div className="login">
+            <div className='cabecalhoLogin'>
+                <i className="bi bi-person-circle"></i>
+                <h2>Entrar</h2>
+                <p>Entre para fazer uma postagem</p>
+            </div>
+
+            <form className="formulario" onSubmit={entrar}>
+                <div className="campoLogin">
+                    <i className="bi bi-person"></i>
+                    <input
+                        className="input"
+                        type="text"
+                        placeholder="Usuário ou e-mail"
+                        value={usuario}
+                        onChange={(e) => setUsuario(e.target.value)}
+                    />
+                </div>
+
+                <div className="campoLogin">
+                    <i className="bi bi-lock"></i>
+                    <input
+                        className="input"
+                        type="password"
+                        placeholder="Senha"
+                        value={senha}
+                        onChange={(e) => setSenha(e.target.value)}
+                    />
+                </div>
+
+                <button type="button" className="EsqueceuSenha">
+                    Esqueceu sua senha?
+                </button>
+
+                <button type="submit" className="BotaoEntrar">
+                    Entrar
+                </button>
+
+                <div className="separadorLogin">
+                    <span>ou</span>
+                </div>
+
+                <button type="button" className="cadastrar">
+                    Cadastre-se
+                </button>
+            </form>
+        </div>
+    );
 }
 
-// 2. COMPONENTE PRINCIPAL DE POSTAGENS
 function Postagens() {
-  // ESTADO para controlar se o login aparece ou não na página
-  const [mostrarLogin, setMostrarLogin] = useState(false);
-  
-  const simularLogin = () => {
-    alert("Login efetuado com sucesso!");
-    setMostrarLogin(false); // Esconde o login novamente após logar
-  };
+    const [mostrarLogin, setMostrarLogin] = useState(false);
 
-  return (
-    <main>
-      <h1 className="inicioPostagens">
-        Veja nossas <strong>POSTAGENS!</strong>
-      </h1>
+    const simularLogin = () => {
+        alert("Login efetuado com sucesso!");
+        setMostrarLogin(false);
+    };
 
-      <p>
-        Faça parte da nossa comunidade!<br /><br />
-        Fique por dentro das nossas ações, visitas e 
-      </p>
+    return (
+        <main className="paginaPostagens">
+            <section className="cabecalhoPostagens">
+                <h1 className="inicioPostagens">
+                    Veja as <strong>POSTAGENS</strong> da nossa comunidade.
+                </h1>
+            </section>
 
-      <article className='container'>
-      <div className='MenuLogin'>
+            <article className="containerPostagem">
+                <div className="MenuLogin">
+                    {!mostrarLogin && (
+                        <div className="convitePostagem">
+                            <div className="iconePostagem">
+                                <i className="bi bi-pencil-square"></i>
+                            </div>
 
-      {/* BOTÃO para mostrar o formulário de login */}
-      <button 
-        className="BotaoAbrirLogin" 
-        onClick={() => setMostrarLogin(true)}
-      >
-        Quero fazer uma postagem
-      </button>
+                            <h2>Quer compartilhar algo?</h2>
 
-      {/* RENDERIZAÇÃO CONDICIONAL: O componente Login só aparece se 'mostrarLogin' for true */}
-      {mostrarLogin && (
-        <Login onLogin={simularLogin} />
-      )}
-      
-      </div>
-      </article>
-    </main>
-  );
+                            <p>
+                                Faça parte da nossa comunidade e compartilhe
+                                suas experiências, jardins e conhecimentos.
+                            </p>
+
+                            <button
+                                className="BotaoAbrirLogin"
+                                onClick={() => setMostrarLogin(true)}
+                            >
+                                <i className="bi bi-plus-circle"></i>
+                                Quero fazer uma postagem
+                            </button>
+                        </div>
+                    )}
+
+                    {mostrarLogin && (
+                        <Login onLogin={simularLogin} />
+                    )}
+                </div>
+            </article>
+
+            <div className="gradePostagens">
+    {postagens.map((post) => (
+
+        <article className="cardPostagem" key={post.id}>
+            <div className="perfilPostagem">
+                <img src={post.perfil} alt={post.usuario} />
+                <div>
+                    <b>{post.usuario}</b>
+                    <span>{post.username}</span>
+                </div>
+            </div>
+
+            <img
+                className="imagemPostagem"
+                src={post.imagem}
+                alt={post.titulo}
+            />
+
+            <div className="conteudoPostagem">
+                <h3>{post.titulo}</h3>
+                <p className='textoPostagem'>{post.descricao}</p>
+                <div className="interacoesPostagem">
+
+                    <button>
+                        <i className="bi bi-heart"></i>
+                        {post.likes}
+                    </button>
+
+                    <button>
+                        <i className="bi bi-chat"></i>
+                        {post.comentarios}
+                    </button>
+                </div>
+            </div>
+        </article>
+    ))}
+</div>
+            <Footer />
+        </main>
+    );
 }
 
 export default Postagens;

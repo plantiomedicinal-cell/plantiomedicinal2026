@@ -45,17 +45,15 @@ function Catalogo() {
   return (
 
     <main>
-      <div>
-         <h1 className="inicio">Conheça nosso
-        <strong>CATÁLOGO COMPLETO!</strong>
-    </h1>
-    </div>
+      <section className='inicioCatalogo'>
+        <h1>Conheça nosso <strong>CATÁLOGO COMPLETO!</strong></h1>
+      
+        <p>
+        Principais receitas medicinais reunindo preparos naturais como chás, xaropes e infusões, com orientações simples para uso no dia a dia. Uma forma prática de aproveitar os benefícios das plantas para o bem-estar.
+        </p>
+      </section>
 
-    <p className='p'>
-      Principais receitas medicinais reunindo preparos naturais como chás, xaropes e infusões, com orientações simples para uso no dia a dia. Uma forma prática de aproveitar os benefícios das plantas para o bem-estar.
-    </p>
-
-    <div className="barraPesquisa">
+    <div className="campoPesquisa">
         <i class='bi bi-search'></i>
         <input type="text" id="pesquisaPlanta" placeholder="Pesquisar por plantas disponiveis"/>
     </div>

@@ -15,7 +15,7 @@ function Footer() {
         <div className='separacao'>
         <h3>Navegação</h3>
 
-            <Link to="/inicio">
+            <Link to="/">
             Início
             </Link>
 

@@ -1,21 +1,19 @@
 import React from "react";
 import {Link}  from "react-router-dom";
 import './Receitas.css';
-
-
+import Footer from '../components/Footer';
 
 function Receitas() {
   return (
-    <main className="inicioReceita">
-    <div className="receita">
-      <h1 className="tituloReceita">Conheça as principais <strong>RECEITAS MEDICINAIS</strong></h1>
-    </div>
+    <main>
+    <section className="inicioReceita">
+      <h1>Conheça as principais <strong>RECEITAS MEDICINAIS</strong></h1>
 
-    <div className="fraseReceita">
       <p>Principais receitas medicinais reunindo preparos naturais como chás, xaropes e infusões, com orientações simples para uso no dia a dia. Uma forma prática de aproveitar os benefícios das plantas para o bem-estar.</p>
-    </div>
 
-    <div className="barraPesquisa">
+    </section>
+    <div className="campoPesquisa">
+      <i class='bi bi-search'></i>
         <input type="text" id="pesquisaReceitas" placeholder=" Pesquisar receitas"/>
     </div>
 
@@ -94,19 +92,25 @@ function Receitas() {
 
     </section>
 
-    <section className="curiosidade">
-      <h1>Você Sabia?</h1>
+      <section class="card-voce-sabia">
+          <div class="icone-sabia">
+              <i class="bi bi-lightbulb-fill"></i>
+          </div>
 
-      <div className="Tcuriosidade">
-        <p >Na área de "Postagens" você pode publicar uma receita feita a partir de Plantas Mediciniais e ver receitas de outras pessoas. Compartilhe seus conhecimentos!</p>
-      </div>
-      
-    </section>
+          <div class="conteudo-sabia">
+              <span class="titulo-sabia">Você sabia?</span>
 
-   
+              <p>
+                Na área de <strong>Postagens</strong>, você pode publicar suas próprias receitas 
+                feitas com plantas medicinais e conhecer receitas compartilhadas 
+                por outras pessoas. Além disso, compartilhe fotos e vídeos do seu 
+                jardim, plantas e experiências com o cultivo. Compartilhe seus 
+                conhecimentos e inspire outras pessoas!
+              </p>
+          </div>
+      </section>
+      <Footer />
     </main>
-
-
   );
 }
 

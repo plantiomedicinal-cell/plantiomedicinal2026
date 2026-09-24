@@ -1,0 +1,120 @@
+.perfilContainer{
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.perfilTopo{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 16px ;
+}
+
+.perfilFoto{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--verdeMusgo);
+}
+
+.perfilInfo{
+    margin: 5px 0;
+    color: black;
+    font-size: 18px;
+}
+
+.perfilInfo p{
+    margin: 0;
+    color: black;
+}
+
+.perfilInfo h1{
+    margin: 5px 0;
+    color: black;
+    font-size: 22px;
+}
+
+.apelido{
+    color: black;
+    font: 20px;
+}
+
+.dados{ 
+    margin-top: 25px;
+    padding: 30px;
+    background: white;
+    border: 1px solid rgb(193, 204, 192); 
+    border-radius: 18px; 
+} 
+
+.dados h2, .perfil-atividades h2 {
+    margin-top: 0;
+    margin-bottom: 25px; 
+    color: rgb(55, 90, 68); 
+    font-size: 21px; 
+} 
+
+.campoPerfil {
+    margin-bottom: 18px; 
+} 
+
+.campoPerfil, .campoSenha label { 
+    display: block; 
+    margin-bottom: 7px; 
+    color: rgb(70, 80, 72); 
+    font-weight: 600; 
+} 
+
+.campoPerfil input { 
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 12px 14px; 
+    border: 1px solid rgb(193, 204, 192); 
+    border-radius: 9px; 
+    background: rgb(250, 250, 250); 
+    font-size: 15px; 
+    outline: none; 
+} 
+    
+.campoSenha { 
+    position: relative; 
+} 
+
+.campoSenha input { 
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 12px 14px; 
+    border: 1px solid rgb(193, 204, 192); 
+    border-radius: 9px; 
+    background: rgb(250, 250, 250); 
+    font-size: 15px; 
+    outline: none;
+} 
+
+.campoSenha i { 
+    position: absolute; 
+    right: 15px; 
+    top: 50%; 
+    transform: translateY(20%); 
+    color: rgb(103, 119, 102); 
+    cursor: pointer; 
+}
+
+.btn-salvar {
+    margin-top: 10px; 
+    padding: 12px 22px; 
+    border: none; 
+    border-radius: 9px; 
+    background: rgb(55, 90, 68); 
+    color: white; 
+    font-size: 15px; 
+    font-weight: 600; 
+    cursor: pointer; 
+} 
+
+.btn-salvar:hover { 
+    background: rgb(103, 119, 102); 
+}
