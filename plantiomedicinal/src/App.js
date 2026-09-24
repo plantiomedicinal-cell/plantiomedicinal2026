@@ -36,8 +36,8 @@ import Receita1 from './pages/receitas/Receita1';
 // import Receita18 from './pages/receitas/Receita18';
 
 // cientificos
-// import Cientifico1 from './pages/cientifico/Cientifico1';
-// import Cientifico2 from './pages/cientifico/Cientifico2';
+import Cientifico1 from './pages/cientifico/Cientifico1';
+import Cientifico2 from './pages/cientifico/Cientifico2';
 // import Cientifico3 from './pages/cientifico/Cientifico3';
 // import Cientifico4 from './pages/cientifico/Cientifico4';
 // import Cientifico5 from './pages/cientifico/Cientifico5';
@@ -67,7 +67,9 @@ function AnimatedRoutes() {
         {/* Receitas */}
         <Route path="/receitas1" element={<PageTransition><Receita1 /></PageTransition>} />
 
-        {/* Científico (adicione conforme for descomentando) */}
+        {/* Científico */}
+        <Route path="/cientifico1" element={<PageTransition><Cientifico1 /></PageTransition>} />
+        <Route path="/cientifico2" element={<PageTransition><Cientifico2 /></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );
