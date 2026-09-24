@@ -74,6 +74,7 @@ const postagens = [
 function Login({ onLogin }) {
     const [usuario, setUsuario] = useState("");
     const [senha, setSenha] = useState("");
+    const [mostrarCadastro, setMostrarCadastro] = useState(false);
 
     function entrar(e) {
         e.preventDefault();
@@ -84,6 +85,69 @@ function Login({ onLogin }) {
             alert("Preencha todos os campos!");
         }
     }
+
+    if (mostrarCadastro) {
+    return (
+        <div className="login">
+            <div className="cabecalhoLogin">
+                <i className="bi bi-person-plus"></i>
+                <h2>Cadastre-se</h2>
+                <p>Faça parte da nossa comunidade!</p>
+            </div>
+
+            <form
+                className="formulario"
+                onSubmit={(e) => e.preventDefault()}
+            >
+            
+            <div className="campoLogin">
+                <i className="bi bi-person"></i>
+                <input
+                    className="input"
+                    type="text"
+                    placeholder="Nome completo"
+                    required
+                />
+            </div>
+            
+            <div className="campoLogin">
+                <i className="bi bi-envelope-at"></i>
+                <input
+                    className="input"
+                    type="email"
+                    placeholder="E-mail"
+                    required
+                />
+            </div>
+
+            <div className="campoLogin">
+                <i className="bi bi-lock"></i>
+                <input
+                    className="input"
+                    type="password"
+                    placeholder="Senha"
+                    required
+                />
+            </div>
+
+                <button
+                    type="submit"
+                    className="BotaoCadastrar"
+                >
+                    Cadastrar
+                </button>
+
+                <button 
+                    type="button"
+                    className='BotaoEntrar'
+                    onClick={() => setMostrarCadastro(false)}
+                >
+                    Já tenho uma conta. Entrar
+                </button>
+            </form>
+        </div>
+    );
+}
 
     return (
         <div className="login">
@@ -128,7 +192,10 @@ function Login({ onLogin }) {
                     <span>ou</span>
                 </div>
 
-                <button type="button" className="cadastrar">
+                <button
+                    type="button"
+                    className='BotaoCadastrar'
+                    onClick={() => setMostrarCadastro(true)}>
                     Cadastre-se
                 </button>
             </form>
@@ -220,8 +287,10 @@ function Postagens() {
         </article>
     ))}
 </div>
-            <Footer />
-        </main>
+         
+
+   <Footer />
+        </main> 
     );
 }
 

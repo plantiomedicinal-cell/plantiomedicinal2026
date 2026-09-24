@@ -1,0 +1,13 @@
+.comeco{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 5rem;
+    font-size: 22px;
+}
+
+.imgCientifico{
+    margin: 3rem;
+    border-radius: 2rem;
+    height: 20rem;
+}
