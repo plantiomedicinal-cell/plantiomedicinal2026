@@ -27,8 +27,8 @@ function Footer() {
             Catálogo
             </Link>
 
-            <Link to="/postagens">
-            Postagens
+            <Link to="/comunidade">
+            Comunidade
             </Link>
             </div>
 

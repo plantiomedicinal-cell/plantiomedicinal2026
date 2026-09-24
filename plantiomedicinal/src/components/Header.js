@@ -10,6 +10,7 @@ function Header() {
         <div className='perfilMenu'>
         <Link to="/conta" className="perfilNav">
           <i class="bi bi-person-circle"></i>
+          Entrar
         </Link>
         </div>
 
@@ -34,9 +35,9 @@ function Header() {
           Catálogo
         </Link>
 
-        <Link to="/postagens">
-          <i class="bi bi-image-fill"></i>
-          Postagens
+        <Link to="/comunidade">
+          <i class="bi bi-people-fill"></i>
+          Comunidade
         </Link>
         </div>
 

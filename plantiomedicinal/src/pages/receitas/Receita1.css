@@ -1,0 +1,57 @@
+.titulo1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    height:10rem;
+}
+
+.titulo1 h1{
+    font-size: 44px; 
+}
+
+.titulo1 p{
+    font-size: 1.5rem;
+}
+
+.conteudo{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.FichaTec, .beneficios{
+    position: relative;
+    left: 3rem;
+    border: 1px solid var(--verdeAcinzentado);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--cinzaGelo);
+    width: 30rem;
+}
+
+.FichaTec h2,
+.beneficios h2 {
+    color: black;
+    text-align: center;
+}
+
+.FichaTec li, .beneficios li{
+    list-style-type: none;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.FichaTec ul, .beneficios ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+

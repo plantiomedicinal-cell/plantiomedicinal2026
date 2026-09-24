@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Postagens.css';
+import './Comunidade.css';
 import Footer from '../components/Footer';
 
 const postagens = [
@@ -26,7 +26,7 @@ const postagens = [
         comentarios: 0
     },
     {
-        id: 0,
+        id: 3,
         usuario: "Maria Oliveira",
         username: "@mariaoliveira",
         perfil: "/img/logo1.png",
@@ -65,13 +65,13 @@ const postagens = [
         perfil: "/img/logo1.png",
         imagem: "/img/guaco.webp",
         titulo: "Minha plantação 🌿",
-        descricao: "Mais uma atualização do meu cultivo.",
+        descricao: "Mais uma atualização do meu próprio cultivo de plantas medicinais.",
         likes: 0,
         comentarios: 0
     }
 ];
 
-function Login({ onLogin }) {
+function Login({ onLogin, onCancelar }) {
     const [usuario, setUsuario] = useState("");
     const [senha, setSenha] = useState("");
     const [mostrarCadastro, setMostrarCadastro] = useState(false);
@@ -87,70 +87,79 @@ function Login({ onLogin }) {
     }
 
     if (mostrarCadastro) {
-    return (
-        <div className="login">
-            <div className="cabecalhoLogin">
-                <i className="bi bi-person-plus"></i>
-                <h2>Cadastre-se</h2>
-                <p>Faça parte da nossa comunidade!</p>
-            </div>
-
-            <form
-                className="formulario"
-                onSubmit={(e) => e.preventDefault()}
-            >
-            
-            <div className="campoLogin">
-                <i className="bi bi-person"></i>
-                <input
-                    className="input"
-                    type="text"
-                    placeholder="Nome completo"
-                    required
-                />
-            </div>
-            
-            <div className="campoLogin">
-                <i className="bi bi-envelope-at"></i>
-                <input
-                    className="input"
-                    type="email"
-                    placeholder="E-mail"
-                    required
-                />
-            </div>
-
-            <div className="campoLogin">
-                <i className="bi bi-lock"></i>
-                <input
-                    className="input"
-                    type="password"
-                    placeholder="Senha"
-                    required
-                />
-            </div>
-
-                <button
-                    type="submit"
-                    className="BotaoCadastrar"
-                >
-                    Cadastrar
+        return (
+            <div className="login">
+                {/* Botão para fechar/voltar */}
+                <button type="button" className="botaoFecharLogin" onClick={onCancelar} title="Voltar">
+                    <i className="bi bi-x-lg"></i>
                 </button>
 
-                <button 
-                    type="button"
-                    className='BotaoEntrar'
-                    onClick={() => setMostrarCadastro(false)}
+                <div className="cabecalhoLogin">
+                    <i className="bi bi-person-plus"></i>
+                    <h2>Cadastre-se</h2>
+                    <p>Faça parte da nossa comunidade!</p>
+                </div>
+
+                <form
+                    className="formulario"
+                    onSubmit={(e) => e.preventDefault()}
                 >
-                    Já tenho uma conta. Entrar
-                </button>
-            </form>
-        </div>
-    );
-}
+                    <div className="campoLogin">
+                        <i className="bi bi-person"></i>
+                        <input
+                            className="input"
+                            type="text"
+                            placeholder="Nome completo"
+                            required
+                        />
+                    </div>
+                    
+                    <div className="campoLogin">
+                        <i className="bi bi-envelope-at"></i>
+                        <input
+                            className="input"
+                            type="email"
+                            placeholder="E-mail"
+                            required
+                        />
+                    </div>
+
+                    <div className="campoLogin">
+                        <i className="bi bi-lock"></i>
+                        <input
+                            className="input"
+                            type="password"
+                            placeholder="Senha"
+                            required
+                        />
+                    </div>
+
+                    <button
+                        type="submit"
+                        className="BotaoCadastrar"
+                    >
+                        Cadastrar
+                    </button>
+
+                    <button 
+                        type="button"
+                        className='BotaoEntrar'
+                        onClick={() => setMostrarCadastro(false)}
+                    >
+                        Já tenho uma conta. Entrar
+                    </button>
+                </form>
+            </div>
+        );
+    }
 
     return (
         <div className="login">
+            {/* Botão para fechar/voltar */}
+            <button type="button" className="botaoFecharLogin" onClick={onCancelar} title="Voltar">
+                <i className="bi bi-x-lg"></i>
+            </button>
+
             <div className='cabecalhoLogin'>
                 <i className="bi bi-person-circle"></i>
                 <h2>Entrar</h2>
@@ -203,7 +212,7 @@ function Login({ onLogin }) {
     );
 }
 
-function Postagens() {
+function Comunidade() {
     const [mostrarLogin, setMostrarLogin] = useState(false);
 
     const simularLogin = () => {
@@ -215,8 +224,10 @@ function Postagens() {
         <main className="paginaPostagens">
             <section className="cabecalhoPostagens">
                 <h1 className="inicioPostagens">
-                    Veja as <strong>POSTAGENS</strong> da nossa comunidade.
-                </h1>
+                    Veja as <strong> POSTAGENS </strong> da nossa comunidade.
+                </h1> 
+
+                <p>Aqui você encontra todas as postagens entre vídeos, fotos e receitas, compartilhadas pela nossa própria comunidade.</p>
             </section>
 
             <article className="containerPostagem">
@@ -245,53 +256,53 @@ function Postagens() {
                     )}
 
                     {mostrarLogin && (
-                        <Login onLogin={simularLogin} />
+                        <Login 
+                            onLogin={simularLogin} 
+                            onCancelar={() => setMostrarLogin(false)} 
+                        />
                     )}
                 </div>
             </article>
 
             <div className="gradePostagens">
-    {postagens.map((post) => (
+                {postagens.map((post) => (
+                    <article className="cardPostagem" key={post.id}>
+                        <div className="perfilPostagem">
+                            <img src={post.perfil} alt={post.usuario} />
+                            <div>
+                                <b>{post.usuario}</b>
+                                <span>{post.username}</span>
+                            </div>
+                        </div>
 
-        <article className="cardPostagem" key={post.id}>
-            <div className="perfilPostagem">
-                <img src={post.perfil} alt={post.usuario} />
-                <div>
-                    <b>{post.usuario}</b>
-                    <span>{post.username}</span>
-                </div>
+                        <img
+                            className="imagemPostagem"
+                            src={post.imagem}
+                            alt={post.titulo}
+                        />
+
+                        <div className="conteudoPostagem">
+                            <h3>{post.titulo}</h3>
+                            <p className='textoPostagem'>{post.descricao}</p>
+                            <div className="interacoesPostagem">
+                                <button>
+                                    <i className="bi bi-heart"></i>
+                                    {post.likes}
+                                </button>
+
+                                <button>
+                                    <i className="bi bi-chat"></i>
+                                    {post.comentarios}
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                ))}
             </div>
 
-            <img
-                className="imagemPostagem"
-                src={post.imagem}
-                alt={post.titulo}
-            />
-
-            <div className="conteudoPostagem">
-                <h3>{post.titulo}</h3>
-                <p className='textoPostagem'>{post.descricao}</p>
-                <div className="interacoesPostagem">
-
-                    <button>
-                        <i className="bi bi-heart"></i>
-                        {post.likes}
-                    </button>
-
-                    <button>
-                        <i className="bi bi-chat"></i>
-                        {post.comentarios}
-                    </button>
-                </div>
-            </div>
-        </article>
-    ))}
-</div>
-         
-
-   <Footer />
+            <Footer />
         </main> 
     );
 }
 
-export default Postagens;
+export default Comunidade;

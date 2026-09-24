@@ -40,7 +40,10 @@ function Conta() {
                     <i className="bi bi-eye"></i> 
                 </div> 
 
+                <div className='botoesConta'>
+                <button className="btn-editar"> Editar alterações </button>
                 <button className="btn-salvar"> Salvar alterações </button>
+                </div>
             </div> 
              
         </div>

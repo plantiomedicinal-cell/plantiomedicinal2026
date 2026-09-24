@@ -2,17 +2,31 @@
    ROOT / CORES
 ========================= */
 
-:root{
-    --verdeMusgo: rgb(55, 90, 68); 
-    --verdeMenta: rgb(171, 219, 188); 
-    --verdeAcinzentado: rgb(193, 204, 192); 
-    --verdeOliva: rgb(103, 119, 102);
-    --verdeOlivaAcinzentado: rgb(103, 119, 102);
-    --verdeNevoa: rgb(226, 238, 229);
-    --cinzaGelo: rgb(235, 235, 235);
-    --cinza-neutro: rgb(195, 195, 195);
-    --begeAreia: rgb(214, 196, 168);
-    --terracota: rgb(181, 117, 87);
+:root {
+  /* Tom Principal & Destaque */
+  --verdeMusgo: #375a44;              
+  --verdeHover: #2c4936;               
+  --verdeOliva: #677766;               
+
+  /* Tons de Verde Claros & Suaves */
+  --verdeMenta: #abdbbc;               
+  --verdeNevoa: #e2eee5;               
+  --verdeAcinzentado: #c1ccc0;         
+
+  /* Neutros & Cinzas */
+  --cinzaFundo: #fafafa;
+  --cinzaGelo: #ebebeb;                
+  --cinzaNeutro: #c3c3c3;              
+  --cinzaBorda: #c1ccc0;               
+
+  /* Tons de Terra & Terrosos */
+  --begeAreia: #d6c4a8;                
+  --terracota: #b57557;                
+
+  /* Textos & Sombras */
+  --textoPrincipal: #2d3732;
+  --textoSecundario: #5c6660;
+  --sombraCard: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 *{
@@ -122,7 +136,6 @@ nav a{
 
 nav a:hover{
     transition: 0.3s;
-    text-decoration: underline;
     color: var(--verdeMenta);
 }
 

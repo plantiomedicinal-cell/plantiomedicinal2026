@@ -1,9 +1,18 @@
 .inicioPostagens{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 3rem;
     font-size: 42px;
+    gap: 0.5rem;
+}
+
+.cabecalhoPostagens p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding-bottom: 3rem;
 }
 
 .containerPostagem {
@@ -78,6 +87,7 @@
 }
 
 .login {
+    position: relative;
     background-color: white;
     padding: 2rem;
     border-radius: 18px;
@@ -320,4 +330,20 @@
 .BotaoCadastrar:hover{
     background-color: var(--verdeOliva);
     transform: translateY(-2px);
+}
+
+.botaoFecharLogin {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.botaoFecharLogin:hover {
+  color: #000;
 }
