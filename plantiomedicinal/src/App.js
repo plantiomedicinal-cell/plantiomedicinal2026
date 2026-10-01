@@ -38,13 +38,13 @@ import Receita1 from './pages/receitas/Receita1';
 // cientificos
 import Cientifico1 from './pages/cientifico/Cientifico1';
 import Cientifico2 from './pages/cientifico/Cientifico2';
-// import Cientifico3 from './pages/cientifico/Cientifico3';
-// import Cientifico4 from './pages/cientifico/Cientifico4';
-// import Cientifico5 from './pages/cientifico/Cientifico5';
-// import Cientifico6 from './pages/cientifico/Cientifico6';
-// import Cientifico7 from './pages/cientifico/Cientifico7';
-// import Cientifico8 from './pages/cientifico/Cientifico8';
-// import Cientifico9 from './pages/cientifico/Cientifico9';
+import Cientifico3 from './pages/cientifico/Cientifico3';
+import Cientifico4 from './pages/cientifico/Cientifico4';
+import Cientifico5 from './pages/cientifico/Cientifico5';
+import Cientifico6 from './pages/cientifico/Cientifico6';
+import Cientifico7 from './pages/cientifico/Cientifico7';
+import Cientifico8 from './pages/cientifico/Cientifico8';
+import Cientifico9 from './pages/cientifico/Cientifico9';
 
 
 // estilo
@@ -70,6 +70,13 @@ function AnimatedRoutes() {
         {/* Científico */}
         <Route path="/cientifico1" element={<PageTransition><Cientifico1 /></PageTransition>} />
         <Route path="/cientifico2" element={<PageTransition><Cientifico2 /></PageTransition>} />
+        <Route path="/cientifico3" element={<PageTransition><Cientifico3 /></PageTransition>} />
+        <Route path="/cientifico4" element={<PageTransition><Cientifico4 /></PageTransition>} />
+        <Route path="/cientifico5" element={<PageTransition><Cientifico5 /></PageTransition>} />
+        <Route path="/cientifico6" element={<PageTransition><Cientifico6 /></PageTransition>} />
+        <Route path="/cientifico7" element={<PageTransition><Cientifico7 /></PageTransition>} />
+        <Route path="/cientifico8" element={<PageTransition><Cientifico8 /></PageTransition>} />
+        <Route path="/cientifico9" element={<PageTransition><Cientifico9 /></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );

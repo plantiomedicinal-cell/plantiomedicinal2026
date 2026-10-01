@@ -6,13 +6,14 @@ function Cientifico2 () {
     return(
         <main>
 
+        <div className="borda">
+
     <article className="containerCientifico">            
         <section className="comeco">
             <h1>ALECRIM</h1>
             <p className="nomeC">(Salvia rosmarinus)</p>
         </section>
 
-        <hr className="divisao2"></hr>
 
 
         <section className="informacoes">
@@ -20,6 +21,7 @@ function Cientifico2 () {
             <img className="imgCientifico" src="/img/alecrim.webp" alt="Ora Pro Nobis" />
             
             <div class="categoriasPlantas">
+                <h4>Principais Benefícios:</h4>
                 <span class="categoriaItem">Imunológica</span>
                 <span class="categoriaItem">Cuidado da Pele</span>
                 <span class="categoriaItem">Cognição e Foco</span>
@@ -45,7 +47,7 @@ function Cientifico2 () {
 
     </div>
 
-    <div className="blocoT">
+    <div className="blocoA">
         <h2 className="estudos">Composição Química</h2>
 
         <ul className="topicos">
@@ -56,7 +58,7 @@ function Cientifico2 () {
 
     </div>
 
-    <div className="blocoT">
+    <div className="blocoA">
         <h2 className="estudos">Propriedades Farmacológicas</h2>
 
         <ul className="topicos">
@@ -70,6 +72,7 @@ function Cientifico2 () {
     
     
     </section>
+    </div>
         </main>
 
      );

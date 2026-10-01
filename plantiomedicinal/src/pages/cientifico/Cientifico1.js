@@ -6,13 +6,16 @@ function Cientifico1 () {
     return(
         <main>
 
+    <div className="borda">
+
+
     <article className="containerCientifico">            
         <section className="comeco">
             <h1>ORA-PRO-NOBIS</h1>
             <p className="nomeC">(Pereskia aculeata)</p>
         </section>
 
-        <hr className="divisao2"></hr>
+       
 
 
         <section className="informacoes">
@@ -20,6 +23,7 @@ function Cientifico1 () {
             <img className="imgCientifico" src="/img/orapronobis.webp" alt="Ora Pro Nobis" />
             
             <div class="categoriasPlantas">
+                <h4>Principais Benefícios:</h4>
                 <span class="categoriaItem">Imunológica</span>
                 <span class="categoriaItem">Saúde Instestinal</span>
                 <span class="categoriaItem">Fortalecimento Ósseo</span>
@@ -47,7 +51,7 @@ function Cientifico1 () {
 
     </div>
 
-    <div className="blocoT">
+    <div className="blocoA">
         <h2 className="estudos">Composição Química</h2>
 
         <ul className="topicos">
@@ -60,7 +64,7 @@ function Cientifico1 () {
 
     </div>
 
-    <div className="blocoT">
+    <div className="blocoA">
         <h2 className="estudos">Propriedades Farmacológicas</h2>
 
         <ul className="topicos">
@@ -76,6 +80,7 @@ function Cientifico1 () {
     
     
     </section>
+    </div>
         </main>
 
      );
