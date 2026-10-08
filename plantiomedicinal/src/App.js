@@ -13,6 +13,7 @@ import Receitas from './pages/Receitas';
 import Catalogo from './pages/Catalogo';
 import Comunidade from './pages/Comunidade';
 import Conta from './pages/Conta';
+import EditarPerfil from './pages/EditarPerfil';
 
 
 // receitas
@@ -63,6 +64,9 @@ function AnimatedRoutes() {
         <Route path="/catalogo" element={<PageTransition><Catalogo /></PageTransition>} />
         <Route path="/comunidade" element={<PageTransition><Comunidade /></PageTransition>} />
         <Route path="/conta" element={<PageTransition><Conta /></PageTransition>} />
+
+        {/* Navegação secundária */}
+        <Route path="/editarperfil" element={<PageTransition><EditarPerfil /></PageTransition>} />
 
         {/* Receitas */}
         <Route path="/receitas1" element={<PageTransition><Receita1 /></PageTransition>} />

@@ -37,12 +37,12 @@ function Inicio() {
 
     <div className="infoSpan">
         <div className="iconeSpan">
-            <i className="bi bi-droplet"></i>
+            <i class="bi bi-cup-hot"></i>
         </div>
 
         <div className="textoSpan">
-            <b>+4</b>
-            <span>filtros</span>
+            <b>+10</b>
+            <span>receitas</span>
         </div>
     </div>
 </div>
