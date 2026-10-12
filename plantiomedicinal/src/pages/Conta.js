@@ -98,9 +98,11 @@ function Conta() {
                     ))}
                 </div>
             </div>
-
+                    
             <div className="criarPostagens">
+                <Link to="/criarpostagens">
                 <button>+ Criar novas postagens</button>
+                </Link>
             </div>
 
         </div>

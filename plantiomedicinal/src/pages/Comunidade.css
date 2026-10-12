@@ -346,3 +346,78 @@
 .botaoFecharLogin:hover {
   color: #000;
 }
+
+/* =========================
+   CRIAR POSTAGENS
+========================= */
+
+.containerPublicacao {
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.novaPublicacao {
+  width: 100%;
+  border-radius: 1rem;
+  background-color: white;
+  border: 1px solid var(--cinzaBorda);
+  overflow: hidden;
+  padding: 3rem;
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.cabecalhoPublicacao {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cabecalhoPublicacao h1{
+  color: var(--verdeMusgo);
+}
+
+.cabecalhoPublicacao p {
+  padding-bottom: 1.3rem;
+}
+
+.fotoPublicacao h2{
+  color: black;
+  padding-top: 1rem;
+  font-size: 16px;
+  font-weight: 560;
+}
+
+.exemplo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed var(--verdeMusgo);
+  background-color: var(--verdeNevoa);
+  border-radius: 1rem;
+  padding: 5rem;
+  gap: 0.5rem;
+}
+
+.exemplo h1 {
+  color: var(--verdeMusgo);
+  font-size: 18px;   
+}
+
+.iconeExemplo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--verdeNevoa);
+    color: var(--verdeMusgo);
+    font-size: 3rem;
+}
+
+.formPublicacao {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
