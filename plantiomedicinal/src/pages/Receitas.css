@@ -147,54 +147,202 @@ hr{
     border: none;
 }
 
-.grupoCards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
-    margin: 0 auto;
-    margin-top:2rem;
-    margin-bottom: 3rem;
+
+/* =========================
+   CONTAINER DOS CARDS
+========================= */
+
+.lista-receitas {
+  width: calc(100% - 40px);
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
-.receitas{
-    margin:1rem;
+.cabecalho-lista {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
-.card{
-    text-align: center;
-    padding: 2rem 0 2rem 0;
-    border: 1px solid rgba(195, 195, 195, 0.3);
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-    transition:transform 0.3s;
+.cabecalho-lista h2 {
+  margin: 0;
+  color: #375a44;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.card:hover{
-    transform: scale(1.1);
+.cabecalho-lista span {
+  color: #888;
+  font-size: 12px;
 }
 
-.card h3{
-    font-size: 2rem;
-    padding-bottom: 0.5rem;
+/* =========================
+   CARD INDIVIDUAL
+========================= */
+
+.card-receita {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 130px;
+  margin-bottom: 14px;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.card ul{
-    display: flex;
-    flex-direction: column;
-    gap:7px;
+.card-receita:hover {
+  border-color: #8da593;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
 }
 
-.card li{
-   list-style-type: none; 
-   
+.card-receita img {
+  display: block;
+  width: 150px;
+  height: 105px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 5px;
+  background: #e2eee5;
 }
 
-.card li a{
-    color: black;
-    transition: color 0.2s;
+.info-receita {
+  flex: 1;
+  min-width: 0;
 }
 
-.card li a:hover{
-    color: var(--verdeOlivaPadrao);
+.categoria-receita {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #677766;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.info-receita h3 {
+  margin: 0 0 7px;
+  color: #375a44;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.info-receita p {
+  margin: 0 0 12px;
+  color: #777;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.btn-receita {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #375a44;
+  color: #fff;
+  border: 1px solid #375a44;
+  border-radius: 5px;
+  font-size: 11px;
+  transition: background 0.2s;
+}
+
+.btn-receita:hover {
+  background: #2c4936;
+}
+
+.btn-receita i {
+  font-size: 12px;
+}
+
+/* =========================
+   PAGINAÇÃO
+========================= */
+
+.paginacao-receitas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 22px;
+  background-color: white;
+}
+
+.paginacao-receitas button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  background: #fff;
+  color: #375a44;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.paginacao-receitas button:hover:not(:disabled) {
+  border-color: #375a44;
+}
+
+.paginacao-receitas button.pagina-ativa {
+  background: #375a44;
+  color: #fff;
+  border-color: #375a44;
+}
+
+.paginacao-receitas button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* =========================
+   PESQUISA SEM RESULTADOS
+========================= */
+
+.receitas-vazias {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.receitas-vazias > i {
+  color: #677766;
+  font-size: 30px;
+}
+
+.receitas-vazias h3 {
+  margin: 12px 0 8px;
+  color: #375a44;
+  font-size: 17px;
+}
+
+.receitas-vazias p {
+  color: #777;
+  font-size: 13px;
+}
+
+.receitas-vazias button {
+  padding: 9px 14px;
+  background: #375a44;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .card-voce-sabia {
