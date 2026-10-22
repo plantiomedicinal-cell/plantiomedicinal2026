@@ -17,7 +17,6 @@ A proposta é conectar pessoas à natureza, incentivando práticas sustentáveis
 
 Este projeto está sendo desenvolvido por:
 
-- 👤 Aline
 - 👤 Brenda
 - 👤 Isabella  
 - 👤 Matheus  
