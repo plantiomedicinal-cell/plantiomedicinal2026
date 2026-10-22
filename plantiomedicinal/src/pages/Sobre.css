@@ -1,0 +1,134 @@
+.body{
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 0.5rem;
+}
+
+.inicioSobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    font-size: 22px;
+}
+
+.valores{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    
+}
+
+.topico{
+    border: 1px solid var(--cinzaGelo);
+    border-radius: 0.5rem;
+    width: 22rem ;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 0.5rem;
+}
+
+
+.titulo{
+    color: #386047;
+}
+
+.descrever{
+    text-align: center;
+    line-height: 1.3rem;
+
+}
+
+.descrever strong{
+    color: #334237;
+}
+
+.icone{
+    border: 1px solid var(--verdeMusgo);
+    border-radius: 2rem;
+    background-color: var(--verdeMusgo);
+    padding: 1rem;
+}
+
+.icone i{
+    color: white;
+}
+
+.box{
+    background-color: var(--verdeNevoa);
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+    height: 15rem;
+    width: 68%;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.box .descrever{
+    text-align: left;
+}
+
+.sobreInfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 4rem 0;
+    gap: 10rem;
+    cursor: default;
+}
+
+.sobreSpan{
+    transition: 0.8s;
+}
+
+.sobreSpan:hover{
+    transform: translateY(-5px);
+    box-shadow: none;
+}
+
+.textSpan{
+    color: var(--verdeMusgo);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textSpan b{
+    font-size: 38px;
+}
+
+.textSpan strong{
+    font-size: 20px;
+}
+
+.topicosSpan{
+    border-bottom: 1px solid var(--verdeMusgo);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chamada{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}

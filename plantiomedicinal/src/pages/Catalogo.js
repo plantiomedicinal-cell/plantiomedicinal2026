@@ -146,7 +146,7 @@ function Catalogo() {
   return (
     <main>
       <section className='inicioCatalogo'>
-        <h1>Conheça nosso <strong>CATÁLOGO COMPLETO!</strong></h1>
+        <h1>Conheça nosso <strong>CATÁLOGO</strong> completo!</h1>
         <p>
           Principais receitas medicinais reunindo preparos naturais como chás, xaropes e infusões, com orientações simples para uso no dia a dia. Uma forma prática de aproveitar os benefícios das plantas para o bem-estar.
         </p>
