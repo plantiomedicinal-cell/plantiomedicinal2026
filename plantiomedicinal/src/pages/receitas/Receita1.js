@@ -1,7 +1,6 @@
 import React from "react";
 import "./Receita1.css";
 
-
 function Receita1(){
     return(
         <main className="mainReceitas">
