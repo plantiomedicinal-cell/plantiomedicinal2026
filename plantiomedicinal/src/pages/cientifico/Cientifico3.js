@@ -17,7 +17,7 @@ function Cientifico3 () {
 
         <section className="informacoes">
 
-            <img className="imgCientifico" src="/img/pimentamacaco.webp" alt="Ora Pro Nobis" />
+            <img className="imgCientifico" src="/img/plantas/pimentamacaco.webp" alt="Ora Pro Nobis" />
             
             <div class="categoriasPlantas">
                 <h4>Principais Benefícios:</h4>

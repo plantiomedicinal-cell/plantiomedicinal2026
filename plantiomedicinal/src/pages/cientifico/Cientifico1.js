@@ -20,7 +20,7 @@ function Cientifico1 () {
 
         <section className="informacoes">
 
-            <img className="imgCientifico" src="/img/orapronobis.webp" alt="Ora Pro Nobis" />
+            <img className="imgCientifico" src="/img/plantas/orapronobis.webp" alt="Ora Pro Nobis" />
             
             <div class="categoriasPlantas">
                 <h4>Principais Benefícios:</h4>

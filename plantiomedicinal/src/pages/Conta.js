@@ -5,7 +5,7 @@ import './Conta.css';
 const conta = [
     {
         id: 1,
-        imagem: "/img/jardim2.jpg",
+        imagem: "/img/jardins/jardim2.jpg",
         titulo: "Cultivo de Hortelã em Vasos",
         descricao: "Dicas simples para manter a hortelã sempre fresca e pronta para preparar chás medicinais.",
         likes: 0,
@@ -13,7 +13,7 @@ const conta = [
     },
     {
         id: 2,
-        imagem: "/img/receita1.jpg",
+        imagem: "/img/receitas/receita1.jpg",
         titulo: "Receita Caseira para Tosses",
         descricao: "Aprenda a fazer um xarope 100% natural utilizando ingredientes simples da sua cozinha.",
         likes: 0,
@@ -21,7 +21,7 @@ const conta = [
     },
     {
         id: 3,
-        imagem: "/img/camomila.webp",
+        imagem: "/img/plantas/camomila.webp",
         titulo: "Como Secar Flores de Camomila",
         descricao: "Processo correto para desidratar as flores sem perder as propriedades calmantes.",
         likes: 0,
@@ -37,7 +37,7 @@ function Conta() {
 
                 <img
                     className="perfilFoto"
-                    src="/img/perfil1.png"
+                    src="/img/icons/perfil1.png"
                     alt="Foto de perfil"
                 />
 

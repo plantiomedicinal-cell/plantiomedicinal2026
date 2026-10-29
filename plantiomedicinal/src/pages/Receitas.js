@@ -13,133 +13,133 @@ const receitas = [
     nome: "Chá Calmante de Erva-Cidreira e Camomila",
     categoria: "Chás",
     descricao: "Uma infusão suave e aromática para momentos de tranquilidade.",
-    imagem: "/img/cha-camomila.jpg",
+    imagem: "/img/postagens/chacamomilaervacidreira.jpg",
     link: "/Receitas2"
   },
   {
     nome: "Xarope Natural de Gengibre com Mel",
     categoria: "Xaropes",
     descricao: "Conheça os ingredientes e o modo de preparo desta receita tradicional.",
-    imagem: "/img/xarope-mel.jpg",
+    imagem: "/img/postagens/xaropemelgengibre.jpg",
     link: "/Receitas8"
   },
   {
     nome: "Tônico Capilar de Alecrim",
     categoria: "Cuidados naturais",
     descricao: "Uma preparação de alecrim para sua rotina de cuidados capilares.",
-    imagem: "/img/alecrim.jpg",
+    imagem: "/img/postagens/tonicoalecrim.jpg",
     link: "/Receitas17"
   },
   {
     nome: "Chá de Hortelã",
     categoria: "Chás",
     descricao: "Aprenda a preparar uma infusão aromática de hortelã.",
-    imagem: "/img/hortela.jpg",
+    imagem: "/img/postagens/hortela.webp",
     link: "/Receitas1"
   },
   {
     nome: "Chá de Gengibre",
     categoria: "Chás",
     descricao: "Veja os ingredientes e as etapas de preparo desta infusão.",
-    imagem: "/img/gengibre.jpg",
+    imagem: "/img/postagens/chagengibre.jpg",
     link: "/Receitas3"
   },
   {
     nome: "Suco Detox Verde",
     categoria: "Sucos",
     descricao: "Uma combinação de ingredientes vegetais para variar sua alimentação.",
-    imagem: "/img/suco-detox.jpg",
+    imagem: "/img/postagens/sucoverde.jpg",
     link: "/Receitas4"
   },
   {
     nome: "Suco de Cenoura com Laranja",
     categoria: "Sucos",
     descricao: "Uma bebida com cenoura e laranja, fácil de preparar.",
-    imagem: "/img/suco-cenoura.jpg",
+    imagem: "/img/postagens/sucocenouralaranja.jpg",
     link: "/Receitas5"
   },
   {
     nome: "Suco de Abacaxi com Hortelã",
     categoria: "Sucos",
     descricao: "Uma combinação refrescante de frutas com hortelã.",
-    imagem: "/img/suco-abacaxi.jpg",
+    imagem: "/img/postagens/sucoabacaxihortela.jpg",
     link: "/Receitas6"
   },
   {
     nome: "Xarope de Mel com Limão",
     categoria: "Xaropes",
     descricao: "Confira os ingredientes e os cuidados desta preparação caseira.",
-    imagem: "/img/xarope-limao.jpg",
+    imagem: "/img/postagens/xaropemellimao.jpg",
     link: "/Receitas7"
   },
   {
     nome: "Xarope de Alho",
     categoria: "Xaropes",
     descricao: "Conheça esta preparação tradicional e seus cuidados de uso.",
-    imagem: "/img/xarope-alho.jpg",
+    imagem: "/img/postagens/xaropealho.jpg",
     link: "/Receitas9"
   },
   {
     nome: "Pomada de Babosa",
     categoria: "Pomadas",
     descricao: "Conheça uma preparação com babosa e os cuidados necessários.",
-    imagem: "/img/babosa.jpg",
+    imagem: "/img/postagens/pomadababosa.jpg",
     link: "/Receitas10"
   },
   {
     nome: "Pomada de Calêndula",
     categoria: "Pomadas",
     descricao: "Veja os ingredientes e as orientações desta preparação.",
-    imagem: "/img/calendula.jpg",
+    imagem: "/img/postagens/pomadacalendula.jpg",
     link: "/Receitas11"
   },
   {
     nome: "Pomada de Ervas",
     categoria: "Pomadas",
     descricao: "Conheça uma preparação tradicional à base de ervas.",
-    imagem: "/img/pomada-ervas.jpg",
+    imagem: "/img/postagens/pomadaervas.jpg",
     link: "/Receitas12"
   },
   {
     nome: "Banho de Camomila",
     categoria: "Banhos Medicinais",
     descricao: "Aprenda sobre o preparo de um banho com camomila.",
-    imagem: "/img/banho-camomila.jpg",
+    imagem: "/img/postagens/banhocamomila.jpg",
     link: "/Receitas13"
   },
   {
     nome: "Banho de Alecrim",
     categoria: "Banhos Medicinais",
     descricao: "Conheça o preparo e os cuidados de um banho de alecrim.",
-    imagem: "/img/banho-alecrim.jpg",
+    imagem: "/img/postagens/banhoalecrim.jpg",
     link: "/Receitas14"
   },
   {
     nome: "Banho de Erva-Cidreira",
     categoria: "Banhos Medicinais",
     descricao: "Veja como preparar um banho com erva-cidreira.",
-    imagem: "/img/erva-cidreira.jpg",
+    imagem: "/img/postagens/banhoervacidreira.jpg",
     link: "/Receitas15"
   },
   {
     nome: "Óleo de Hortelã",
     categoria: "Óleos Medicinais",
     descricao: "Conheça esta preparação e os cuidados para seu uso.",
-    imagem: "/img/oleo-hortela.jpg",
+    imagem: "/img/postagens/oleohortela.jpg",
     link: "/Receitas16"
   },
   {
     nome: "Óleo de Alecrim",
     categoria: "Óleos Medicinais",
     descricao: "Confira informações sobre a preparação de óleo de alecrim.",
-    imagem: "/img/oleo-alecrim.jpg",
+    imagem: "/img/postagens/oleoalecrim.jpg",
     link: "/Receitas17"
   },
   {
     nome: "Óleo de Lavanda",
     categoria: "Óleos Medicinais",
     descricao: "Conheça esta preparação e as orientações para uso seguro.",
-    imagem: "/img/oleo-lavanda.jpg",
+    imagem: "/img/postagens/oleolavanda.jpg",
     link: "/Receitas18"
   }
 ];

@@ -11,7 +11,7 @@ const plantasData = [
     id: 1,
     nomeP: "Ora Pro Nobis",
     nomeC: "Pereskia aculeata",
-    img: "/img/orapronobis.webp",
+    img: "/img/plantas/orapronobis.webp",
     link: "/cientifico1",
     tags: ["Imunidade", "Pele", "Comestível", "Perene", "Brasil", "Fácil", "Em hortas", "Trepadeira"]
   },
@@ -19,7 +19,7 @@ const plantasData = [
     id: 2,
     nomeP: "Alecrim",
     nomeC: "Salvia rosmarinus",
-    img: "/img/alecrim.webp",
+    img: "/img/plantas/alecrim.webp",
     link: "/cientifico2",
     tags: ["Digestão", "Imunidade", "Aromática", "Perene", "Resistente", "Europa", "Fácil", "Em vasos", "Arbustivo", "Médio"]
   },
@@ -27,7 +27,7 @@ const plantasData = [
     id: 3,
     nomeP: "Pimenta Macaco",
     nomeC: "Xylopia aromatica",
-    img: "/img/pimentamacaco.webp",
+    img: "/img/plantas/pimentamacaco.webp",
     link: "/cientifico3",
     tags: ["Dores", "Inflamação", "Aromática", "Brasil", "América do Sul", "Moderado", "Grande", "Arbustivo"]
   },
@@ -35,7 +35,7 @@ const plantasData = [
     id: 4,
     nomeP: "Moringa",
     nomeC: "Moringa oleifera",
-    img: "/img/moringa.webp",
+    img: "/img/plantas/moringa.webp",
     link: "/cientifico4",
     tags: ["Imunidade", "Comestível", "Resistente", "Ásia", "África", "Fácil", "Em jardins", "Grande"]
   },
@@ -43,7 +43,7 @@ const plantasData = [
     id: 5,
     nomeP: "Louro",
     nomeC: "Laurus nobilis L.",
-    img: "/img/louro.webp",
+    img: "/img/plantas/louro.webp",
     link: "/cientifico5",
     tags: ["Digestão", "Aromática", "Perene", "Europa", "Moderado", "Em vasos", "Médio", "Arbustivo"]
   },
@@ -51,7 +51,7 @@ const plantasData = [
     id: 6,
     nomeP: "Guaco",
     nomeC: "Mikania glomerata",
-    img: "/img/guaco.webp",
+    img: "/img/plantas/guaco.webp",
     link: "/cientifico6",
     tags: ["Respiração", "Inflamação", "Perene", "Brasil", "América do Sul", "Fácil", "Trepadeira"]
   },
@@ -59,7 +59,7 @@ const plantasData = [
     id: 7,
     nomeP: "Camomila",
     nomeC: "Matricaria chamomilla",
-    img: "/img/camomila.webp",
+    img: "/img/plantas/camomila.webp",
     link: "/cientifico7",
     tags: ["Relaxamento", "Sono", "Digestão", "Florífera", "Aromática", "Europa", "Fácil", "Em vasos", "Pequeno"]
   },
@@ -67,7 +67,7 @@ const plantasData = [
     id: 8,
     nomeP: "Hortelã",
     nomeC: "Mentha spicata",
-    img: "/img/hortela.webp",
+    img: "/img/plantas/hortela.webp",
     link: "/cientifico8",
     tags: ["Digestão", "Respiração", "Aromática", "Comestível", "Perene", "Ásia", "Europa", "Fácil", "Em vasos", "Rasteiro"]
   },
@@ -75,7 +75,7 @@ const plantasData = [
     id: 9,
     nomeP: "Boldo",
     nomeC: "Plectranthus barbatus",
-    img: "/img/boldo.webp",
+    img: "/img/plantas/boldo.webp",
     link: "/cientifico9",
     tags: ["Digestão", "Aromática", "Resistente", "África", "Fácil", "Em vasos", "Arbustivo", "Médio"]
   }

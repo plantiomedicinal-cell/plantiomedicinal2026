@@ -17,7 +17,7 @@ function Cientifico4 () {
 
         <section className="informacoes">
 
-            <img className="imgCientifico" src="/img/moringa.webp" alt="Ora Pro Nobis" />
+            <img className="imgCientifico" src="/img/plantas/moringa.webp" alt="Ora Pro Nobis" />
             
             <div class="categoriasPlantas">
                 <h4>Principais Benefícios:</h4>

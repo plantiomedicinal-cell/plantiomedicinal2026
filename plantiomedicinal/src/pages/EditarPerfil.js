@@ -15,7 +15,7 @@ function EditarPerfil() {
             <div className='editarFoto'>
                 <img
                         className="perfilFoto"
-                        src="/img/perfil1.png"
+                        src="/img/icons/perfil1.png"
                         alt="Foto de perfil"
                     />
 

@@ -17,7 +17,7 @@ function Cientifico5 () {
 
         <section className="informacoes">
 
-            <img className="imgCientifico" src="/img/louro.webp" alt="Ora Pro Nobis" />
+            <img className="imgCientifico" src="/img/plantas/louro.webp" alt="Ora Pro Nobis" />
             
             <div class="categoriasPlantas">
                 <h4>Principais Benefícios:</h4>
