@@ -1,5 +1,16 @@
+.mainCientifico{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+
 .borda{
-  margin: 2rem 15rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
 }
@@ -7,7 +18,7 @@
 .containerCientifico{
     display: flex;
     flex-direction:column;
-    padding: 0 20rem;
+    align-items: center;
 }
 
 .containerCientifico h1{
@@ -31,14 +42,13 @@
 
 .imgCientifico{
     background-color: var(--cinzaGelo);
-    margin: 3rem;
     border-radius: 2rem;
     height: 20rem;
 }
 
 .informacoes{
     display: flex;
-    margin: 2rem 3rem 0 6rem;
+    align-items: center;
 }
 
 .categoriasPlantas{
@@ -147,4 +157,23 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+@media screen and (max-width:1280px){
+
+  .informacoes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+}
+
+@media screen and (max-width:1130px){
+
+  .borda{
+    width: 100%;
+    margin: 0;
+  }
+
 }

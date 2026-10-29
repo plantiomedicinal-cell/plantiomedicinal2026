@@ -421,3 +421,36 @@
     flex-direction: column;
     padding-top: 2rem;
 }
+
+@media screen and (max-width: 1076px) {
+    
+    .inicioPostagens{
+        font-size: 1.5rem;
+    }
+
+      .gradePostagens{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 874px){
+
+  
+    .cabecalhoPostagens p{
+       display: none;
+}
+}
+
+@media screen and (max-width: 640px){
+
+    .gradePostagens{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecalhoPostagens h1{
+        font-size: 1rem;
+    }
+}

@@ -4,7 +4,7 @@ import './Cientifico.css'
 
 function Cientifico7 () {
     return(
-        <main>
+        <main className="mainCientifico">
 
             <div className="borda">
 
