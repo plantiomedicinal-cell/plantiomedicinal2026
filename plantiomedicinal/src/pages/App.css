@@ -413,6 +413,11 @@ footer .infoDivisao{
     border: none;
 }
 
+.divisao5{
+    border: 1px solid var(--cinzaBorda);
+    margin: 2rem 0;
+}
+
 /* =========================
    CARDS - INDEX
 ========================= */

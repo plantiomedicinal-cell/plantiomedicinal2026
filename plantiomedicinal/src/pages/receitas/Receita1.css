@@ -5,7 +5,7 @@
    font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
+.mainReceitas{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +70,7 @@ main{
     border-radius: 10px;
 }
 
-hr{
+.divisao5{
     border: 1px solid var(--cinzaBorda);
     margin: 2rem 0;
 }

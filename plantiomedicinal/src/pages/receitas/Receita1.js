@@ -1,9 +1,10 @@
 import React from "react";
 import "./Receita1.css";
 
+
 function Receita1(){
     return(
-        <main>
+        <main className="mainReceitas">
             
             <section className="principal">
                 <div className="nomeReceita">
@@ -39,7 +40,7 @@ function Receita1(){
                     </div>
                 </div>
 
-                <hr></hr>
+                <hr className="divisao5" />
 
                     <h2 className="titulopreparo">Ingredientes</h2>
                 <section className="cardingredientes">
