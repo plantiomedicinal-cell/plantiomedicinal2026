@@ -1,0 +1,100 @@
+.mainRegistro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    padding: 3rem 0;
+}
+
+.registro {
+    padding: 2rem 2rem;
+    width: 30%;
+    box-shadow: var(--sombraCard);
+    border-radius: 16px;
+}
+
+.registro h1 {
+    padding-top: 1rem;
+    color: var(--verdeMusgo);
+    font-size: 22px;
+}
+
+.registro p{
+    padding-bottom: 1rem;
+    font-size: 15px;
+}
+
+.registroForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.registroInfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.1rem;
+}
+
+.registroInfo .form-registro {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #333333;
+    background-color: #f8f8f8;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-registro:focus {
+    border-color: #888888;
+    background-color: white;
+}
+
+.entrar {
+    background-color: var(--verdeMusgo);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    transition: 1s;
+}
+
+.entrar:hover {
+    background-color: white;
+    color: var(--verdeMusgo);
+    border: 1px solid var(--verdeMusgo);
+    cursor: pointer;
+}
+
+.agrupamentoBotoes {
+    background-color: var(--verdeNevoa);
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.login {
+    background-color: var(--verdeMusgo);
+    width: 50%;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    transition: 1s;
+}
+
+.cadastro{
+    background-color: var(--verdeNevoa);
+    width: 50%;
+    color: var(--textoSecundario);
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    transition: 1s;
+}
