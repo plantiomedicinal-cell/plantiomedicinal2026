@@ -1,5 +1,6 @@
 import React from "react";
-import "./Receita1.css";
+import { Link } from "react-router-dom";
+import "./Receita.css";
 
 function Receita1(){
     return(
@@ -7,31 +8,34 @@ function Receita1(){
             
             <section className="principal">
                 <div className="nomeReceita">
-
+                    
+                    <Link to="/receitas">
                     <button className="voltar">
                       <i class="bi bi-caret-left-fill"></i>
                       <b> Voltar para a lista de receitas.</b>
                     </button>
-                    <h1>
+                    </Link>
+
+                    <h1 className="tituloreceita">
                         Chá de Hortelã
                     </h1>
-                    <p>Publicado por Ana - Tempo de preparo: 10min - Dificuldade: Fácil</p>
+                    <p className="descricaopublicacao">Publicado por Ana - Tempo de preparo: 10min - Dificuldade: Fácil</p>
                 </div>
 
                 <div className="cardscha">
                     <div className="fotoCha" id="filho1">
                     </div>
                     <div className="rendimento" id="filho2">
-                        <h4>Rendimento</h4>
-                        <p>1 xícaras</p>
+                        <h4 className="cardsh4">Rendimento</h4>
+                        <p className="cardsp">1 xícara</p>
                     </div>
                     <div className="categoria" id="filho3">
-                        <h4>Categoria</h4>
-                        <p>Infusão herbal</p>
+                        <h4 className="cardsh4">Categoria</h4>
+                        <p className="cardsp">Infusão de Ervas</p>
                     </div>
                     <div className="beneficios" id="filho4">
-                        <h4>Benefícios</h4>
-                        <ul>
+                        <h4 className="cardsh4">Benefícios</h4>
+                        <ul className="cardsul">
                             <li>Melhora a digestão</li>
                             <li>Alivia gasesa e cólicas</li>
                             <li>Combate máu hálito</li>

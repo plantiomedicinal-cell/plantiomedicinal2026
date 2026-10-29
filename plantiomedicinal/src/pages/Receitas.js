@@ -10,32 +10,18 @@ import CampoPesquisa from "../components/CampoPesquisa";
 // categoria, descrição, imagem e link para a página dela.
 const receitas = [
   {
-    nome: "Chá Calmante de Erva-Cidreira e Camomila",
-    categoria: "Chás",
-    descricao: "Uma infusão suave e aromática para momentos de tranquilidade.",
-    imagem: "/img/postagens/chacamomilaervacidreira.jpg",
-    link: "/Receitas2"
-  },
-  {
-    nome: "Xarope Natural de Gengibre com Mel",
-    categoria: "Xaropes",
-    descricao: "Conheça os ingredientes e o modo de preparo desta receita tradicional.",
-    imagem: "/img/postagens/xaropemelgengibre.jpg",
-    link: "/Receitas8"
-  },
-  {
-    nome: "Tônico Capilar de Alecrim",
-    categoria: "Cuidados naturais",
-    descricao: "Uma preparação de alecrim para sua rotina de cuidados capilares.",
-    imagem: "/img/postagens/tonicoalecrim.jpg",
-    link: "/Receitas17"
-  },
-  {
     nome: "Chá de Hortelã",
     categoria: "Chás",
     descricao: "Aprenda a preparar uma infusão aromática de hortelã.",
     imagem: "/img/postagens/hortela.webp",
     link: "/Receitas1"
+  },
+  {
+    nome: "Chá Calmante de Erva-Cidreira e Camomila",
+    categoria: "Chás",
+    descricao: "Uma infusão suave e aromática para momentos de tranquilidade.",
+    imagem: "/img/postagens/chacamomilaervacidreira.jpg",
+    link: "/Receitas2"
   },
   {
     nome: "Chá de Gengibre",
@@ -71,6 +57,13 @@ const receitas = [
     descricao: "Confira os ingredientes e os cuidados desta preparação caseira.",
     imagem: "/img/postagens/xaropemellimao.jpg",
     link: "/Receitas7"
+  },
+  {
+    nome: "Xarope Natural de Gengibre com Mel",
+    categoria: "Xaropes",
+    descricao: "Conheça os ingredientes e o modo de preparo desta receita tradicional.",
+    imagem: "/img/postagens/xaropemelgengibre.jpg",
+    link: "/Receitas8"
   },
   {
     nome: "Xarope de Alho",

@@ -20,13 +20,13 @@ import CriarPostagens from './pages/CriarPostagens';
 
 // receitas
 import Receita1 from './pages/receitas/Receita1';
-// import Receita2 from './pages/receitas/Receita2';
+import Receita2 from './pages/receitas/Receita2';
 // import Receita3 from './pages/receitas/Receita3';
 // import Receita4 from './pages/receitas/Receita4';
 // import Receita5 from './pages/receitas/Receita5';
 // import Receita6 from './pages/receitas/Receita6';
 // import Receita7 from './pages/receitas/Receita7';
-// import Receita8 from './pages/receitas/Receita8';
+import Receita8 from './pages/receitas/Receita8';
 // import Receita9 from './pages/receitas/Receita9';
 // import Receita10 from './pages/receitas/Receita10';
 // import Receita11 from './pages/receitas/Receita11';
@@ -74,6 +74,8 @@ function AnimatedRoutes() {
 
         {/* Receitas */}
         <Route path="/receitas1" element={<PageTransition><Receita1 /></PageTransition>} />
+        <Route path="/receitas2" element={<PageTransition><Receita2 /></PageTransition>} />
+        <Route path="/receitas8" element={<PageTransition><Receita8 /></PageTransition>} />
 
         {/* Científico */}
         <Route path="/cientifico1" element={<PageTransition><Cientifico1 /></PageTransition>} />

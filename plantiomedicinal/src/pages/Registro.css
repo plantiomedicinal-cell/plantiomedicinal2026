@@ -79,7 +79,7 @@
     border-radius: 8px;
 }
 
-.login {
+.agrupamentoBotoes .login {
     background-color: var(--verdeMusgo);
     width: 50%;
     color: white;
@@ -89,7 +89,7 @@
     transition: 1s;
 }
 
-.cadastro{
+.agrupamentoBotoes .cadastro{
     background-color: var(--verdeNevoa);
     width: 50%;
     color: var(--textoSecundario);
