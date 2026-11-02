@@ -5,7 +5,7 @@ import './Catalogo.css';
 import Footer from '../components/Footer';
 import CampoPesquisa from '../components/CampoPesquisa';
 
-// 1. Array com os dados das plantas (adicione ou ajuste as propriedades conforme necessário)
+// Array com os dados das plantas (adicione ou ajuste as propriedades conforme necessário)
 const plantasData = [
   {
     id: 1,
@@ -144,7 +144,7 @@ function Catalogo() {
   });
 
   return (
-    <main>
+    <main className='paginaCatalogo'>
       <section className='inicioCatalogo'>
         <h1>Conheça nosso <strong>CATÁLOGO</strong> completo!</h1>
         <p>

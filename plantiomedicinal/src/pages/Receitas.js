@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Receitas.css";
@@ -439,12 +438,10 @@ function Receitas() {
 
       </section>
 
-      {/* Rodapé reutilizado de outro componente do projeto. */}
       <Footer />
 
     </main>
   );
 }
 
-// Permite importar o componente Receitas em outros arquivos.
 export default Receitas;

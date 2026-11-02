@@ -1,6 +1,6 @@
-a{
-    text-decoration: none;
-}
+/* =========================
+   PAGINA DAS RECEITAS
+========================= */
 
 .inicioReceita{
     display: flex;
@@ -129,7 +129,6 @@ a{
     color: #888;
 }
 
-/* Botão de remover (X) individual */
 .btnRemover {
     position: static;
     transform: none;
@@ -142,11 +141,6 @@ a{
 .btnRemover:hover {
     color: #d9534f;
 }
-
-hr{
-    border: none;
-}
-
 
 /* =========================
    CONTAINER DOS CARDS

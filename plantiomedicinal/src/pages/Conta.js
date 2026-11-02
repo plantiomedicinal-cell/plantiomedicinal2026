@@ -31,48 +31,41 @@ const conta = [
 
 function Conta() {
     return (
-        <div className="perfilContainer">
-
-            <div className="perfilTopo">
-
+        <main className="paginaPerfil">
+            <section className="perfilTopo">
                 <img
                     className="perfilFoto"
                     src="/img/icons/perfil1.png"
-                    alt="Foto de perfil"
+                    alt="Foto de perfil do usuário"
                 />
 
                 <div className="perfilInfo">
-
                     <div className="infoSeparacao">
                         <div>
-                            <h1>Usuario</h1>
+                            <h1>Usuário</h1>
                             <span className="apelido">@nomedousuario</span>
                         </div>
 
                         <Link to="/editarperfil">
-                        <button>Editar Perfil</button>
+                            <button className="botaoEditarPerfil">Editar Perfil</button>
                         </Link>
                     </div>
-
                 </div>
-            </div>
+            </section>
 
-            <div className="meusInfo">
+            <section className="meusInfo">
                 <h2>Minhas Publicações</h2>
-                <hr className="divisao3" />
 
                 <div className="gradePerfil">
                     {conta.map((post) => (
                         <article className="cardPerfil" key={post.id}>
-
                             <img
                                 className="imagemPerfil"
                                 src={post.imagem}
-                                alt={post.titulo}
+                                alt={`Ilustração da postagem: ${post.titulo}`}
                             />
 
                             <div className="conteudoPerfil">
-
                                 <h3>{post.titulo}</h3>
 
                                 <p className="textoPerfil">
@@ -80,32 +73,28 @@ function Conta() {
                                 </p>
 
                                 <div className="interacoesPerfil">
-
-                                    <button>
+                                    <button aria-label="Curtir publicação">
                                         <i className="bi bi-heart"></i>
-                                        {post.likes}
+                                        <span>{post.likes}</span>
                                     </button>
 
-                                    <button>
+                                    <button aria-label="Ver comentários da publicação">
                                         <i className="bi bi-chat"></i>
-                                        {post.comentarios}
+                                        <span>{post.comentarios}</span>
                                     </button>
-
                                 </div>
                             </div>
-
                         </article>
                     ))}
                 </div>
-            </div>
-                    
+            </section>
+                
             <div className="criarPostagens">
                 <Link to="/criarpostagens">
-                <button>+ Criar novas postagens</button>
+                    <button className="botaoCriarPost">+ Criar novas postagens</button>
                 </Link>
             </div>
-
-        </div>
+        </main>
     );
 }
 
