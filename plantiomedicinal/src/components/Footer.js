@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="App-footer">
+    <footer>
 
         <div className='infoDivisao'>
         <div className='separacao'>
@@ -25,10 +25,6 @@ function Footer() {
 
             <Link to="/catalogo">
             Catálogo
-            </Link>
-
-            <Link to="/comunidade">
-            Comunidade
             </Link>
             </div>
 

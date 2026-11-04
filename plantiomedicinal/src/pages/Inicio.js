@@ -6,8 +6,9 @@ import Footer from '../components/Footer';
 
 function Inicio() {
   return (
+    <>
     <main>
-      <div className="info">
+      <section className="info">
         <div className="infoTexto">
           <h1>
             Faça seu jardim <br />
@@ -22,45 +23,42 @@ function Inicio() {
             de plantio.
           </p>
 
-<div className="infoSpans">
+      <div className="informacoes">
+          <div className="infoSpan">
+              <div className="iconeSpan">
+                  <i className="bi bi-leaf"></i>
+              </div>
 
-    <div className="infoSpan">
-        <div className="iconeSpan">
-            <i className="bi bi-leaf"></i>
-        </div>
+              <div className="textoSpan">
+                  <b>+6</b>
+                  <span>espécies</span>
+              </div>
+          </div>
 
-        <div className="textoSpan">
-            <b>+6</b>
-            <span>espécies</span>
-        </div>
-    </div>
+          <div className="infoSpan">
+              <div className="iconeSpan">
+                  <i class="bi bi-cup-hot"></i>
+              </div>
 
-    <div className="infoSpan">
-        <div className="iconeSpan">
-            <i class="bi bi-cup-hot"></i>
-        </div>
-
-        <div className="textoSpan">
-            <b>+10</b>
-            <span>receitas</span>
-        </div>
-    </div>
-</div>
-</div>
+              <div className="textoSpan">
+                  <b>+10</b>
+                  <span>receitas</span>
+              </div>
+          </div>
+      </div>
+      </div>
 
       <div className="infoImagem">
           <img src="/img/icons/personagem1.png" alt="Logo" />
         </div>
-      </div>
+      </section>
 
-      <hr className="divisao1" />
-      <hr className="divisao2" />
+      <div className="divisao1" />
+      <div className="divisao2" />
 
       <article className="containerCards">
         <section className="catalogoPrevia">
-          <div className="catalogo">
-            <h1 className="descricao">Conheça algumas espécies do nosso catálogo</h1>
-          </div>
+            <h1 className="previaTitulo-catalogo">Conheça algumas espécies do nosso catálogo</h1>
 
           <div className="cards">
             {/* CARD 1 */}
@@ -140,15 +138,17 @@ function Inicio() {
         </section>
       </article>
 
-      <hr className="divisao4" />
+      <div className="divisao4" />
 
-      <div className="descubraTitulo">
-        <h2 className="receitasPrevia">Descubra novas<br/> <strong>receitas.</strong></h2>
-      
+      <section className="receitasPrevia">
+        <div className="receitasCabecalho">
+          <h2 className="previaTitulo-receita">
+            Descubra novas<br/> <strong>receitas.</strong>
+          </h2>
 
-        <div class="textoReceita">
-        <p>Plantas Medicinais podem ser ultilizadas de diversas formas para promover saúde e bem-estar, sendo uma prática tradicional que atravessa gerações. Com elas, é possível preparar receitas naturais como chás, infusões, xaropes, pomadas, e até banhos terapêuticos, cada um com finalidades específicas</p>
-        </div>
+          <div class="textoReceita">
+          <p>Plantas Medicinais podem ser ultilizadas de diversas formas para promover saúde e bem-estar, sendo uma prática tradicional que atravessa gerações. Com elas, é possível preparar receitas naturais como chás, infusões, xaropes, pomadas, e até banhos terapêuticos, cada um com finalidades específicas</p>
+          </div>
         </div>
 
         <div class="trioImagem">
@@ -167,34 +167,16 @@ function Inicio() {
                 <img src="./img/icons/livro.png" alt="Imagem Livro"/>
                 <h2 class="textoTrio3">Mostre seu Resultado</h2>
             </div>
-
-        </div>
-
-        <hr className="divisao1" />
-        <hr className="divisao2" />
-
-        <div className="containerPostagens">
-        <div className="postagensTexto">
-          <h1>
-            Compartilhe o seu <strong>PLANTIO MEDICINAL</strong> conosco, na comunidade!
-          </h1>
-
-          <p>
-            Mostre o crescimento das plantas, os
-            cuidados no dia a dia e a beleza de
-            cultivar a natureza. Um espaço para
-            trocar experiências, ideias e
-            inspirações sobre jardinagem de
-            forma simples e natural.
-          </p>
-
-          <Galeria />
-
           </div>
-        </div>
-        <Footer />
+        </section>
+
+        <div className="divisao1" />
+        <div className="divisao2" />
+
     </main>
 
+    <Footer />
+    </>
   );
 }
 

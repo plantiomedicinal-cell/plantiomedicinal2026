@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const aplicacao = ReactDOM.createRoot(document.getElementById('plantio-medicinal'));
+aplicacao.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>

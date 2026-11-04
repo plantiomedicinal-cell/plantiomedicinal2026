@@ -1,10 +1,8 @@
 // src/App.jsx
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
 
 // componentes
 import Header from './components/Header';
-import PageTransition from './components/PageLayout';
 
 // navegação
 import Inicio from './pages/Inicio';
@@ -53,53 +51,41 @@ import Cientifico9 from './pages/cientifico/Cientifico9';
 // estilo
 import './App.css';
 
-function AnimatedRoutes() {
-  const location = useLocation();
-
-  return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        {/* Navegação principal */}
-        <Route path="/" element={<PageTransition><Inicio /></PageTransition>} />
-        <Route path="/sobre" element={<PageTransition><Sobre /></PageTransition>} />
-        <Route path="/receitas" element={<PageTransition><Receitas /></PageTransition>} />
-        <Route path="/catalogo" element={<PageTransition><Catalogo /></PageTransition>} />
-        <Route path="/comunidade" element={<PageTransition><Comunidade /></PageTransition>} />
-        <Route path="/conta" element={<PageTransition><Conta /></PageTransition>} />
-        <Route path="/registro" element={<PageTransition><Registro /></PageTransition>} />
-
-        {/* Navegação secundária */}
-        <Route path="/editarperfil" element={<PageTransition><EditarPerfil /></PageTransition>} />
-        <Route path="/criarpostagens" element={<PageTransition><CriarPostagens /></PageTransition>} />
-
-        {/* Receitas */}
-        <Route path="/receitas1" element={<PageTransition><Receita1 /></PageTransition>} />
-        <Route path="/receitas2" element={<PageTransition><Receita2 /></PageTransition>} />
-        <Route path="/receitas8" element={<PageTransition><Receita8 /></PageTransition>} />
-
-        {/* Científico */}
-        <Route path="/cientifico1" element={<PageTransition><Cientifico1 /></PageTransition>} />
-        <Route path="/cientifico2" element={<PageTransition><Cientifico2 /></PageTransition>} />
-        <Route path="/cientifico3" element={<PageTransition><Cientifico3 /></PageTransition>} />
-        <Route path="/cientifico4" element={<PageTransition><Cientifico4 /></PageTransition>} />
-        <Route path="/cientifico5" element={<PageTransition><Cientifico5 /></PageTransition>} />
-        <Route path="/cientifico6" element={<PageTransition><Cientifico6 /></PageTransition>} />
-        <Route path="/cientifico7" element={<PageTransition><Cientifico7 /></PageTransition>} />
-        <Route path="/cientifico8" element={<PageTransition><Cientifico8 /></PageTransition>} />
-        <Route path="/cientifico9" element={<PageTransition><Cientifico9 /></PageTransition>} />
-      </Routes>
-    </AnimatePresence>
-  );
-}
-
 function App() {
   return (
-    <div className="App">
       <BrowserRouter>
         <Header />
-        <AnimatedRoutes />
+        <Routes>
+          {/* Navegação principal */}
+          <Route path="/" element={<Inicio />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/receitas" element={<Receitas />} />
+          <Route path="/catalogo" element={<Catalogo />} />
+          <Route path="/comunidade" element={<Comunidade />} />
+          <Route path="/conta" element={<Conta />} />
+          <Route path="/registro" element={<Registro />} />
+
+          {/* Navegação secundária */}
+          <Route path="/editarperfil" element={<EditarPerfil />} />
+          <Route path="/criarpostagens" element={<CriarPostagens />} />
+
+          {/* Receitas */}
+          <Route path="/receitas1" element={<Receita1 />} />
+          <Route path="/receitas2" element={<Receita2 />} />
+          <Route path="/receitas8" element={<Receita8 />} />
+
+          {/* Científico */}
+          <Route path="/cientifico1" element={<Cientifico1 />} />
+          <Route path="/cientifico2" element={<Cientifico2 />} />
+          <Route path="/cientifico3" element={<Cientifico3 />} />
+          <Route path="/cientifico4" element={<Cientifico4 />} />
+          <Route path="/cientifico5" element={<Cientifico5 />} />
+          <Route path="/cientifico6" element={<Cientifico6 />} />
+          <Route path="/cientifico7" element={<Cientifico7 />} />
+          <Route path="/cientifico8" element={<Cientifico8 />} />
+          <Route path="/cientifico9" element={<Cientifico9 />} />
+        </Routes>
       </BrowserRouter>
-    </div>
   );
 }
 

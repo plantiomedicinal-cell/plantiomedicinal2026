@@ -44,10 +44,48 @@
 }
 
 /* =========================
+   TAGS GERAIS
+========================= */
+
+h1 {
+    font-size: 2.8rem;
+    color: var(--textoPrincipal);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: var(--textoPrincipal);
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--verdeMusgo);
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--verdeOliva);
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--textoSecundario, #5c6660);
+    line-height: 1.6;
+}
+
+/* =========================
    SPANS
 ========================= */
 
-.infoSpans {
+.informacoes {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -141,7 +179,7 @@ a {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0 5rem;
     height: 5rem;
     width: 100%;
@@ -162,13 +200,13 @@ nav a:hover {
     color: var(--verdeMenta);
 }
 
-.menu {
+.navegacao {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-.botaoMenu {
+.botaoNavegacao {
     border: none;
     background-color: transparent;
     display: none;
@@ -177,33 +215,20 @@ nav a:hover {
     cursor: pointer;
 }
 
-.botaoMenu div {
+.botaoNavegacao div {
     width: 1.8rem;
     height: 2px;
     background-color: white;
     transition: background 0.5s;
 }
 
-.botaoMenu:hover div {
+.botaoNavegacao:hover div {
     background-color: yellow;
 }
 
-.perfilMenu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: var(--verdeMusgo);
+.navegacao i {
+    font-size: 1.5rem;
 }
-
-.perfilMenu i {
-    font-size: 2rem;
-}
-
-.perfilMenu:hover {
-    color: var(--verdeOliva);
-}
-
 
 /* =========================
    RODAPÉ
@@ -282,41 +307,28 @@ footer .infoDivisao {
     font-size: 2rem;
     align-items: center;
     text-align: left;
-    color: black;
     justify-content: space-between;
-    margin-left: 2rem;
     padding: 2rem 25rem 0 25rem;
-    background-color: white;
-
-    background-image: radial-gradient(
-        rgba(55, 90, 68, 0.12) 1px,
-        transparent 1px
-    );
-
-    background-size: 22px 22px;
 }
 
 .infoTexto {
-    font-size: 1.8rem;
     margin-top: 2rem;
-    max-width: 50%;
-    color: black;
 }
 
 .infoTexto p {
     font-size: 1rem;
-    text-align: left;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    text-align: justify;
+    width: 70%;
 }
 
 .infoImagem {
     display: flex;
-    flex: 1;
     justify-content: flex-end;
 }
 
 .infoImagem img {
-    width: 90%;
+    width: 30rem;
     height: auto;
 }
 
@@ -398,10 +410,6 @@ footer .infoDivisao {
    DIVISÕES
 ========================= */
 
-hr{
-    border: none;
-}
-
 .divisao1 {
     background-color: var(--cinzaGelo);
     height: 4rem;
@@ -446,7 +454,7 @@ hr{
     gap: 1.5rem;
 }
 
-.catalogo .descricao {
+.previaTitulo-catalogo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -511,16 +519,23 @@ hr{
    RECEITAS - INDEX
 ========================= */
 
-.descubraTitulo {
+.receitasPrevia {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
     padding: 4rem;
     gap: 3rem;
 }
 
-.receitasPrevia {
+.receitasCabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.previaTitulo-receita {
     text-align: start;
     font-size: 3rem;
     max-width: 30%;
@@ -708,7 +723,7 @@ nav a {
     display: none;
 }
 
-.botaoMenu {
+.botaoNavegacao {
     display: flex;
 }
 
