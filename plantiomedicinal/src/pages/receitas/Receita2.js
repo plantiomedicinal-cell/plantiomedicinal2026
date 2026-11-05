@@ -19,7 +19,6 @@ function Receita2(){
                     <h1 className="tituloreceita">
                         Chá de Erva-Cidreira e Camomila
                     </h1>
-                    <p className="descricaopublicacao">Publicado por Gabriela - Tempo de preparo: 10min - Dificuldade: Fácil</p>
                 </div>
 
                 <div className="cardscha">

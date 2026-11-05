@@ -39,7 +39,6 @@
 
 .cardscha{
     height: auto;
-    min-height: auto;
     gap: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -71,16 +70,6 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-    max-width: 100%;
-    overflow: hidden; 
-    word-break: break-word; 
-    overflow-wrap: break-word;
-}
-
-p, span, h4, li {
-    max-width: 100%;
-    word-break: break-word;
-    overflow-wrap: break-word;
 }
 
 .fotoCha, .categoria, .rendimento, .beneficios{
@@ -134,39 +123,9 @@ p, span, h4, li {
     margin-top: 1rem;
 }
 
-.modopreparo{
-    display: flex;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-}
-
-.modopreparo ol{
-    list-style: none;
-    counter-reset: meu-contador;
-}
-
 .modopreparo ol li{
-    counter-increment: meu-contador;
     margin-bottom: 12px;
-    position: relative;
-    display: flex;
-    align-items: flex-start;
     line-height: 1.5;
-}
-
-.modopreparo ol li::before{
-    content: counter(meu-contador);
-    background-color: var(--verdeMusgo);
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    text-align: center;
-    border-radius: 50%;
-    margin-right: 12px;
-    font-size: 13px
 }
 
 .dica{
@@ -175,13 +134,10 @@ p, span, h4, li {
     border: 1px solid var(--pessegoBorda);
     border-radius: 10px;
     background-color: var(--amareloPastel);
-    height: 4rem;
     align-items: center;
-    padding: 0 2rem;
     color: var(--ouroVelho);
     gap: 0.3rem;
 }
-
 
 @media screen and (max-width: 1060px){
     .cardscha{
@@ -201,25 +157,18 @@ p, span, h4, li {
         display: none;
     }
 
-
-    .modopreparo ol li{
-    display: block;
-    }
-
     .descricaopublicacao{
         display: none;
     }
 }
 
-
 @media screen and (max-width:660px) {
    .principal{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color:white;
-    padding:0;
-
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color:white;
+        padding:0;
 } 
     .dica{
         display: none;
@@ -228,13 +177,12 @@ p, span, h4, li {
 
 @media screen and (max-width:150px) {
     .categoria h4, .categoria p, .rendimento h4, .rendimento p, .beneficios h4, .beneficios ul{
-    flex-direction: column;
-    border-radius: 10px;
+        flex-direction: column;
+        border-radius: 10px;
     }
 
     .principal{
-    width: auto;
-   
+        width: auto;
     }
 
     .tituloreceita{
@@ -247,8 +195,8 @@ p, span, h4, li {
     }
 
     .cardscha{
-    height: 100%;
-    width: 100%;
+        height: 100%;
+        width: 100%;
     }
    
 }

@@ -19,7 +19,6 @@ function Receita8(){
                     <h1 className="tituloreceita">
                         Xarope natural de Gengibre com Mel
                     </h1>
-                    <p className="descricaopublicacao">Publicado por Gabriela - Tempo de preparo: 10min - Dificuldade: Fácil</p>
                 </div>
 
                 <div className="cardscha">

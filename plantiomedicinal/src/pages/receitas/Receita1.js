@@ -19,7 +19,6 @@ function Receita1(){
                     <h1 className="tituloreceita">
                         Chá de Hortelã
                     </h1>
-                    <p className="descricaopublicacao">Publicado por Ana - Tempo de preparo: 10min - Dificuldade: Fácil</p>
                 </div>
 
                 <div className="cardscha">
@@ -57,7 +56,7 @@ function Receita1(){
                     <h2 className="titulopreparo">Modo de Preparo</h2>
                 <section className="modopreparo">
                     <ol>
-                        <li>Lave bem as folhas de hortelã em agua corrente para remover sujeira ou impurezas</li>
+                        <li>Lave bem as folhas de hortelã em água corrente para remover sujeira ou impurezas</li>
                         <li>Aqueça a água até quase ferver. Evite ferver as folhas junto com a água, pois isso pode amargar o chá e destruir os óleos essenciais</li>
                         <li>Despeje a água quente sobre as folhas em uma xícara ou bule resistente ao calor</li>
                         <li>Tampe e deixe em infusão por 5 a 10 minutos, dependendo da intensidade desejada.</li>
