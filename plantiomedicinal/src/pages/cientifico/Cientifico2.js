@@ -1,81 +1,67 @@
+
 import React from "react";
-import { Link } from "react-router-dom";
 import './Cientifico.css'
 
 function Cientifico2 () {
     return(
-        <main className="mainCientifico">
+        <main>
 
-        <div className="borda">
+            <section className="containerCientifico">            
+                <div className="cientifico">
+                    <h1>ALECRIM</h1>
+                    <p className="nomeC">(Salvia rosmarinus)</p>
+                </div>
 
-    <article className="containerCientifico">            
-        <section className="comeco">
-            <h1>ALECRIM</h1>
-            <p className="nomeC">(Salvia rosmarinus)</p>
-        </section>
+                <section className="informacoes">
 
+                    <img className="imgCientifico" src="/img/plantas/alecrim.webp" alt="Alecrim" />
+                    
+                    <div className="categoriasPlantas">
+                        <h2>Principais Benefícios:</h2>
+                        <span className="categoriaItem">Imunológica</span>
+                        <span className="categoriaItem">Cuidado da Pele</span>
+                        <span className="categoriaItem">Cognição e Foco</span>
+                    </div>
+                </section>  
 
+                <section className="blocoC">
+                    <h1>Estudo Científico do Alecrim</h1> 
+                    
+                    <p>O alecrim (Salvia rosmarinus) é um subarbusto aromático da família Lamiaceae, originário da região do Mediterrâneo.</p>
 
-        <section className="informacoes">
+                    <div className="blocoT">
+                        <h2>Classificação Botânica</h2>
 
-            <img className="imgCientifico" src="/img/plantas/alecrim.webp" alt="Ora Pro Nobis" />
-            
-            <div class="categoriasPlantas">
-                <h4>Principais Benefícios:</h4>
-                <span class="categoriaItem">Imunológica</span>
-                <span class="categoriaItem">Cuidado da Pele</span>
-                <span class="categoriaItem">Cognição e Foco</span>
-            </div>
+                        <ul className="topicos">
+                            <li><strong>Nome científico:</strong> Salvia rosmarinus</li>
+                            <li><strong>Família:</strong> Lamiaceae</li>
+                            <li><strong>Origem:</strong> Região do Mediterrâneo</li>
+                        </ul>
+                    </div>
 
-    
-        </section>
-    </article>  
+                    <div className="blocoA">
+                        <h2>Composição Química</h2>
 
-    <section className="blocoC">
-       <h1 className="estudos">Estudo Científico do alecrim</h1> 
-       
-       <p>O alecrim (Salvia rosmarinus) é um subarbusto aromático da família Lamiaceae, originário da região do Mediterrâneo.</p>
+                        <ul className="topicos">
+                            <li><strong>Ácido Carnósico e Rosmarínico:</strong> Antioxidantes naturais.</li>
+                            <li><strong>1,8-Cineol e Cânfora:</strong> Compostos do óleo essencial com ação antimicrobiana.</li>
+                            <li><strong>Ácido Ursólico:</strong> Ativo com ação anti-inflamatória.</li>
+                        </ul>
+                    </div>
 
-    <div className="blocoT">
-        <h2 className="estudos">Classificação Botânica</h2>
+                    <div className="blocoA">
+                        <h2>Propriedades Farmacológicas</h2>
 
-        <ul className="topicos">
-            <li><strong>Nome científico:</strong> Salvia rosmarinus</li>
-             <li><strong>Família:</strong> Lamiaceae</li>
-              <li><strong>Origem:</strong> Região do Mediterrâneo</li>
-        </ul>
-
-    </div>
-
-    <div className="blocoA">
-        <h2 className="estudos">Composição Química</h2>
-
-        <ul className="topicos">
-            <li><strong>Ácido Carnósico e Rosmarínico:</strong> Antioxidantes naturais.</li>
-             <li><strong>1,8-Cineol e Cânfora:</strong> Compostos do óleo essencial com ação antimicrobiana.</li>
-              <li><strong>Ácido Ursólico:</strong>Ativo com ação anti-inflamatória.</li>
-        </ul>
-
-    </div>
-
-    <div className="blocoA">
-        <h2 className="estudos">Propriedades Farmacológicas</h2>
-
-        <ul className="topicos">
-            <li><strong>Ação Antioxidante:</strong> Combate o envelhecimento celular.</li>
-             <li><strong>Efeito Neuroprotetor:</strong>  Auxilia na melhora da memória e cognição.</li>
-              <li><strong>Antimicrobiano:</strong> Inibe o crescimento de fungos e bactérias.</li>
-        </ul>
-
-    </div>
-
-    
-    
-    </section>
-    </div>
+                        <ul className="topicos">
+                            <li><strong>Ação Antioxidante:</strong> Combate o envelhecimento celular.</li>
+                            <li><strong>Efeito Neuroprotetor:</strong> Auxilia na melhora da memória e cognição.</li>
+                            <li><strong>Antimicrobiano:</strong> Inibe o crescimento de fungos e bactérias.</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
         </main>
-
-     );
+    );
 }
 
 export default Cientifico2;

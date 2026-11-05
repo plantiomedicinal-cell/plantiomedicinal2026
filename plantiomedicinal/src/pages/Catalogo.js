@@ -144,11 +144,14 @@ function Catalogo() {
   });
 
   return (
-    <main className='paginaCatalogo'>
+    <>
+    <main>
       <section className='inicioCatalogo'>
         <h1>Conheça nosso <strong>CATÁLOGO</strong> completo!</h1>
         <p>
-          Principais receitas medicinais reunindo preparos naturais como chás, xaropes e infusões, com orientações simples para uso no dia a dia. Uma forma prática de aproveitar os benefícios das plantas para o bem-estar.
+            Conheça diferentes espécies de plantas medicinais, suas características,
+            origens e formas de cultivo. Explore nosso catálogo e descubra mais
+            sobre a diversidade da natureza.
         </p>
       </section>
 
@@ -240,8 +243,8 @@ function Catalogo() {
         </section>
 
         {/* ÁREA DAS PLANTAS FILTRADAS */}
-        <article className="containerCardsCatalogo">
-          <section className="catalogo">
+        <section className="containerCardsCatalogo">
+          <div className="catalogo">
             <div className="cardsCatalogo">
               {plantasFiltradas.length > 0 ? (
                 plantasFiltradas.map((planta) => (
@@ -251,7 +254,9 @@ function Catalogo() {
                     </Link>
                     <div className="textosCatalogo">
                       <h2 className="nomeP">{planta.nomeP}</h2>
-                      <h3 className="nomeC">{planta.nomeC}</h3>
+                      <p className="nomeC">
+                        <i>{planta.nomeC}</i>
+                      </p>
                     </div>
                   </div>
                 ))
@@ -259,12 +264,13 @@ function Catalogo() {
                 <p className="semResultados">Nenhuma planta encontrada com os filtros selecionados.</p>
               )}
             </div>
-          </section>
-        </article>
+          </div>
+        </section>
       </div>
-
-      <Footer />
     </main>
+
+    <Footer />
+    </>
   );
 }
 
