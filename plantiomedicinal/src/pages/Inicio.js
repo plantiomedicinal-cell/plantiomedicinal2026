@@ -55,8 +55,8 @@ function Inicio() {
       <div className="divisao1" />
       <div className="divisao2" />
 
-      <article className="containerCards">
-        <section className="catalogoPrevia">
+      <section className="containerCards">
+        <div className="catalogoPrevia">
             <h1 className="previaTitulo-catalogo">Conheça algumas espécies do nosso catálogo</h1>
 
           <div className="cards">
@@ -134,8 +134,8 @@ function Inicio() {
               </button>
             </Link>
           </div>
-        </section>
-      </article>
+        </div>
+      </section>
 
       <div className="divisao4" />
 

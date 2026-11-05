@@ -5,14 +5,15 @@ import Footer from '../components/Footer';
 
 function Sobre() {
   return (
-    <main className="paginaSobre">
-        <div className="inicioSobre">
+    <>
+    <main>
+        <section className="inicioSobre">
           <h1>Conheça a história do <strong>PLANTIO MEDICINAL</strong></h1>
           <p>
             Conectando saberes tradicionais, natureza e tecnologia para promover a
             saúde e o bem-estar de todos.
           </p>
-        </div>
+        </section>
 
         <section className='valores'>
           <div className='topico'>
@@ -68,7 +69,7 @@ function Sobre() {
           </p>
         </article>
 
-        <article className='topicosSpan'>
+        <section className='topicosSpan'>
           <div className="sobreInfo">
             <div className="sobreSpan">
               <div className="textSpan">
@@ -91,23 +92,22 @@ function Sobre() {
               </div>
             </div>
           </div>
-        </article>
+        </section>
 
         <div className='chamada'>
-          <h3>Quer fazer parte da nossa comunidade?</h3>
-          <p>Compartilhe suas receitas e tire dúvidas sobre suas plantas medicinais</p>
+          <h3>Você gostaria de conhecer nosso catálogo de plantas medicinais?</h3>
+          <p>Explore nosso catálogo e descubra diversas espécies, suas propriedades e benefícios.</p>
 
-          <div className="verCatalogo">
-            <Link to="/comunidade">
-              <button className="botaoCatalogo">
-                <b>Ir para a Comunidade</b>
-              </button>
+          <div className="chamadaCatalogo">
+            <Link className="botaoChamada" to="/catalogo">
+                <b>Conhecer Catálogo</b>
             </Link>
           </div>
         </div>
-
-      <Footer />
     </main>
+
+    <Footer />
+    </>
   );
 }
 

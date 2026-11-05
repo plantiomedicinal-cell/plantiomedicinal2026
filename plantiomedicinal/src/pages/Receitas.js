@@ -202,10 +202,9 @@ function Receitas() {
           Nenhuma receita encontrada.
         </p>
       )}
-
       </section>
 
-      {/* Card informativo abaixo da lista de receitas. */}
+      {/* Card informativo abaixo da lista de receitas.
       <section className="card-voce-sabia">
 
         <div className="iconeSabia">
@@ -218,14 +217,15 @@ function Receitas() {
           </span>
 
           <p>
-            Na área de <strong>Postagens</strong>, você pode compartilhar
-            receitas, fotos e vídeos do seu jardim e trocar experiências
-            sobre o cultivo de plantas. Compartilhe seus conhecimentos
-            e inspire outras pessoas!
+            Na área de <b>Receitas</b>, você pode compartilhar suas próprias receitas
+            e dividir seus conhecimentos com a nossa página! Se precisar de 
+            ajuda ou tiver alguma dúvida, entre em contato conosco. [Clique aqui] 
+            para conseguir postar sua própria receita com a gente!
           </p>
         </div>
 
-      </section>
+      </section> */}
+
     </main>
 
     <Footer />

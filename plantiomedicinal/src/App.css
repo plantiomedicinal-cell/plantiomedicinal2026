@@ -81,6 +81,12 @@ p {
     line-height: 1.6;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* =========================
    SPANS
 ========================= */
@@ -179,11 +185,30 @@ a {
 nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0 5rem;
     height: 5rem;
     width: 100%;
+    box-sizing: border-box;
     background-color: var(--verdeMusgo);
+}
+
+.logoHeader {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    flex-shrink: 0;
+}
+
+.logoHeader img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.textoLogo h2 {
+    font-size: 1.2rem;
+    padding: 0;
 }
 
 nav a {
@@ -203,7 +228,28 @@ nav a:hover {
 .navegacao {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navegacao a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.navegacao i {
+    font-size: 1.2rem;
+}
+
+.navegacao a:hover {
+    color: var(--verdeMenta);
+    transition: 0.3s;
 }
 
 .botaoNavegacao {
@@ -226,9 +272,6 @@ nav a:hover {
     background-color: yellow;
 }
 
-.navegacao i {
-    font-size: 1.5rem;
-}
 
 /* =========================
    RODAPÉ
@@ -283,6 +326,7 @@ footer .infoDivisao {
 .separacao img {
     width: 10%;
     height: 5rem;
+    display: block;
 }
 
 .contatos {
@@ -445,6 +489,7 @@ footer .infoDivisao {
     display: flex;
     justify-content: center;
     background-color: var(--cinzaGelo);
+    width: 100%;
 }
 
 .containerCards .catalogoPrevia {
