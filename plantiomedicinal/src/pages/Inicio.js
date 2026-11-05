@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Galeria from '../components/Galeria';
 import Footer from '../components/Footer';
 
 function Inicio() {

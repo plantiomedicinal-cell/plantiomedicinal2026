@@ -153,7 +153,7 @@ function Catalogo() {
       </section>
 
       {/* Componente de Pesquisa Reutilizável */}
-      <CampoPesquisa onSearch={handleBuscar} placeholder="Pesquisar plantas ou receitas..." />
+      <CampoPesquisa onSearch={handleBuscar} placeholder="Pesquisar plantas..." />
 
       <div className="menuCatalogo">
         <section className="filtros">
