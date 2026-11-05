@@ -680,6 +680,12 @@ footer .infoDivisao {
    width: 90%;
 }
 
+.informacoes{
+    display: flex;
+    flex-direction: row;
+
+}
+
 /* CARDS */
 .containerCards .catalogoPrevia {
     width: 85%;
@@ -728,12 +734,11 @@ footer .infoDivisao {
 }
 
 .receitasPrevia {
-    max-width: 35%;
     font-size: 2.5rem;
 }
 
 .textoReceita {
-    max-width: 50%;
+    width: 60%;
 }
 
 /* TRIO DE IMAGENS */
@@ -744,7 +749,7 @@ footer .infoDivisao {
 .img1 img,
 .img2 img,
 .img3 img {
-    max-width: 220px;
+    width: 20rem;
 }
 
 /* FOOTER */
@@ -815,6 +820,11 @@ nav a {
 
 .textoReceita p {
     font-size: 16px;
+}
+
+.receitasCabecalho{
+    display: flex;
+    align-items: center;
 }
 
 /* TRIO DE IMAGENS */
@@ -959,6 +969,18 @@ nav a {
 .textoReceita p {
     text-align: justify;
     font-size: 16px;
+}
+
+.receitasCabecalho{
+    display: block;
+}
+
+.receitasCabecalho h2{
+    display: inline;
+}
+
+.receitasCabecalho p{
+    margin-top: 0.8rem;
 }
 
 /* TRIO DE IMAGENS */

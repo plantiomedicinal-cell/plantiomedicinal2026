@@ -19,22 +19,22 @@ import CriarPostagens from './pages/CriarPostagens';
 // receitas
 import Receita1 from './pages/receitas/Receita1';
 import Receita2 from './pages/receitas/Receita2';
-// import Receita3 from './pages/receitas/Receita3';
-// import Receita4 from './pages/receitas/Receita4';
-// import Receita5 from './pages/receitas/Receita5';
-// import Receita6 from './pages/receitas/Receita6';
-// import Receita7 from './pages/receitas/Receita7';
+import Receita3 from './pages/receitas/Receita3';
+import Receita4 from './pages/receitas/Receita4';
+import Receita5 from './pages/receitas/Receita5';
+import Receita6 from './pages/receitas/Receita6';
+import Receita7 from './pages/receitas/Receita7';
 import Receita8 from './pages/receitas/Receita8';
-// import Receita9 from './pages/receitas/Receita9';
-// import Receita10 from './pages/receitas/Receita10';
-// import Receita11 from './pages/receitas/Receita11';
-// import Receita12 from './pages/receitas/Receita12';
-// import Receita13 from './pages/receitas/Receita13';
-// import Receita14 from './pages/receitas/Receita14';
-// import Receita15 from './pages/receitas/Receita15';
-// import Receita16 from './pages/receitas/Receita16';
-// import Receita17 from './pages/receitas/Receita17';
-// import Receita18 from './pages/receitas/Receita18';
+import Receita9 from './pages/receitas/Receita9';
+import Receita10 from './pages/receitas/Receita10';
+import Receita11 from './pages/receitas/Receita11';
+import Receita12 from './pages/receitas/Receita12';
+import Receita13 from './pages/receitas/Receita13';
+import Receita14 from './pages/receitas/Receita14';
+import Receita15 from './pages/receitas/Receita15';
+import Receita16 from './pages/receitas/Receita16';
+import Receita17 from './pages/receitas/Receita17';
+import Receita18 from './pages/receitas/Receita18';
 
 // cientificos
 import Cientifico1 from './pages/cientifico/Cientifico1';
@@ -72,7 +72,22 @@ function App() {
           {/* Receitas */}
           <Route path="/receitas1" element={<Receita1 />} />
           <Route path="/receitas2" element={<Receita2 />} />
+          <Route path="/receitas3" element={<Receita3 />} />
+          <Route path="/receitas4" element={<Receita4 />} />
+          <Route path="/receitas5" element={<Receita5 />} />
+          <Route path="/receitas6" element={<Receita6 />} />
+          <Route path="/receitas7" element={<Receita7 />} />
           <Route path="/receitas8" element={<Receita8 />} />
+          <Route path="/receitas9" element={<Receita9 />} />
+          <Route path="/receitas10" element={<Receita10 />} />
+          <Route path="/receitas11" element={<Receita11 />} />
+          <Route path="/receitas12" element={<Receita12 />} />
+          <Route path="/receitas13" element={<Receita13 />} />
+          <Route path="/receitas14" element={<Receita14 />} />
+          <Route path="/receitas15" element={<Receita15 />} />
+          <Route path="/receitas16" element={<Receita16 />} />
+          <Route path="/receitas17" element={<Receita17 />} />
+          <Route path="/receitas18" element={<Receita18 />} />
 
           {/* Científico */}
           <Route path="/cientifico1" element={<Cientifico1 />} />
