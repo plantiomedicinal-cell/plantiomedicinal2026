@@ -161,16 +161,19 @@ function Receitas() {
 
       {/* Cabeçalho com o título e a apresentação da página. */}
       <section className="inicioReceita">
-        <h1>
-          Conheça as principais{" "}
-          <strong>RECEITAS MEDICINAIS</strong>
-        </h1>
 
+        <div className="topoReceitas">
+          <h1>
+            Conheça as principais{" "}
+            <strong>RECEITAS MEDICINAIS</strong>
+          </h1>
+        
         <p>
           Descubra preparações com plantas medicinais, incluindo chás,
           sucos e outras receitas, com informações sobre ingredientes,
           preparo e cuidados importantes.
         </p>
+        </div>
       </section>
 
       <CampoPesquisa onSearch={handleBuscar} placeholder="Pesquisar receitas..." />

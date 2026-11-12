@@ -155,3 +155,48 @@
     line-height: 1.6;
     font-style: italic;
 }
+
+/*GRUPOS DE MIDIA*/
+
+@media screen and (max-width:1175px){
+
+  .topoReceitas h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width:865px){
+
+.cardReceita{
+  display: flex;
+  flex-direction: column;
+}
+
+.cardReceita img{
+width: 100%;
+}
+
+.topoReceitas h1{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.topoReceitas p{
+  margin-top: 0.5rem;
+  font-size: small;
+}
+}
+
+@media screen and (max-width:370px){
+
+.cardReceita img{
+  display: none;
+}
+
+.listaReceitas{
+  width: 100%;
+}
+
+}
