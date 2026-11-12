@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import './Comunidade.css';
 import Footer from '../components/Footer';
 

@@ -252,24 +252,19 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.botaoNavegacao {
-    border: none;
-    background-color: transparent;
+.botaoMenu {
     display: none;
     flex-direction: column;
     gap: 6px;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
 }
 
-.botaoNavegacao div {
+.botaoMenu div {
     width: 1.8rem;
     height: 2px;
     background-color: white;
-    transition: background 0.5s;
-}
-
-.botaoNavegacao:hover div {
-    background-color: yellow;
 }
 
 
@@ -764,19 +759,6 @@ footer .infoDivisao {
 
 @media (max-width: 1000px) {
 
-/* MENU */
-nav {
-    gap: 1rem;
-}
-
-nav a {
-    display: none;
-}
-
-.botaoNavegacao {
-    display: flex;
-}
-
 /* LOGO */
 .logo {
     height: 6rem;
@@ -868,6 +850,43 @@ nav {
 
 nav a {
     font-size: 0.95rem;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    min-height: 5rem;
+    padding: 1rem;
+}
+
+.botaoMenu {
+    display: flex;
+}
+
+header nav .navegacao {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+header nav .navegacao.ativo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav .navegacao a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
 /* INFORMAÇÕES */
@@ -1057,13 +1076,50 @@ text-align: center;
 
 /* MENU */
 nav {
-    flex-direction: column;
+    flex-direction: row;
     padding: 1rem;
     gap: 0.7rem;
 }
 
 nav a {
     font-size: 0.9rem;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    min-height: 5rem;
+    padding: 1rem;
+}
+
+.botaoMenu {
+    display: flex;
+}
+
+header nav .navegacao {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+header nav .navegacao.ativo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav .navegacao a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
 /* INFORMAÇÕES */
