@@ -42,7 +42,7 @@ function Receita12(){
                     </div>
                 </div>
 
-                <hr className="divisao5" />
+                <div className="divisao5" />
 
                     <h2 className="titulopreparo">Ingredientes</h2>
                 <section className="cardingredientes">

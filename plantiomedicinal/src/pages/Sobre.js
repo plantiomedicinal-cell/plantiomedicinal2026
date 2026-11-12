@@ -100,7 +100,7 @@ function Sobre() {
 
           <div className="chamadaCatalogo">
             <Link className="botaoChamada" to="/catalogo">
-                <b>Conhecer Catálogo</b>
+                <p className='cCatalogo'><b>Conhecer Catálogo</b></p>
             </Link>
           </div>
         </div>
