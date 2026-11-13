@@ -1,0 +1,48 @@
+services:
+  # back em nodejs
+  back:
+    build: ./back
+    container_name: pulsar_back
+    #restart: always
+    restart: unless-stopped
+
+    environment:
+      - API_PORT=3000
+      - PORT=4001
+      - DB_HOST=dbmaria
+      - DB_USER=root
+      - DB_PASSWORD=teste@123
+      - DB_PORT=3306
+      - DB_NAME=pulsar
+      - DB_DATABASE=pulsar
+      - DB_RESET=false
+      - DATABASE_URL=mysql://root:teste@123@dbmaria:3306/pulsar
+      - JWT_SECRET=senhasupersecreta
+
+    ports:
+      - "13012:4001"  
+    networks:
+      - proxy_net
+
+  # Servidor Web + API/Front nodejs / banco mysql
+  web:
+    build: 
+      context: ./web
+      args:  
+        - VITE_API_URL=http://localhost:13012
+
+    container_name: pulsar_web
+    #restart: always
+    restart: unless-stopped  
+
+    ports:
+      - "15012:80"  
+
+    networks:
+      - proxy_net
+
+
+networks:
+  proxy_net:
+    name: proxy_net
+    external: true

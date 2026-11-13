@@ -1,0 +1,22 @@
+services:
+  # back em nodejs
+
+  # Servidor Web + API/Front nodejs / banco mysql
+  web:
+    build: 
+      context: ./web
+   
+    container_name: plantiomedicinal_web
+    #restart: always
+    restart: unless-stopped  
+
+    ports:
+      - "15018:80"  
+
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    name: proxy_net
+    external: true
