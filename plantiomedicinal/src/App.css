@@ -21,7 +21,11 @@
 
   /* Tons de Terra & Terrosos */
   --begeAreia: #d6c4a8;                
-  --terracota: #b57557;                
+  --terracota: #b57557;      
+  --amareloPastel: #FFF9E6;  
+  --pessegoBorda: #FFE0B2;
+  --ouroVelho: #8A6D3B;
+
 
   /* Textos & Sombras */
   --textoPrincipal: #2d3732;
@@ -29,7 +33,10 @@
   --sombraCard: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-*{
+/* =========================
+   RESET GLOBAL
+========================= */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,10 +44,54 @@
 }
 
 /* =========================
+   TAGS GERAIS
+========================= */
+
+h1 {
+    font-size: 2.8rem;
+    color: var(--textoPrincipal);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: var(--textoPrincipal);
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--verdeMusgo);
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--verdeOliva);
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--textoSecundario, #5c6660);
+    line-height: 1.6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================
    SPANS
 ========================= */
 
-.infoSpans{
+.informacoes {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -48,7 +99,7 @@
     margin-bottom: 4rem;
 }
 
-.infoSpan{
+.infoSpan {
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -61,12 +112,12 @@
     transition: transform 0.3s;
 }
 
-.infoSpan:hover{
+.infoSpan:hover {
     transform: translateY(-3px);
     box-shadow: none;
 }
 
-.iconeSpan{
+.iconeSpan {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,18 +129,18 @@
     font-size: 1.2rem;
 }
 
-.textoSpan{
+.textoSpan {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.textoSpan b{
+.textoSpan b {
     font-size: 1.2rem;
     color: black;
 }
 
-.textoSpan span{
+.textoSpan span {
     font-size: 0.85rem;
     color: black;
 }
@@ -106,7 +157,7 @@ strong {
    LOGO
 ========================= */
 
-.logo{
+.logo {
     display: flex;
     background-color: var(--cinzaGelo);
     height: 7rem;
@@ -114,26 +165,53 @@ strong {
     align-items: center;
 }
 
-.logo img{
+.logo img {
     max-width: 100%;
     height: 10rem;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    text-decoration: none;
 }
 
 /* =========================
    HEADER
 ========================= */
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 5rem;
     height: 5rem;
     width: 100%;
+    box-sizing: border-box;
     background-color: var(--verdeMusgo);
 }
 
-nav a{
+.logoHeader {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    flex-shrink: 0;
+}
+
+.logoHeader img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.textoLogo h2 {
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+nav a {
     text-decoration: none;
     color: white;
     display: flex;
@@ -142,23 +220,44 @@ nav a{
     font-size: 17px;
 }
 
-nav a:hover{
+nav a:hover {
     transition: 0.3s;
     color: var(--verdeMenta);
 }
 
-.menu{
+.navegacao {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navegacao a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.navegacao i {
+    font-size: 1.2rem;
+}
+
+.navegacao a:hover {
+    color: var(--verdeMenta);
+    transition: 0.3s;
 }
 
 .botaoMenu {
-    border: none;
-    background-color: transparent;
     display: none;
     flex-direction: column;
     gap: 6px;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
 }
 
@@ -166,34 +265,14 @@ nav a:hover{
     width: 1.8rem;
     height: 2px;
     background-color: white;
-    transition: background 0.5s;
 }
 
-.botaoMenu:hover div {
-    background-color: yellow;
-}
-
-.perfilMenu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: var(--verdeMusgo);
-}
-
-.perfilMenu i {
-    font-size: 2rem;
-}
-
-.perfilMenu:hover {
-    color: var(--verdeOliva);
-}
 
 /* =========================
    RODAPÉ
 ========================= */
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,18 +282,18 @@ footer{
     background-color: var(--verdeMusgo);
 }
 
-footer a{
+footer a {
     color: white;
     text-decoration: none;
     padding: 0 0 0.5rem 0;
 }
 
-footer a:hover{
+footer a:hover {
     transition: 0.3s;
     text-decoration: underline;
 }
 
-footer .infoDivisao{
+footer .infoDivisao {
     width: 100%;
     height: auto;
     display: grid;
@@ -223,35 +302,36 @@ footer .infoDivisao{
     margin: 2rem;
 }
 
-.separacao{
+.separacao {
     display: flex;
     flex-direction: column;
     margin: 1.2rem;
 }
 
-.separacao h3, h2{
+.separacao h3, h2 {
     color: white;
     padding: 0 0 0.5rem 0;
 }
 
-.separacao p{
+.separacao p {
     color: white;
     text-align: left;
 }
 
-.separacao img{
+.separacao img {
     width: 10%;
     height: 5rem;
+    display: block;
 }
 
-.contatos{
+.contatos {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
 }
 
-.direitosreservados{
-    color: white;
+.direitosreservados {
+    color: white; 
     text-align: left;
     font-size: 14px;
 }
@@ -260,51 +340,38 @@ footer .infoDivisao{
    SEÇÃO PRINCIPAL
 ========================= */
 
-.info{
+.info {
     display: flex;
     flex-direction: row;
     font-size: 2rem;
     align-items: center;
     text-align: left;
-    color: black;
     justify-content: space-between;
-    margin-left: 2rem;
     padding: 2rem 25rem 0 25rem;
-    background-color: white;
-
-    background-image: radial-gradient(
-        rgba(55, 90, 68, 0.12) 1px,
-        transparent 1px
-    );
-
-    background-size: 22px 22px;
 }
 
-.infoTexto{
-    font-size: 1.8rem;
+.infoTexto {
     margin-top: 2rem;
-    max-width: 50%;
-    color: black;
 }
 
-.infoTexto p{
+.infoTexto p {
     font-size: 1rem;
-    text-align: left;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    text-align: justify;
+    width: 70%;
 }
 
-.infoImagem{
+.infoImagem {
     display: flex;
-    flex: 1;
     justify-content: flex-end;
 }
 
-.infoImagem img{
-    width: 90%;
+.infoImagem img {
+    width: 30rem;
     height: auto;
 }
 
-.infoConjunto{
+.infoConjunto {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -315,7 +382,7 @@ footer .infoDivisao{
    BOTÕES
 ========================= */
 
-.infoBotao{
+.infoBotao {
     width: 10rem;
     color: black;
     border-radius: 10px;
@@ -329,18 +396,18 @@ footer .infoDivisao{
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.infoBotao:hover{
+.infoBotao:hover {
     transform: scale(1.05);
     box-shadow:0 10px 10px rgba(0,0,0, 0.3) ;
 }
 
-.verCatalogo{
+.verCatalogo {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.botaoCatalogo{
+.botaoCatalogo {
     background-color: var(--verdeMusgo);
     height: 3.2rem;
     width: 23rem;
@@ -354,12 +421,12 @@ footer .infoDivisao{
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.botaoCatalogo:hover{
+.botaoCatalogo:hover {
     transform: scale(1.05);
     box-shadow:0 10px 10px rgba(0,0,0, 0.3) ;
 }
 
-.receitasBotao{
+.receitasBotao {
     width: 10rem;
     color: black;
     border-radius: 10px;
@@ -373,7 +440,7 @@ footer .infoDivisao{
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.receitasBotao:hover{
+.receitasBotao:hover {
     transform: scale(1.05);
     box-shadow:0 10px 10px rgba(0,0,0, 0.3) ;
 }
@@ -382,21 +449,21 @@ footer .infoDivisao{
    DIVISÕES
 ========================= */
 
-.divisao1{
+.divisao1 {
     background-color: var(--cinzaGelo);
     height: 4rem;
     width: 100%;
     border: none;
 }
 
-.divisao2{
+.divisao2 {
     background-color: var(--verdeMusgo);
     height: 0.4rem;
     width: 100%;
     border: none;
 }
 
-.divisao3{
+.divisao3 {
     background-color: var(--cinzaGelo);
     width: 100%; 
     padding: 0.1rem 2rem;       
@@ -405,7 +472,7 @@ footer .infoDivisao{
     height: auto;
 }
 
-.divisao4{
+.divisao4 {
     border: none;
 }
 
@@ -417,6 +484,7 @@ footer .infoDivisao{
     display: flex;
     justify-content: center;
     background-color: var(--cinzaGelo);
+    width: 100%;
 }
 
 .containerCards .catalogoPrevia {
@@ -426,7 +494,7 @@ footer .infoDivisao{
     gap: 1.5rem;
 }
 
-.catalogo .descricao {
+.previaTitulo-catalogo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -491,16 +559,23 @@ footer .infoDivisao{
    RECEITAS - INDEX
 ========================= */
 
-.descubraTitulo {
+.receitasPrevia {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
     padding: 4rem;
     gap: 3rem;
 }
 
-.receitasPrevia {
+.receitasCabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.previaTitulo-receita {
     text-align: start;
     font-size: 3rem;
     max-width: 30%;
@@ -564,13 +639,13 @@ footer .infoDivisao{
     padding: 4rem;
 }
 
-.postagensTexto{
+.postagensTexto {
     font-size: 1.5rem;
     margin-top: 2rem;
     color: black;
 }
 
-.postagensTexto p{
+.postagensTexto p {
     font-size: 16px;
     margin-top: 1rem;
 }
@@ -584,26 +659,35 @@ footer .infoDivisao{
    TELAS ATÉ 1550px
 ========================= */
 
-@media (max-width: 1550px){
+@media (max-width: 1550px) {
 
-.info{
+/* INFORMAÇÕES */
+.info {
     padding: 2rem 12rem 0 12rem;
 }
 
-.infoTexto{
+.infoTexto {
     max-width: 50%;
     font-size: 1.7rem;
 }
 
-.infoImagem img{
+.infoImagem img {
    width: 90%;
 }
 
-.containerCards .catalogoPrevia{
+.informacoes{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* CARDS */
+.containerCards .catalogoPrevia {
     width: 85%;
 }
 
-.descubraTitulo{
+/* RECEITAS */
+.descubraTitulo {
         padding: 4rem 8rem;
     }
 }
@@ -612,55 +696,59 @@ footer .infoDivisao{
    TELAS ATÉ 1200px
 ========================= */
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
 
-.info{
+/* INFORMAÇÕES */ 
+.info {
     padding: 2rem 6rem 0 6rem;
     gap: 2rem;
 }
 
-.infoTexto{
+.infoTexto {
     max-width: 50%;
     font-size: 1.5rem;
 }
 
-.infoImagem img{
+.infoImagem img {
     width: 100%;
 }
 
-.cards{
+/* CARDS */
+.cards {
     gap: 1.5rem;
 }
 
-.containerCards .catalogoPrevia{
+.containerCards .catalogoPrevia {
     width: 90%;
 }
 
-.descubraTitulo{
+/* RECEITAS */
+.descubraTitulo {
     padding: 4rem 5rem;
     gap: 2rem;
 }
 
-.receitasPrevia{
-    max-width: 35%;
+.receitasPrevia {
     font-size: 2.5rem;
 }
 
-.textoReceita{
-    max-width: 50%;
+.textoReceita {
+    width: 60%;
 }
 
-.trioImagem{
+/* TRIO DE IMAGENS */
+.trioImagem {
     gap: 1rem;
 }
 
 .img1 img,
 .img2 img,
-.img3 img{
-    max-width: 220px;
+.img3 img {
+    width: 20rem;
 }
 
-footer .infoDivisao{
+/* FOOTER */
+footer .infoDivisao {
     grid-template-columns: 0.8fr 0.5fr 0.5fr;
 }
 }
@@ -669,67 +757,67 @@ footer .infoDivisao{
    TELAS ATÉ 1000px
 ========================= */
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 
-nav a {
-    display: none;
-}
-
-.botaoMenu {
-    display: flex;
-}
-
-.logo{
+/* LOGO */
+.logo {
     height: 6rem;
 }
 
-.logo img{
+.logo img {
     height: 8rem;
 }
 
-nav{
-    gap: 1rem;
-}
-
-.info{
+/* INFORMAÇÕES */
+.info {
     padding: 2rem 3rem 0 3rem;
 }
 
-.infoTexto{
+.infoTexto {
     font-size: 1.4rem;
 }
 
-.infoTexto p{
+.infoTexto p {
     font-size: 0.95rem;
 }
 
-.infoSpan{
+/* INFO SPAN */
+.infoSpan {
     width: 70%;
 }
 
-.cards{
+/* CARDS */
+.cards {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.descubraTitulo{
+/* RECEITAS */
+.descubraTitulo {
     padding: 3rem;
 }
 
-.receitasPrevia{
+.receitasPrevia {
     font-size: 2.2rem;
 }
 
-.textoReceita p{
+.textoReceita p {
     font-size: 16px;
 }
 
+.receitasCabecalho{
+    display: flex;
+    align-items: center;
+}
+
+/* TRIO DE IMAGENS */
 .img1 img,
 .img2 img,
-.img3 img{
+.img3 img {
     max-width: 190px;
 }
 
-footer .infoDivisao{
+/* FOOTER */
+footer .infoDivisao {
     grid-template-columns: 1fr 1fr;
 }
 }
@@ -738,21 +826,21 @@ footer .infoDivisao{
    TELAS ATÉ 760px
 ========================= */
 
-@media (max-width: 760px){
+@media (max-width: 760px) {
 
 /* LOGO */
-.logo{
+.logo {
     height: 5.5rem;
 }
 
-.logo img{
+.logo img {
     height: 7rem;
     max-width: 90%;
     object-fit: contain;
 }
 
 /* MENU */
-nav{
+nav {
     height: auto;
     min-height: 4rem;
     padding: 1rem;
@@ -760,12 +848,49 @@ nav{
     flex-wrap: wrap;
 }
 
-nav a{
+nav a {
     font-size: 0.95rem;
 }
 
+header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    min-height: 5rem;
+    padding: 1rem;
+}
+
+.botaoMenu {
+    display: flex;
+}
+
+header nav .navegacao {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+header nav .navegacao.ativo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav .navegacao a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
 /* INFORMAÇÕES */
-.info{
+.info {
     flex-direction: column;
     padding: 2rem 2rem;
     margin-left: 0;
@@ -773,67 +898,67 @@ nav a{
     text-align: center;
 }
 
-.infoTexto{
+.infoTexto {
     max-width: 100%;
     width: 100%;
     font-size: 1.5rem;
     text-align: center;
 }
 
-.infoTexto p{
+.infoTexto p {
     text-align: justify;
     font-size: 1rem;
 }
 
-.infoImagem{
+.infoImagem {
     width: 100%;
     justify-content: center;
 }
 
-.infoImagem img{
+.infoImagem img {
     width: 90%;
     max-width: 500px;
 }
 
 /* INFO SPAN */
 
-.infoSpan{
+.infoSpan {
     width: 90%;
     height: auto;
     min-height: 3.2rem;
     padding: 0.5rem;
 }
 
-.infoSpan img{
+.infoSpan img {
     height: 3.5rem;
 }
 
 /* CONJUNTO */
-.infoConjunto{
+.infoConjunto {
     justify-content: center;
     flex-wrap: wrap;
 }
 
 /* CARDS */
-.containerCards{
+.containerCards {
     padding: 1rem 0;
 }
 
-.containerCards .catalogoPrevia{
+.containerCards .catalogoPrevia {
     width: 90%;
 }
 
-.cards{
+.cards {
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
-.containerCards .plantasPrevia:hover{
+.containerCards .plantasPrevia:hover {
     transform: scale(1.02);
 }
 
 /* TÍTULO CATÁLOGO */
-.catalogo .descricao{
+.catalogo .descricao {
     margin: 2rem 1rem;
     font-size: 2.2rem;
     text-align: center;
@@ -841,32 +966,44 @@ nav a{
 
 /* RECEITAS */
 
-.descubraTitulo{
+.descubraTitulo {
     flex-direction: column;
     align-items: center;
     padding: 3rem 2rem;
     gap: 2rem;
 }
 
-.receitasPrevia{
+.receitasPrevia {
     max-width: 100%;
     width: 100%;
     text-align: center;
     font-size: 2.3rem;
 }
 
-.textoReceita{
+.textoReceita {
     max-width: 100%;
     width: 100%;
 }
 
-.textoReceita p{
+.textoReceita p {
     text-align: justify;
     font-size: 16px;
 }
 
+.receitasCabecalho{
+    display: block;
+}
+
+.receitasCabecalho h2{
+    display: inline;
+}
+
+.receitasCabecalho p{
+    margin-top: 0.8rem;
+}
+
 /* TRIO DE IMAGENS */
-.trioImagem{
+.trioImagem {
     grid-template-columns: 1fr;
     gap: 2.5rem;
     padding-bottom: 3rem;
@@ -874,50 +1011,50 @@ nav a{
 
 .img1 img,
 .img2 img,
-.img3 img{
+.img3 img {
     max-width: 220px;
 }
 
 /* POSTAGENS */
-.containerPostagens{
+.containerPostagens {
     padding: 3rem 2rem;
 }
 
-.postagensTexto{
+.postagensTexto {
     font-size: 1.4rem;
     text-align: center;
 }
 
-.postagensTexto p{
+.postagensTexto p {
     text-align: justify;
 }
 
 /* FOOTER */
-footer .infoDivisao{
+footer .infoDivisao {
     grid-template-columns: 1fr;
     margin: 1.5rem;
 }
 
-.separacao{
+.separacao {
     align-items: center;
     text-align: center;
 }
 
 .separacao h3,
-.separacao h2{
+.separacao h2 {
     text-align: center;
 }
 
-.separacao p{
+.separacao p {
     text-align: center;
 }
 
-.separacao img{
+.separacao img {
     width: 20%;
     height: auto;
 }
 
-.direitosreservados{
+.direitosreservados {
 text-align: center;
 }
 }
@@ -926,123 +1063,160 @@ text-align: center;
    TELAS ATÉ 480px
 ========================= */
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
 
 /* LOGO */
-.logo{
+.logo {
     height: 5rem;
 }
 
-.logo img{
+.logo img {
     height: 6.5rem;
 }
 
 /* MENU */
-nav{
-    flex-direction: column;
+nav {
+    flex-direction: row;
     padding: 1rem;
     gap: 0.7rem;
 }
 
-nav a{
+nav a {
     font-size: 0.9rem;
 }
 
+header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    min-height: 5rem;
+    padding: 1rem;
+}
+
+.botaoMenu {
+    display: flex;
+}
+
+header nav .navegacao {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+header nav .navegacao.ativo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav .navegacao a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
 /* INFORMAÇÕES */
-.info{
+.info {
     padding: 1.5rem 1rem;
     gap: 1.5rem;
 }
 
-.infoTexto{
+.infoTexto {
     font-size: 1.3rem;
 }
 
-.infoTexto p{
+.infoTexto p {
     font-size: 15px;
 }
 
 /* SPAN */
-.infoSpan{
+.infoSpan {
     width: 95%;
     font-size: 0.9rem;
 }
 
-.infoSpan img{
+.infoSpan img {
     height: 3rem;
 }
 
 /* BOTÕES */
 .infoBotao,
-.receitasBotao{
+.receitasBotao {
     width: 8.5rem;
     padding: 0.8rem;
 }
 
-.botaoCatalogo{
+.botaoCatalogo {
     width: 90%;
     font-size: 1rem;
 }
 
 /* CARDS */
-.containerCards .catalogoPrevia{
+.containerCards .catalogoPrevia {
     width: 94%;
 }
 
-.containerCards .plantasPrevia:hover{
+.containerCards .plantasPrevia:hover {
     transform: none;
 }
 
-.catalogo .descricao{
+.catalogo .descricao {
     font-size: 1.8rem;
 }
 
 /* RECEITAS */
-.descubraTitulo{
+.descubraTitulo {
     padding: 2.5rem 1rem;
 }
 
-.receitasPrevia{
+.receitasPrevia {
     font-size: 1.8rem;
 }
 
-.textoReceita p{
+.textoReceita p {
     font-size: 15px;
 }
 
-/* IMAGENS */
+/* TRIO DE IMAGENS */
 .img1 img,
 .img2 img,
-.img3 img{
+.img3 img {
     max-width: 180px;
 }
 
 .textoTrio1,
 .textoTrio2,
-.textoTrio3{
+.textoTrio3 {
     font-size: 1.3rem;
 }
 
 /* POSTAGENS */
-.containerPostagens{
+.containerPostagens {
     padding: 2rem 1rem;
 }
 
-.postagensTexto{
+.postagensTexto {
     font-size: 1.2rem;
 }
 
 
 /* FOOTER */
-footer .infoDivisao{
+footer .infoDivisao {
     margin: 1rem;
 }
 
-.separacao{
+.separacao {
     margin: 0.8rem;
 }
 
-.separacao img{
+.separacao img {
     width: 30%;
 }
 }

@@ -1,62 +1,78 @@
-import { Link } from 'react-router-dom';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+
+import React from "react";
+import { Link } from "react-router-dom";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Header() {
-  return (
-    <header className="App-header">
 
-      <nav>
+    // Função para abrir e fechar o menu
+    function abrirMenu() {
 
-        <div className='perfilMenu'>
-        <Link to="/conta" className="perfilNav">
-          <i class="bi bi-person-circle"></i>
-          Entrar
-        </Link>
-        </div>
+        // Capturar o grupo de navegação
+        const menu = document.querySelector(".navegacao");
 
-        <div className='menu'>
-        <Link to="/">
-          <i class="bi bi-houses-fill"></i>
-          Início
-        </Link>
+        // Adicionar ou remover a classe ativo
+        if (menu) {
+            menu.classList.toggle("ativo");
+        }
+    }
 
-        <Link to="/sobre">
-          <i class="bi bi-chat-left-text-fill"></i>
-          Sobre Nós
-        </Link>
+    return (
+        <header>
+            <nav>
 
-        <Link to="/receitas">
-          <i class="bi bi-clipboard2-minus-fill"></i>
-          Receitas
-        </Link>
+                {/* Logo e nome do projeto */}
+                <div className="logoHeader">
+                    <img
+                        src="./img/icons/logo2.png"
+                        alt="Logo Plantio Medicinal"
+                    />
 
-        <Link to="/catalogo">
-          <i class="bi bi-grid-1x2-fill"></i>
-          Catálogo
-        </Link>
+                    <div className="textoLogo">
+                        <h2>Plantio Medicinal</h2>
+                    </div>
+                </div>
 
-        <Link to="/comunidade">
-          <i class="bi bi-people-fill"></i>
-          Comunidade
-        </Link>
-        </div>
+                {/* Links de navegação */}
+                <div className="navegacao">
 
-        <button class="botaoMenu">
-            <div></div>
-            <div></div>
-            <div></div>
-        </button>
+                    <Link to="/">
+                        <i className="bi bi-houses-fill"></i>
+                        Início
+                    </Link>
 
-      </nav>
+                    <Link to="/sobre">
+                        <i className="bi bi-chat-left-text-fill"></i>
+                        Sobre Nós
+                    </Link>
 
-      <div className="logo">
-        <Link to="/">
-          <img src="./img/logo1.png" alt="Logo" />
-        </Link>
-      </div>
+                    <Link to="/receitas">
+                        <i className="bi bi-clipboard2-minus-fill"></i>
+                        Receitas
+                    </Link>
 
-    </header>
-  );
+                    <Link to="/catalogo">
+                        <i className="bi bi-grid-1x2-fill"></i>
+                        Catálogo
+                    </Link>
+
+                </div>
+
+                {/* Botão de navegação */}
+                <button
+                    className="botaoMenu"
+                    type="button"
+                    onClick={abrirMenu}
+                    aria-label="Abrir ou fechar menu"
+                >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+
+            </nav>
+        </header>
+    );
 }
 
 export default Header;

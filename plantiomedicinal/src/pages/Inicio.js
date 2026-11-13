@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Galeria from '../components/Galeria';
 import Footer from '../components/Footer';
 
 function Inicio() {
   return (
+    <>
     <main>
-      <div className="info">
+      <section className="info">
         <div className="infoTexto">
           <h1>
             Faça seu jardim <br />
@@ -22,51 +22,48 @@ function Inicio() {
             de plantio.
           </p>
 
-<div className="infoSpans">
+      <div className="informacoes">
+          <div className="infoSpan">
+              <div className="iconeSpan">
+                  <i className="bi bi-leaf"></i>
+              </div>
 
-    <div className="infoSpan">
-        <div className="iconeSpan">
-            <i className="bi bi-leaf"></i>
-        </div>
+              <div className="textoSpan">
+                  <b>+6</b>
+                  <span>espécies</span>
+              </div>
+          </div>
 
-        <div className="textoSpan">
-            <b>+6</b>
-            <span>espécies</span>
-        </div>
-    </div>
+          <div className="infoSpan">
+              <div className="iconeSpan">
+                  <i class="bi bi-cup-hot"></i>
+              </div>
 
-    <div className="infoSpan">
-        <div className="iconeSpan">
-            <i class="bi bi-cup-hot"></i>
-        </div>
-
-        <div className="textoSpan">
-            <b>+10</b>
-            <span>receitas</span>
-        </div>
-    </div>
-</div>
-</div>
-
-      <div className="infoImagem">
-          <img src="/img/personagem1.png" alt="Logo" />
-        </div>
+              <div className="textoSpan">
+                  <b>+10</b>
+                  <span>receitas</span>
+              </div>
+          </div>
+      </div>
       </div>
 
-      <hr className="divisao1" />
-      <hr className="divisao2" />
+      <div className="infoImagem">
+          <img src="/img/icons/personagem1.png" alt="Logo" />
+        </div>
+      </section>
 
-      <article className="containerCards">
-        <section className="catalogoPrevia">
-          <div className="catalogo">
-            <h1 className="descricao">Conheça algumas espécies do nosso catálogo</h1>
-          </div>
+      <div className="divisao1" />
+      <div className="divisao2" />
+
+      <section className="containerCards">
+        <div className="catalogoPrevia">
+            <h1 className="previaTitulo-catalogo">Conheça algumas espécies do nosso catálogo</h1>
 
           <div className="cards">
             {/* CARD 1 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/orapronobis.webp" alt="Ora Pro Nobis" />
+                <img src="/img/plantas/orapronobis.webp" alt="Ora Pro Nobis" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Ora Pro Nobis</h2>
@@ -77,7 +74,7 @@ function Inicio() {
             {/* CARD 2 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/alecrim.webp" alt="Alecrim" />
+                <img src="/img/plantas/alecrim.webp" alt="Alecrim" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Alecrim</h2>
@@ -88,7 +85,7 @@ function Inicio() {
             {/* CARD 3 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/pimentamacaco.webp" alt="Pimenta Macaco" />
+                <img src="/img/plantas/pimentamacaco.webp" alt="Pimenta Macaco" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Pimenta Macaco</h2>
@@ -99,7 +96,7 @@ function Inicio() {
             {/* CARD 4 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/moringa.webp" alt="Moringa" />
+                <img src="/img/plantas/moringa.webp" alt="Moringa" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Moringa</h2>
@@ -110,7 +107,7 @@ function Inicio() {
             {/* CARD 5 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/louro.webp" alt="Louro" />
+                <img src="/img/plantas/louro.webp" alt="Louro" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Louro</h2>
@@ -121,7 +118,7 @@ function Inicio() {
             {/* CARD 6 */}
             <div className="plantasPrevia">
               <Link to="/catalogo" className="quadroImg">
-                <img src="/img/guaco.webp" alt="Guaco" />
+                <img src="/img/plantas/guaco.webp" alt="Guaco" />
               </Link>
               <div className="textosPrevia">
                 <h2 className="nomeP">Guaco</h2>
@@ -137,64 +134,48 @@ function Inicio() {
               </button>
             </Link>
           </div>
-        </section>
-      </article>
-
-      <hr className="divisao4" />
-
-      <div className="descubraTitulo">
-        <h2 className="receitasPrevia">Descubra novas<br/> <strong>receitas.</strong></h2>
-      
-
-        <div class="textoReceita">
-        <p>Plantas Medicinais podem ser ultilizadas de diversas formas para promover saúde e bem-estar, sendo uma prática tradicional que atravessa gerações. Com elas, é possível preparar receitas naturais como chás, infusões, xaropes, pomadas, e até banhos terapêuticos, cada um com finalidades específicas</p>
         </div>
+      </section>
+
+      <div className="divisao4" />
+
+      <section className="receitasPrevia">
+        <div className="receitasCabecalho">
+          <h2 className="previaTitulo-receita">
+            Descubra novas<br/> <strong>receitas.</strong>
+          </h2>
+
+          <div class="textoReceita">
+          <p>Plantas Medicinais podem ser ultilizadas de diversas formas para promover saúde e bem-estar, sendo uma prática tradicional que atravessa gerações. Com elas, é possível preparar receitas naturais como chás, infusões, xaropes, pomadas, e até banhos terapêuticos, cada um com finalidades específicas</p>
+          </div>
         </div>
 
         <div class="trioImagem">
 
             <div class="img1">
-                <img src="./img/planta.png" alt="Imagem Planta"/> 
+                <img src="./img/icons/planta.png" alt="Imagem Planta"/> 
                 <h2 class="textoTrio1">Plante e Colha</h2>
             </div>
 
             <div class="img2">
-                <img src="./img/personagem2.png" alt="Imagem Profissional"/>
+                <img src="./img/icons/personagem2.png" alt="Imagem Profissional"/>
                 <h2 class="textoTrio2">Faça e Cozinhe</h2>
             </div>
 
             <div class="img3">
-                <img src="./img/livro.png" alt="Imagem Livro"/>
+                <img src="./img/icons/livro.png" alt="Imagem Livro"/>
                 <h2 class="textoTrio3">Mostre seu Resultado</h2>
             </div>
-
-        </div>
-
-        <hr className="divisao1" />
-        <hr className="divisao2" />
-
-        <div className="containerPostagens">
-        <div className="postagensTexto">
-          <h1>
-            Compartilhe o seu <strong>PLANTIO MEDICINAL</strong> conosco, na comunidade!
-          </h1>
-
-          <p>
-            Mostre o crescimento das plantas, os
-            cuidados no dia a dia e a beleza de
-            cultivar a natureza. Um espaço para
-            trocar experiências, ideias e
-            inspirações sobre jardinagem de
-            forma simples e natural.
-          </p>
-
-          <Galeria />
-
           </div>
-        </div>
-        <Footer />
+        </section>
+
+        <div className="divisao1" />
+        <div className="divisao2" />
+
     </main>
 
+    <Footer />
+    </>
   );
 }
 

@@ -1,6 +1,6 @@
-a{
-    text-decoration: none;
-}
+/* =========================
+   PAGINA DAS RECEITAS
+========================= */
 
 .inicioReceita{
     display: flex;
@@ -24,214 +24,61 @@ a{
     width: 100%;
 }
 
-.campoPesquisa {
-    position: relative;
-    width: 70%;
-    max-width: 700px;
-    margin: 2rem auto;
-}
-
-.campoPesquisa input {
-    width: 100%;
-    height: 40px;
-    box-sizing: border-box;
-    padding: 0 15px 0 40px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-    transition: 0.3s;
-}
-
-.campoPesquisa i {
-    position: absolute;
-    left: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: var(--verdeMusgo);
-    z-index: 1;
-}
-
-.campoPesquisa input:focus {
-    border-color: var(--verdeMusgo);
-    box-shadow: 0 0 0 3px rgba(55, 90, 68, 0.12);
-}
-
-/* --- Novas regras para o Histórico --- */
-.historicoDropdown {
-    position: absolute;
-    top: calc(100% + 6px);
-    left: 0;
-    right: 0;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    z-index: 10;
-    overflow: hidden;
-}
-
-.historicoHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 14px;
-    font-size: 12px;
-    color: #777;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.btnLimpar {
-    background: none;
-    border: none;
-    color: #d9534f;
-    font-size: 12px;
-    cursor: pointer;
-    padding: 0;
-}
-
-.btnLimpar:hover {
-    text-decoration: underline;
-}
-
-.historicoLista {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.historicoLista li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 14px;
-    cursor: pointer;
-    font-size: 14px;
-    color: #333;
-    transition: background-color 0.15s;
-}
-
-.historicoLista li:hover {
-    background-color: #f7f9f8;
-}
-
-.historicoItemConteudo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Ícone de relógio no histórico */
-.historicoItemConteudo i {
-    position: static;
-    transform: none;
-    font-size: 14px;
-    color: #888;
-}
-
-/* Botão de remover (X) individual */
-.btnRemover {
-    position: static;
-    transform: none;
-    font-size: 12px;
-    color: #aaa;
-    padding: 4px;
-    transition: color 0.15s;
-}
-
-.btnRemover:hover {
-    color: #d9534f;
-}
-
-hr{
-    border: none;
-}
-
-
 /* =========================
    CONTAINER DOS CARDS
 ========================= */
 
-.lista-receitas {
-  width: calc(100% - 40px);
-  max-width: 1200px;
-  margin: 25px auto;
-  padding: 24px;
+.listaReceitas {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 40rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 2rem auto;
+  padding: 1.6rem;
   background: #fff;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   box-sizing: border-box;
 }
 
-.cabecalho-lista {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 18px;
-}
-
-.cabecalho-lista h2 {
-  margin: 0;
-  color: #375a44;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.cabecalho-lista span {
-  color: #888;
-  font-size: 12px;
-}
-
 /* =========================
    CARD INDIVIDUAL
 ========================= */
 
-.card-receita {
+.cardReceita {
   display: flex;
   align-items: center;
-  gap: 18px;
-  min-height: 130px;
-  margin-bottom: 14px;
-  padding: 14px;
-  background: #fff;
-  border: 2px solid #e8e8e8;
+  gap: 2rem;
+  margin-bottom: 1.8rem;
+  padding: 0.8rem;
+  background: rgba(240, 240, 240, 0.548);
   border-radius: 8px;
   box-sizing: border-box;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: box-shadow 0.2s;
 }
 
-.card-receita:hover {
-  border-color: #8da593;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+.cardReceita:hover {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
 }
 
-.card-receita img {
+.cardReceita img {
   display: block;
-  width: 150px;
-  height: 105px;
+  width: 15rem;
+  height: 10rem;
   flex-shrink: 0;
   object-fit: cover;
   border-radius: 5px;
   background: #e2eee5;
 }
 
-.info-receita {
+.infoReceita {
   flex: 1;
   min-width: 0;
 }
 
-.categoria-receita {
-  display: inline-block;
-  margin-bottom: 5px;
-  color: #677766;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-}
-
-.info-receita h3 {
+.infoReceita h3 {
   margin: 0 0 7px;
   color: #375a44;
   font-size: 18px;
@@ -239,14 +86,14 @@ hr{
   line-height: 1.4;
 }
 
-.info-receita p {
+.infoReceita p {
   margin: 0 0 12px;
   color: #777;
   font-size: 14px;
   line-height: 1.6;
 }
 
-.btn-receita {
+.botaoReceita {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -259,132 +106,97 @@ hr{
   transition: background 0.2s;
 }
 
-.btn-receita:hover {
+.botaoReceita:hover {
   background: #2c4936;
 }
 
-.btn-receita i {
-  font-size: 12px;
-}
-
-/* =========================
-   PAGINAÇÃO
-========================= */
-
-.paginacao-receitas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  margin-top: 22px;
-  background-color: white;
-}
-
-.paginacao-receitas button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 30px;
-  height: 30px;
-  padding: 0 8px;
-  background: #fff;
-  color: #375a44;
-  border: 1px solid #e1e1e1;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.2s;
-}
-
-.paginacao-receitas button:hover:not(:disabled) {
-  border-color: #375a44;
-}
-
-.paginacao-receitas button.pagina-ativa {
-  background: #375a44;
-  color: #fff;
-  border-color: #375a44;
-}
-
-.paginacao-receitas button:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-/* =========================
-   PESQUISA SEM RESULTADOS
-========================= */
-
-.receitas-vazias {
-  padding: 40px 15px;
-  text-align: center;
-}
-
-.receitas-vazias > i {
-  color: #677766;
-  font-size: 30px;
-}
-
-.receitas-vazias h3 {
-  margin: 12px 0 8px;
-  color: #375a44;
-  font-size: 17px;
-}
-
-.receitas-vazias p {
-  color: #777;
-  font-size: 13px;
-}
-
-.receitas-vazias button {
-  padding: 9px 14px;
-  background: #375a44;
+.botaoReceita a {
   color: white;
-  border: 0;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .card-voce-sabia {
     display: flex;
     align-items: center;
     gap: 18px;
-    max-width: 850px;
-    margin: 30px auto;
-    padding: 22px 26px;
+    width: 50%;
+    margin: 2rem auto;
+    padding: 1.5rem 1.8rem;
     background: rgb(226, 238, 229);
     border-radius: 14px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.icone-sabia {
-    min-width: 48px;
-    height: 48px;
+.iconeSabia {
+    width: 2.8rem;
+    height: 2.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(55, 90, 68);
+    background: var(--verdeMusgo);
     color: white;
     border-radius: 50%;
     font-size: 22px;
 }
 
-.conteudo-sabia {
+.conteudoSabia {
     flex: 1;
 }
 
-.titulo-sabia {
+.tituloSabia {
     display: block;
-    margin-bottom: 6px;
-    color: rgb(55, 90, 68);
-    font-size: 20px;
-    font-weight: 700;
+    margin-bottom: 0.4rem;
+    color: var(--verdeMusgo);
 }
 
-.conteudo-sabia p {
+.conteudoSabia p {
     margin: 0;
     color: rgb(70, 80, 72);
     font-size: 15px;
     line-height: 1.6;
     font-style: italic;
+}
+
+/*GRUPOS DE MIDIA*/
+
+@media screen and (max-width:1175px){
+
+  .topoReceitas h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width:865px){
+
+.cardReceita{
+  display: flex;
+  flex-direction: column;
+}
+
+.cardReceita img{
+width: 100%;
+}
+
+.topoReceitas h1{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.topoReceitas p{
+  margin-top: 0.5rem;
+  font-size: small;
+}
+}
+
+@media screen and (max-width:370px){
+
+.cardReceita img{
+  display: none;
+}
+
+.listaReceitas{
+  width: 100%;
+}
+
 }

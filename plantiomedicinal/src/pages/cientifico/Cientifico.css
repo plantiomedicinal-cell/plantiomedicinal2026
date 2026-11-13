@@ -1,20 +1,18 @@
-.borda{
-  margin: 2rem 15rem ;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  border-radius: 0.5rem;
-}
-
-.containerCientifico{
+.containerCientifico {
     display: flex;
     flex-direction:column;
-    padding: 0 20rem;
+    align-items: center;
+    width: 65%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    margin: 25px auto;
 }
 
-.containerCientifico h1{
+.containerCientifico h1 {
   color: var(--verdeMusgo);
 }
 
-.comeco{
+.cientifico {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,33 +22,35 @@
     border-bottom: 1px solid var(--verdeOliva);
 }
 
-.nomeC{
+.nomeC {
     font-size: 15px;
     font-style: italic;
 }
 
-.imgCientifico{
+.imgCientifico {
     background-color: var(--cinzaGelo);
-    margin: 3rem;
     border-radius: 2rem;
     height: 20rem;
 }
 
-.informacoes{
+.informacoes {
     display: flex;
-    margin: 2rem 3rem 0 6rem;
+    align-items: center;
 }
 
-.categoriasPlantas{
+.categoriasPlantas {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    padding: 5rem;
 }
 
+.categoriasPlantas h2 {
+    color: var(--verdeMusgo);
+    font-size: 24px;
+}
 
-.categoriaItem{
+.categoriaItem {
     border: 2px solid var(--verdeMusgo);
     border-radius: 2rem;
     padding: 0.5rem;
@@ -58,39 +58,16 @@
     text-align: center;
     background-color: rgba(171, 219, 188, 0.2);
     color: var(--verdeMusgo);
-    opacity: 0;
-    transform: translateX(-50px);
-    animation: aparecer 0.6s ease forwards
-}
-
-.categoriaItem:nth-child(2){
-    animation-delay: 0.2s;
-}
-
-.categoriaItem:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-.categoriaItem:nth-child(4) {
-  animation-delay: 1s;
-}
-
-.categoriaItem:nth-child(5) {
-  animation-delay: 1.4s;
-}
-
-.categoriaItem:nth-child(6) {
-  animation-delay: 1.8s;
 }
 
 .categoriaItem::before {
     content: "✓";
     font-weight: bold;
-    margin-right: 5px;
+    margin-right: 0.2rem;
 }
 
-.blocoC{
-    padding: 5rem 8rem;
+.blocoC {
+    padding: 0rem 2rem 5rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +75,17 @@
     text-align: center;
 }
 
-.blocoT{
+.blocoC h1 {
+    color: var(--verdeMusgo);
+    font-size: 26px;
+}
+
+.blocoC p {
+    width: 80%;
+    text-align: justify;
+}
+
+.blocoT {
     background-color: var(--cinzaGelo);
     width: 100%;
     padding: 3rem;
@@ -106,16 +93,16 @@
     flex-direction: column;
     gap: 2rem;
     border-bottom: 1px solid var(--verdeOliva);
-    border-radius: 0.5rem;
     align-items: center;
 }
 
-.blocoT h2 , .blocoA h2 , .blocoC h1{
-  color: var(--verdeMusgo);
+.blocoT h2 {
+    color: var(--verdeMusgo);
+    font-size: 26px;
 }
 
-.blocoA{
-    padding: 3rem;
+.blocoA {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -123,12 +110,12 @@
     border-bottom: 1px solid var(--verdeOliva);
 }
 
-
-.estudos{
-    color: black;
+.blocoA h2 {
+    color: var(--verdeMusgo);
+    font-size: 26px;
 }
 
-.topicos{
+.topicos {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -147,4 +134,23 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+@media screen and (max-width:1280px){
+
+  .informacoes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+}
+
+@media screen and (max-width:1130px){
+
+  .borda{
+    width: 100%;
+    margin: 0;
+  }
+
 }

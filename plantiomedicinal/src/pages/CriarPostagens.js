@@ -3,87 +3,97 @@ import { Link } from "react-router-dom";
 import './Comunidade.css';
 
 function CriarPostagens() {
-  return (
-        <main className="containerPublicacao">
+    // Estado para gerenciar o texto das instruções e o contador dinâmico
+    const [instrucoes, setInstrucoes] = useState(
+        "Descreva o passo a passo detalhado do seu assunto."
+    );
+
+    const handleInstrucoesChange = (e) => {
+        setInstrucoes(e.target.value);
+    };
+
+    return (
+        <main className="paginaCriarPostagens">
             <section className="novaPublicacao">
                 <div className="cabecalhoPublicacao">
                     <h1>Criar Nova Publicação</h1>
                     <p>Compartilhe os seus conhecimentos, receitas ou experiências de cultivo com a comunidade</p>
                 </div>
 
-                <hr className="divisao3"></hr>
-
                 <div className="fotoPublicacao">
                     <h2>Imagem de Capa</h2>
                     <div className="exemplo">
                         <div className="iconeExemplo">
-                            <i class="bi bi-arrow-up-circle-fill"></i>
+                            <i className="bi bi-arrow-up-circle-fill"></i>
                         </div>
 
-                        <h1>Clique ou arraste uma foto aqui</h1>
+                        <h3>Clique ou arraste uma foto aqui</h3>
                         <p>Formatos aceitos: JPG, PNG (até 10MB)</p>
                     </div>
                 </div>
 
-                <form>
+                <form className="formPublicacaoPrincipal">
                     <div className="formPublicacao">
-                        <div class="grupoForm">
-                            <label for="titulo">Título da Publicação</label>
+                        <div className="grupoForm">
+                            <label htmlFor="titulo">Título da Publicação</label>
                             <input 
-                            type="text" 
-                            id="titulo" 
-                            name="titulo" 
-                            class="form-control" 
-                            placeholder="Ex: Chá Calmante de Erva-Cidreira e Camomila"
+                                type="text" 
+                                id="titulo" 
+                                name="titulo" 
+                                className="form-control" 
+                                placeholder="Ex: Chá Calmante de Erva-Cidreira e Camomila"
                             />
                         </div>
 
-                        <div class="grupoForm">
-                            <label for="categoria">Categoria</label>
+                        <div className="grupoForm">
+                            <label htmlFor="categoria">Categoria</label>
                             <input 
-                            type="text" 
-                            id="categoria" 
-                            name="categoria" 
-                            class="form-control" 
+                                type="text" 
+                                id="categoria" 
+                                name="categoria" 
+                                className="form-control" 
+                                placeholder="Ex: Receitas, Cultivo..."
                             />
                         </div>
 
-                        <div class="grupoForm">
-                        <label for="assunto">Assunto</label>
-                        <input 
-                            type="text" 
-                            id="assunto" 
-                            name="assunto" 
-                            class="form-control"
-                            placeholder="Ex: Hoje eu estarei compartilhando uma receita"
-                        />
+                        <div className="grupoForm">
+                            <label htmlFor="assunto">Assunto</label>
+                            <input 
+                                type="text" 
+                                id="assunto" 
+                                name="assunto" 
+                                className="form-control"
+                                placeholder="Ex: Hoje eu estarei compartilhando uma receita"
+                            />
                         </div>
 
-                        <div class="grupoForm">
-                        <label for="instrucoes">Instruções</label>
-                            <div class="textareaPerfil">
+                        <div className="grupoForm">
+                            <label htmlFor="instrucoes">Instruções</label>
+                            <div className="textareaPerfil">
                                 <textarea 
-                                id="instrucoes" 
-                                name="instrucoes" 
-                                class="form-control" 
-                                maxlength="200"
-                                oninput="updateCounter(this)"
-                                >Descreva o passo a passo detalhado do seu assunto.</textarea>
-                                <span class="char-counter" id="counter">84 / 200 caracteres</span>
+                                    id="instrucoes" 
+                                    name="instrucoes" 
+                                    className="form-control" 
+                                    maxLength="200"
+                                    value={instrucoes}
+                                    onChange={handleInstrucoesChange}
+                                ></textarea>
+                                <span className="char-counter">
+                                    {instrucoes.length} / 200 caracteres
+                                </span>
                             </div>
                         </div>
                     </div>
 
-                <div className='botaoAlterar'>
+                    <div className="botaoAlterar">
+                        <Link to="/conta">
+                            <button type="button" className="cancelar">Cancelar</button>
+                        </Link>
 
-                    <Link to="/conta">
-                    <button className='cancelar'>Cancelar</button>
-                    </Link>
-
-                    <Link to="/comunidade">
-                    <button className='salvar'>Publicar</button>
-                    </Link>
-                </div>
+                        <Link to="/comunidade">
+                            <button type="submit" className="salvar">Publicar</button>
+                        </Link>
+                    </div>
                 </form>
             </section>
         </main>

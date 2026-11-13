@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="App-footer">
+    <footer>
 
         <div className='infoDivisao'>
         <div className='separacao'>
         <h2>Plantio Medicinal</h2>
             <p>Site sobre plantas medicinais, com catálogo de espécies e receitas para conhecer e aproveitar seus benefícios.</p>
-            <img src='/img/logo2.png'/>
+            <img src='/img/icons/logo2.png' alt='logo'/>
             <p className='direitosreservados'><strong>© 2026 Plantio Medicinal. Todos os direitos reservados.</strong></p>
         </div>
 
@@ -25,10 +25,6 @@ function Footer() {
 
             <Link to="/catalogo">
             Catálogo
-            </Link>
-
-            <Link to="/comunidade">
-            Comunidade
             </Link>
             </div>
 
